@@ -1,0 +1,29 @@
+main{
+	display: grid;
+
+	grid-row-start: 3;
+	grid-column-start: 2;
+
+	width: 1000px;
+
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: white;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.campos{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 10px;
+}
+
+.quadro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}

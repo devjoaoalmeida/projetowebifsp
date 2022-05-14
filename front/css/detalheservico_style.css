@@ -1,0 +1,52 @@
+main{
+	display: grid;
+
+	grid-row-start: 3;
+	grid-column-start: 2;
+
+	width: 1000px;
+
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-radius: 20px;
+
+	margin: 10px;
+}
+
+
+h1{
+	text-align: center;
+}
+
+.quadro{
+	display: flex;
+	flex-direction: column;
+}
+
+.descricao{
+	display: flex;
+	height: 250px;
+}
+
+.servico_info{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.botoes{
+	display: flex;
+	grid-gap: 10px;
+}
+
+.botao_orcamento{
+	height: 50px;
+	width: 300px;
+}
+
+.enviar_mensagem{
+	height: 50px;
+	width: 300px;
+}
+
