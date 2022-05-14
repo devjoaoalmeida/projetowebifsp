@@ -1,0 +1,167 @@
+body{
+	background-color: #fffafa;
+	margin: auto;
+}
+
+/*QUADRO DE CIMA COM REDES SOCIAIS E ATALHOS DO SITE*/
+
+.quadro_cima{
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #babaca;
+}
+
+ul.barra_quadrocima{
+	display: flex;
+	margin: auto;
+	height: 30px;
+	align-items: center;
+}
+
+li.barra_quadrocima{
+	display: flex;
+	height: auto;
+	width: 200px;
+	justify-content: center;
+}
+
+/*BARRA DE PESQUISA*/
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: yellow;
+}
+
+ul.produtos{
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+}
+
+li.produtos{
+	display: flex;
+	height: 30px;
+	width: 150px;
+	margin: 5px;
+	align-items: center;
+	justify-content: center;
+	background-color: #babaca;
+}
+
+.pesquisar{
+	display: flex;
+	height: 30px;
+	width: 1000px;
+}
+
+ul.servicos_usuarios{
+	display: flex;
+	align-items: center;
+}
+
+li.servicos_usuarios{
+	display: flex;
+	height: 30px;
+	width: 100px;
+	align-items: center;
+	justify-content: center;
+	background-color: #babaca;
+}
+
+/*CONTEUDO PRINCIPAL*/
+
+main{
+	display: grid;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.prop_esquerda{
+	display: grid;
+	justify-self: center;
+	margin-top: 100px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+.prop_direita{
+	display: grid;
+	justify-self: center;
+	margin-top: 100px;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+.anuncie_aqui{
+	display: grid;
+	margin-top: 50px;
+	justify-self: center;
+	justify-items: center;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-end: 3;
+}
+
+.quadro_servicoaleatorio{
+	display: grid;
+	display: flex;
+	justify-self: center;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+.servico_aleatorio{
+	display: flex;
+	margin-top: 100px;
+	margin: 30px;
+	padding: 50px;
+	background-color: white;
+	border: thin;
+	border-style: solid;
+	border-color: #babaca;
+	border-radius: 50px;
+}
+
+
+ul.informacoes{
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	margin: auto;
+}
+
+p.informacoes{
+	display: flex;
+	margin: auto;
+}
+
+li.informacoes{
+	display: flex;
+	margin: 5px;
+}
+
+li.informacoes_desc{
+	display: flex;
+	margin: auto;
+	height: 80px;
+}
+
+.botao_orcamento{
+	display: flex;
+	margin: auto;
+	width: 200px;
+	height: 30px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
