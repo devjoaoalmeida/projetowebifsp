@@ -1,52 +1,39 @@
-main{
+.quadro_cadastroservico{
 	display: grid;
-
-	grid-row-start: 3;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
 	grid-column-start: 2;
+	grid-column-end: 4;
+    grid-row-start: 1;
+	grid-row-end: 4;
+    width: 1000px;
+}
 
-	width: 1000px;
+.quadro_servico{
+	display: flex;
+	width: 800px;
+	
+}
 
+.quadro_servico_direita{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+label, input, img{
+	margin: 20px;
+}
+
+.quadro_servico_esquerda{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.quadro_uploadimg{
+	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	background-color: white;
-	border-radius: 20px;
-
-	margin: 10px;
 }
-
-
-h1{
-	text-align: center;
-}
-
-.quadro{
-	display: flex;
-	flex-direction: column;
-}
-
-.descricao{
-	display: flex;
-	height: 250px;
-}
-
-.servico_info{
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.botoes{
-	display: flex;
-	grid-gap: 10px;
-}
-
-.botao_orcamento{
-	height: 50px;
-	width: 300px;
-}
-
-.enviar_mensagem{
-	height: 50px;
-	width: 300px;
-}
-

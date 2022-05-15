@@ -1,20 +1,39 @@
-h1{
-	text-align: center;
-}
-
 .quadro_cadastroservico{
-	display: flex;
-	flex-direction: column;
-	grid-gap: 20px;
+	display: grid;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+	grid-column-start: 2;
+	grid-column-end: 4;
+    grid-row-start: 1;
+	grid-row-end: 4;
+    width: 1000px;
 }
 
 .quadro_servico{
 	display: flex;
+	width: 800px;
+	
+}
+
+.quadro_servico_direita{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+label, input, img, button{
+	margin: 20px;
+}
+
+.quadro_servico_esquerda{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
 }
 
 .quadro_uploadimg{
 	display: flex;
 	flex-direction: column;
-	text-align: center;
-	margin-bottom: 250px;
+	align-items: center;
 }

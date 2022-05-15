@@ -1,0 +1,16 @@
+.sobre{
+	display: grid;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+	grid-column-start: 2;
+	grid-column-end: 4;
+    grid-row-start: 1;
+	grid-row-end: 4;
+    width: 1000px;
+}
+
+.desenvolvedores{
+    display: flex;
+    justify-content: space-evenly;
+}
