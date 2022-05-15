@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../css/paginainicial_style.css">
+	<link rel="stylesheet" type="text/css" href="../css/cadastroservico_style.css">
 	<link rel="stylesheet" type="text/css" href="../css/style_all.css">
 	<title>Cadastro Serviço</title>
 </head>
@@ -40,5 +40,39 @@
 
 		<img src="" alt="" width="200px" height="650px" class="prop_esquerda">
 		<img src="" alt="" width="200px" height="650px" class="prop_direita">
-</body>
+
+		<h1>cadastro de serviços/produtos</h1>
+
+		<div class="quadro_cadastroservico">
+			<div class="quadro_serviço">
+
+				<label for="nome"><b> Nome do serviço: </b></label>
+				<input type="text" placeholder="Nome do serviço." name="nome_servico" required>
+
+				<label for="categoria"><b> Categoria </b></label>
+				<input type="radio" value="produto" name="categoria" required><label for="produto">Produto</label>
+				<input type="radio" value="servico" name="categoria" required><label for="servico">Serviço</label>
+
+				<label for="custo"><b> Custo: </b></label>
+				<input type="text" placeholder="Custo minimo" name="custo" required>
+
+				<label for="prazo"><b> Prazo: </b></label>
+				<input type="text" placeholder="Prazo minimo" name="prazo" required>
+
+				<label for="descrição"><b> Descrição: </b></label>
+				<input type="text" placeholder="Explique como é o serviço que será prestado." name="descrição" required>
+
+			</div>
+			
+			<div class="quadro_uploadimg">
+				<label>Imagem do serviço</label>
+				<img src="" width="100px" height="100px">
+			</div>
+
+			<button type="submit">criar serviço</button>
+		</div>
+		
+	</main>
+
+	</body>
 </html>
