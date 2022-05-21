@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/orcamento_style.css">
+	<script type="../js/orcamento_script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<title>orcamento</title>
+</head>
+<body>
+
+	<!-- Button to open the modal login form -->
+  	<button onclick="document.getElementById('orcamento').style.display='block'">Fazer um orçamento</button>
+
+  	<!-- The Modal -->
+  	<div id="orcamento" class="modal_orcamento">
+
+    	<span onclick="document.getElementById('orcamento').style.display='none'"
+
+   		class="close" title="Close Modal">&times;</span>
+
+    	<!-- Modal Content -->
+    	<form class="conteudo_modal animate" action="/action_page.php">
+
+      		<div class="quadro_orcamento">
+
+        		<label for="nome"><b> Nome do serviço: </b></label>
+        		<input type="text" placeholder="Serviço" name="nome_servico" required>
+
+        		<label for="categoria"><b> Categoria </b></label>
+        		<input type="text" placeholder="Coloque sua senha" name="senha" required>
+
+        		<label for="custo"><b> Custo: </b></label>
+        		<input type="text" placeholder="Custo minimo" name="custo" required>
+
+        		<label for="prazo"><b> Prazo: </b></label>
+        		<input type="text" placeholder="Prazo minimo" name="prazo" required>
+
+        		<label for="descrição"><b> Descrição: </b></label>
+        		<input type="text" placeholder="Explique como o serviço deve ser feito." name="descrição" required>
+
+        		<button type="submit">fazer orçamento</button>
+     			<button type="button" onclick="document.getElementById('orcamento').style.display='none'" class="btn_cancelar">Cancelar</button>
+
+      		</div>
+
+    	</form>
+  	</div>
+
+</body>
+</html>
