@@ -1,24 +1,16 @@
-.anuncie_aqui{
-	display: grid;
-	margin-top: 50px;
-	justify-self: center;
-	justify-items: center;
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-end: 3;
+.principal{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.quadro_servicoaleatorio{
-	display: grid;
+.quadro_maispedidos{
 	display: flex;
 	justify-self: center;
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 3;
-	grid-row-end: 4;
 }
 
-.servico_aleatorio{
+.maispedidos{
 	display: flex;
 	margin-top: 100px;
 	margin: 30px;
@@ -29,7 +21,6 @@
 	border-color: #babaca;
 	border-radius: 50px;
 }
-
 
 ul.informacoes{
 	display: flex;
@@ -54,7 +45,7 @@ li.informacoes_desc{
 	height: 80px;
 }
 
-.botao_orcamento{
+button.botao_orcamento{
 	display: flex;
 	margin: auto;
 	width: 200px;

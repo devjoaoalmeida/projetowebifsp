@@ -1,7 +1,13 @@
-export default () => {
-    const container = document.createElement('div');
-
-    const template = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="lista_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     <div class="quadro_lista">
         <div class="filtro">
             <fieldset>
@@ -54,9 +60,5 @@ export default () => {
             </div>
         </fieldset>
     </div>
-    `;
-
-	container.innerHTML = template;
-
-    return container;
-}
+</body>
+</html>

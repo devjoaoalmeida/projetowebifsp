@@ -1,15 +1,28 @@
+@import url(../front/css/detalheservico_style.css);
+@import url(../front/css/cadastroservico_style.css);
+@import url(../front/css/home_style.css);
+@import url(../front/css/lista_style.css);
+@import url(../front/css/servicocadastrado_style.css);
+@import url(../front/css/sobre_style.css);
+
 body{
 	background-color: #fffafa;
-	margin: auto;
+    margin: auto;
 	font-size: large;
 	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
 
 .quadro_cima{
 	display: flex;
-	margin: auto;
+	justify-content: flex-end;
 	height: 30px;
 	background-color: #babaca;
+}
+
+a.quadro_cima{
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
 }
 
 /*BARRA DE PESQUISA*/
@@ -73,44 +86,36 @@ li.servicos_usuarios{
 /*CONTEUDO PRINCIPAL*/
 
 main{
-	display: grid;
+	display: flex;
 	margin: auto;
+	width: 1300px;
 	justify-content: space-around;
-}
-
-.prop_esquerda{
-	display: grid;
-	justify-self: center;
-	margin-top: 100px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-	grid-row-start: 2;
-	grid-row-end: 4;
-}
-
-.prop_direita{
-	display: grid;
-	justify-self: center;
-	margin-top: 100px;
-	grid-column-start: 4;
-	grid-column-end: 5;
-	grid-row-start: 2;
-	grid-row-end: 4;
 }
 
 /*RODAPE*/
 
+footer{
+	display: flex;
+	background-color: #babaca;
+	height: 35px;
+	justify-content: center;
+	width: auto;
+	margin: auto;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
 .rodape{
 	display: flex;
-	margin: auto;
-	height: 40px;
-	background-color: #babaca;
+	align-content: center;
 }
 
 p.rodape{
 	display: flex;
 	margin: auto;
-	align-items: center;
-	justify-content: center;
+	width: auto;
 }
+
+
 

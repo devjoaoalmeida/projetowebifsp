@@ -1,0 +1,60 @@
+.quadro_lista{
+    display: flex;
+}
+
+.filtro{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.filtros{
+    display: flex;
+    margin: auto;
+    width: 200px;
+}
+
+.prazo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quadro_servicos{
+    display: flex;
+    width: 1050px;
+    margin: auto;
+}
+
+.servicos{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+
+.servicos_info{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: auto;
+    margin-right: 10px;
+}
+
+.descricao_info{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.descricao{
+    width: 650px;
+    height: 100px;
+    border: thin;
+    border-style: solid;
+    padding: 10px;
+}

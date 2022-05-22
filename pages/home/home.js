@@ -2,11 +2,11 @@ export default () => {
     const container = document.createElement('div');
 
     const template = `
+    <div class="principal">
         <img src="" alt="" width="1000px" height="400px" class="anuncie_aqui">
-
-        <div class="quadro_servicoaleatorio">
-            
-            <div class="servico_aleatorio"> <!-- QUADRO UM DOS SERVIÇOS -->
+        
+        <div class="quadro_maispedidos">
+            <div class="maispedidos"> <!-- QUADRO UM DOS SERVIÇOS -->
                 <img src="" alt="" width="150px" height="200px">
                 <ul class="informacoes">
                     <li class="informacoes">
@@ -23,8 +23,7 @@ export default () => {
                     </li>
                 </ul>
             </div>
-
-            <div class="servico_aleatorio"> <!-- QUADRO UM DOS SERVIÇOS -->
+            <div class="maispedidos"> <!-- QUADRO UM DOS SERVIÇOS -->
                 <img src="" alt="" width="150px" height="200px">
                 <ul class="informacoes">
                     <li class="informacoes">
@@ -41,8 +40,8 @@ export default () => {
                     </li>
                 </ul>
             </div>
-
         </div>
+    </div>
     `;
 
 	container.innerHTML = template;
