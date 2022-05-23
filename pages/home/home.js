@@ -2,46 +2,29 @@ export default () => {
     const container = document.createElement('div');
 
     const template = `
-    <div class="principal">
-        <img src="" alt="" width="1000px" height="400px" class="anuncie_aqui">
-        
+        <div class="slider">
+            <img src="" alt="" width="1000px" height="400px" class="anuncie_aqui">
+        </div>
         <div class="quadro_maispedidos">
-            <div class="maispedidos"> <!-- QUADRO UM DOS SERVIÇOS -->
+            <div class="maispedidos">
                 <img src="" alt="" width="150px" height="200px">
-                <ul class="informacoes">
-                    <li class="informacoes">
-                        <p class="informacoes">nome do serviço: </p>
-                    </li>
-                    <li class="informacoes">
-                        <p class="informacoes">empresa: </p>
-                    </li>
-                    <li class="informacoes_desc">
-                        <p class="informacoes">descrição: </p>
-                    </li>
-                    <li class="informacoes">
-                        <button class="botao_orcamento">fazer orçamento</button>
-                    </li>
-                </ul>
+                <div class="info_maispedidos">
+                    <p>nome do serviço: </p>
+                    <p>empresa: </p>
+                    <p>descrição: </p>
+                    <button class="botao_orcamento">fazer orçamento</button>
+                </div>
             </div>
-            <div class="maispedidos"> <!-- QUADRO UM DOS SERVIÇOS -->
+            <div class="maispedidos">
                 <img src="" alt="" width="150px" height="200px">
-                <ul class="informacoes">
-                    <li class="informacoes">
-                        <p class="informacoes">nome do serviço: </p>
-                    </li>
-                    <li class="informacoes">
-                        <p class="informacoes">empresa: </p>
-                    </li>
-                    <li class="informacoes_desc">
-                        <p class="informacoes">descrição: </p>
-                    </li>
-                    <li class="informacoes">
-                        <button class="botao_orcamento">fazer orçamento</button>
-                    </li>
-                </ul>
+                <div class="info_maispedidos">
+                    <p>nome do serviço: </p>
+                    <p>empresa: </p>
+                    <p>descrição: </p>
+                    <button class="botao_orcamento">fazer orçamento</button>
+                </div>
             </div>
         </div>
-    </div>
     `;
 
 	container.innerHTML = template;

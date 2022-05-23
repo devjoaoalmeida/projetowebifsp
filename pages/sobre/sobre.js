@@ -2,29 +2,33 @@ export default () => {
     const container = document.createElement('div');
 
     const template = `
-    <p>Este projeto foi feito para o primeiro semestre da especialização em desenvolvimento web no Instituto Federal de Itapetininga, sendo desenvolvido por: </p>
-		<div class="desenvolvedores">
+	<div class="quadro_sobre">	
+		<h4 class="desenvolvedores">Este projeto foi feito para o primeiro semestre da especialização em desenvolvimento web no Instituto Federal de Itapetininga, sendo desenvolvido por: </h4>	
+		<div class="desenvolvedores">			
 			<div class="joao">
-				<p>João Pedro de Almeida</p>
-				<p>link do linkedin</p>
-				<p>link do github</p>
+				<p class="joao">João Pedro de Almeida</p>
+				<p class="joao">link do linkedin</p>
+				<p class="joao">link do github</p>
 			</div>
-	
+		
 			<div class="walace">
-				<p>Walace Victor Galdino de Oliveira Soares</p>
-				<p>link do linkedin</p>
-				<p>link do github</p>
+				<p class="walace">Walace Victor Galdino de Oliveira Soares</p>
+				<p class="walace">link do linkedin</p>
+				<p class="walace">link do github</p>
 			</div>
 		</div>
 
-		<p>Usando as linguagens para desenvolvimento web:</p>
+		<div class="linguagens">
+			<p class="linguagens">Usando as linguagens para desenvolvimento web:</p>
 
-		<ul class="info_sobre">
-			<li> FRONT: HTML, CSS, JavaScript e Vue,js</li>
-			<li> BACK: Golang </li>
-			<li> BANCO: Relacional (MySQL) e Não-relacional (MongoDB) </li>
-			<li> INFRA: Servidor em DOCKER </li>
-		</ul>
+			<ul>
+				<li> FRONT: HTML, CSS, JavaScript e Vue,js</li>
+				<li> BACK: Golang </li>
+				<li> BANCO: Relacional (MySQL) e Não-relacional (MongoDB) </li>
+				<li> INFRA: Servidor em DOCKER </li>
+			</ul>
+		</div>
+	</div>
     `;
 
 	container.innerHTML = template;

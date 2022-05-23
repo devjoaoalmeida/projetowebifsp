@@ -1,57 +1,15 @@
-.principal{
+.slider{
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
 
 .quadro_maispedidos{
 	display: flex;
-	justify-self: center;
+	justify-content: space-evenly;
 }
 
 .maispedidos{
 	display: flex;
-	margin-top: 100px;
-	margin: 30px;
-	padding: 50px;
-	background-color: white;
-	border: thin;
-	border-style: solid;
-	border-color: #babaca;
-	border-radius: 50px;
-}
-
-ul.informacoes{
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
 	margin: auto;
+	align-content: space-between;
 }
-
-p.informacoes{
-	display: flex;
-	margin: auto;
-}
-
-li.informacoes{
-	display: flex;
-	margin: 5px;
-}
-
-li.informacoes_desc{
-	display: flex;
-	margin: auto;
-	height: 80px;
-}
-
-button.botao_orcamento{
-	display: flex;
-	margin: auto;
-	width: 200px;
-	height: 30px;
-	align-items: center;
-	justify-content: center;
-}
-
-

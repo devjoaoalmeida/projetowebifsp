@@ -14,7 +14,8 @@ body{
 
 .quadro_cima{
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 	height: 30px;
 	background-color: #babaca;
 }
@@ -23,6 +24,7 @@ a.quadro_cima{
 	display: flex;
 	align-items: center;
 	margin-right: 30px;
+	margin-left: 30px;
 }
 
 /*BARRA DE PESQUISA*/
@@ -34,28 +36,9 @@ a.quadro_cima{
 	background-color: yellow;
 }
 
-ul.produtos{
+ul.produtos, li.produtos{
 	display: flex;
-}
-
-li.produtos{
-	display: flex;
-	margin: 2px;
-}
-
-button.produtos{
 	width: 150px;
-	height: 25px;
-	justify-content: center;
-	align-items: center;
-	border-radius: 10px;
-	border: thin;
-	border-style: solid;
-	border-color: #babaca;
-}
-
-button.produtos:hover{
-	background-color: white;
 }
 
 .pesquisar{
@@ -69,27 +52,22 @@ button.produtos:hover{
 	border-color: #babaca;
 }
 
-ul.servicos_usuarios{
+ul.login, li.login{
 	display: flex;
-	align-items: center;
-}
-
-li.servicos_usuarios{
-	display: flex;
-	height: 30px;
-	width: 100px;
-	align-items: center;
-	justify-content: center;
-	background-color: #babaca;
+	width: 150px;
 }
 
 /*CONTEUDO PRINCIPAL*/
 
 main{
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: auto;
 	width: 1300px;
-	justify-content: space-around;
+	height: 843px;
+	position: static;
+	background-color: white;
 }
 
 /*RODAPE*/

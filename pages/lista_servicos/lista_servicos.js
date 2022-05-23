@@ -19,18 +19,9 @@ export default () => {
             <fieldset>
                 <legend> Prazo </legend>
                 <div class="prazo">
-                    <div>
-                        <input type="checkbox" name="curto" id="curto">
-                        <label for="curto">Curto</label>    
-                    </div>
-                    <div>
-                        <input type="checkbox" name="médio" id="médio">
-                        <label for="medio">Médio</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="longo" id="longo">
-                        <label for="longo">Longo</label>
-                    </div>
+                    <input type="checkbox" name="curto" id="curto"> Curto 
+                    <input type="checkbox" name="médio" id="médio"> Médio
+                    <input type="checkbox" name="longo" id="longo"> Longo
                 </div>
             </fieldset>
         </div>

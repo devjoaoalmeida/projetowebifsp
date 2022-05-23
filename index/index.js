@@ -11,7 +11,7 @@ const init = () => {
     window.addEventListener("hashchange", () => {
         main.innerHTML = "";
         switch(window.location.hash){
-            case "":
+            case " ":
                 main.appendChild(home());
                 break;
             case "#lista_servico":
