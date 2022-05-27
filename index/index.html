@@ -7,28 +7,31 @@
 	<script src="index.js" type="module"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<title>index</title>
 </head>
 
 <body>
 	<header> <!-- BARRA DE PESQUISA E BOTOES DA CONTA E PEDIDOS-->	
-		<div class="quadro_cima"> <!-- BARRA DE ATALHOS --> 
-			<a href="#sobre" class="quadro_cima"> Sobre </a>
-			<a href="#home" class="quadro_cima"> Home</a>
+		<div class="quadro_topheader"> <!-- BARRA DE ATALHOS --> 
+			<a href="#sobre" class="quadro_topheader"> Sobre </a>
 		</div>
+
 		<div class="quadro_pesquisa">
-			<ul class="produtos">
-				<li class="produtos"><a href="#lista_servico" class="produtos">Serviços</a></li>
-			</ul>
-			<input type="search" placeholder="Qual serviço você procura?" class="pesquisar">
-			<ul class="login">
-				<li class="login">
-					<form action="login.html">
-						<button>Login</button>
-					</form>
-				</li>
-			</ul>
+			<div class="pesquisa">
+				<a href="#lista_servico">Serviços</a>
+				<input type="search" placeholder="Qual serviço você procura?" class="pesquisa">
+			</div>
+		</div>	
+
+		<div class="logo">
+			<a class="logo" href="#home">ServTech</a>
+		</div>
+
+		<div class="login">
+			<form action="login.html">
+				<button>Login</button>
+			</form>
 		</div>
 	</header>
 

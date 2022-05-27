@@ -7,14 +7,14 @@ export default () => {
 		<div class="desenvolvedores">			
 			<div class="joao">
 				<p class="joao">João Pedro de Almeida</p>
-				<p class="joao">link do linkedin</p>
-				<p class="joao">link do github</p>
+				<p class="joao"><a href="https://www.linkedin.com/in/joaopedro-almeida/">Linked-in</a></p>
+				<p class="joao"><a href="https://github.com/Jaozin04">GitHub</a></p>
 			</div>
 		
 			<div class="walace">
 				<p class="walace">Walace Victor Galdino de Oliveira Soares</p>
-				<p class="walace">link do linkedin</p>
-				<p class="walace">link do github</p>
+				<p class="walace"><a href="https://www.linkedin.com/in/walace-soares-desenvolvedor">Linked-in</a></p>
+				<p class="walace"><a href="https://github.com/walacesoares">GitHub</a></p>
 			</div>
 		</div>
 
