@@ -5,6 +5,8 @@
 @import url(/front/css/servicocadastrado_style.css);
 @import url(/front/css/sobre_style.css);
 
+@import url(/slider/slider_style.css);
+
 @import url(/front/css/login_style.css);
 
 body{
@@ -104,8 +106,12 @@ main{
 	color: #1e111d;
 }
 
-input, label, button{
+input, label, button, a{
 	margin: auto;
+}
+
+button, a{
+	cursor: pointer;
 }
 
 /*RODAPE*/

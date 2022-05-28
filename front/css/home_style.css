@@ -1,10 +1,75 @@
-.slider{
+.slider {
+	position: relative;
+	display: flex;
+	width: 1000px;
+	height: 400px;
+	justify-content: center;
+}
+
+.img_slider{
 	display: flex;
 	justify-content: center;
+	margin: auto;
+	position: absolute;
+}
+
+.slide {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	opacity: 0;
+	border: thin;
+	border-style: solid;
+	border-color: #bababa;
+	border-radius: 5px;
+}
+  
+.ativa {
+	opacity: 1;
+}
+
+.anterior, .proximo {
+	position: absolute;
+	width: 50px;
+	height: 30px;
+	margin-top: 150px;
+	color: black;
+	font-weight: bold;
+	border-radius: 10px;
+	border-style: none;
+	font-size: 25px;
+}
+  
+.proximo{
+	right: 0;
+}
+  
+.anterior{
+	left: 0;
+}
+  
+.anterior:hover, .proximo:hover {
+	background-color: rgba(80,80,80,0.5);
+	color: white;
+}
+
+button.botao_slider{
+	height: 10px;
+	width: 50px;
+	margin: 10px;
+	margin-top: 340px;
+	border: none;
+	border-radius: 10px;
+	background-color: #babaca;
+}
+  
+button.botao_slider:hover {
+	background-color: #808080;
 }
 
 .quadro_maispedidos{
 	display: flex;
+	margin-top: 80px;
 	justify-content: space-evenly;
 }
 

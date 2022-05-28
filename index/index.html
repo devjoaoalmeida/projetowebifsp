@@ -29,9 +29,42 @@
 		</div>
 
 		<div class="login">
-			<a href="#login"><button>Login</button></a>
+			<button onclick="document.getElementById('modal_login').style.display='flex'">Login</button>
 		</div>
 	</header>
+
+	<div id="login">
+		<div class="modal_login" id="modal_login">
+			<form class="conteudomodal_login">
+				<div class="quadro_login">
+					<label for="email"><b> E-mail </b></label>
+					<input type="text" placeholder="Insira o seu e-mail" name="email" required>
+					<label for="senha"><b> Senha </b></label>
+					<input type="password" placeholder="Coloque sua senha" name="senha" required>	
+					<div class="quadro_loginopcoes">
+						<button type="submit">Entrar</button>
+						<label>
+						<input type="checkbox" checked="checked" name="remember"> Lembrar-me
+						</label>
+					</div>
+				</div>
+				<div class="opcoes_login">
+					<button onclick="document.getElementById('modal_login').style.display='none'">Cancelar</button>
+					<a href="#senha">Esqueceu a senha?</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="cad_login"></div>
+
+	<div id="senha"></div>
+	
+	<div id="orcamento"></div>
+
+	<div id="pagamento"></div>
+
+	<div id="cad_servico"></div>
 
 	<main id="root"> <!-- ONDE TEM OS SERVIÇOS MAIS PROCURADOS DO SITE e as PROPAGANDAS--> 
 	</main>
@@ -41,6 +74,5 @@
 			<p class="rodape">DESENVOLVIDO POR WALACE E JOAO PARA O PROJETO DO PRIMEIRO SEMESTRE DO CURSO DE ESPECIALIZAÇÃO EM DESENVOLVIMENTO WEB NO INSTITUTO FEDERAL DE SÃO PAULO EM ITAPETININGA.</p>
 		</div>
 	</footer>
-	
 </body>
 </html>
