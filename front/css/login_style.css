@@ -1,43 +1,70 @@
-.modal_login{
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.1); 
-}
-
-.conteudomodal_login{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    top: 90px;
-    right: 80px;
-    width: 400px;
-    height: 200px;
-    background-color: #fffafa;
-	color: #1e111d;
-    border: thin;
-    border-style: none;
-    border-radius: 10px;
-    box-shadow: 5px 5px 50px 10px #bababa;
-}
-
 .quadro_login{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    padding-top: 30px;
 }
 
-.quadro_loginopcoes{
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+.fechar{
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    width: 480px;
+    margin: 5px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.entrar{
     display: flex;
 }
 
-.opcoes_login{
+button.entrar{
+    height: 40px;
+    width: 410px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color:blueviolet;
+    color: white;
+}
+
+button.entrar:hover{
+    background-color: #babaca;
+    color: black;
+}
+
+.esqueceu_senha{
     display: flex;
-    padding: 20px;
-    background-color: #bababa;
+    justify-content: flex-end;
+    width: 420px;
+    padding: auto;
+    margin-bottom: 20px;
+}
+
+input.lembrarme{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.cadastrese{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #babaca;
     border-radius: 0px 0px 10px 10px;
 }

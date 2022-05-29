@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<script src="index.js" type="module"></script>
+	<script src="/front/js/slider.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -34,23 +35,24 @@
 	</header>
 
 	<div id="login">
-		<div class="modal_login" id="modal_login">
-			<form class="conteudomodal_login">
+		<div class="modal" id="modal_login">
+			<form class="conteudo_modal">
+				<p class="fechar" onclick="document.getElementById('modal_login').style.display='none'">Fechar</p>
 				<div class="quadro_login">
-					<label for="email"><b> E-mail </b></label>
-					<input type="text" placeholder="Insira o seu e-mail" name="email" required>
-					<label for="senha"><b> Senha </b></label>
-					<input type="password" placeholder="Coloque sua senha" name="senha" required>	
-					<div class="quadro_loginopcoes">
-						<button type="submit">Entrar</button>
-						<label>
-						<input type="checkbox" checked="checked" name="remember"> Lembrar-me
-						</label>
+					<b>E-mail</b>
+					<input type="text" placeholder="Insira o seu e-mail" required>
+					<b>Senha</b>
+					<input type="password" placeholder="Coloque sua senha" required>	
+					<div class="esqueceu_senha">
+						<p>Esqueceu a senha?</p>
+					</div>
+					<div>
+						<button class="entrar" type="submit">Entrar</button>
 					</div>
 				</div>
-				<div class="opcoes_login">
-					<button onclick="document.getElementById('modal_login').style.display='none'">Cancelar</button>
-					<a href="#senha">Esqueceu a senha?</a>
+				<div class="cadastrese">
+					<p id="cad_login">Cadastre-se </p>
+					<p >ou use uma de suas contas: </p>
 				</div>
 			</form>
 		</div>
