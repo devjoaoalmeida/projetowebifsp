@@ -1,0 +1,9 @@
+insert into cliente (idcliente,cpf,idusuario) values (1, "123456789", 1);
+
+insert into empresa (idempresa,cnpj,razao_social,nome_fantasia,idusuario) values (1,"123456798","razão social","nome fantasia",1);
+
+insert into endereco (idendereco,rua,numero,cidade,bairro,estado,idcliente,idempresa) values (1,"dr rui barbosa","431","são miguel arcanjo","centro","sp",1,1);
+
+insert into telefone (idtelefone,pessoal,residencial,idcliente,idempresa) values (1,"996522301","32793279",1,1);
+
+insert into ordemservico (idordemservico,nome,custo,prazo,descricao,idcliente,idservico,idorcamento) values (1,"conserto de microondas","R$100,00","5 dias","a depender do problema",1,1,1);

@@ -1,0 +1,55 @@
+use projetoweb
+
+
+
+db (pra ver se é o banco certo)
+
+
+
+db.createCollecion("usuario")
+
+db.createCollecion("servico")
+
+
+
+db.usuario.insert({nome: "",email: "", senha: "")}
+
+db.servico.insert(
+	{
+	"nome": "",
+	"categoria": "",
+	"custo": "",
+	"prazo": "",
+	"descricao": "",
+	"orcamento": "",
+	"comentarios": {
+		"comentario": "",
+		"avaliacao": ""},
+	"foto_servico": ["","","",""]
+	}
+)
+
+
+
+db.createCollecion( "servico",
+	{
+		"nome": <string>,
+		"categoria": <string>,
+		"custo": <string>,
+		"prazo": <string>,
+		"descricao": <string>,
+		"orcamento": <string>,
+		"comentarios": {
+			"comentario": <string>,
+			"avaliacao": <string>},
+		"foto_servico": [<array>]
+	}
+)
+
+db.createCollecion( "usuario",
+	{
+		"nome": <string>,
+		"email": <string>,
+		"senha": <string>
+	}
+)
