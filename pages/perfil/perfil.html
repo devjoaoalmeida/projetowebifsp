@@ -1,7 +1,14 @@
-export default () => {
-    const container = document.createElement('div');
-
-    const template = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/front/css/perfil_style.css">
+    <script src="/front/js/perfil.js"></script>
+    <title>Document</title>
+</head>
+<body>
     <div class="meu_perfil">
         <div class="perfis">
             <div onclick="user()" class="user">
@@ -57,16 +64,12 @@ export default () => {
                 <div class="telefones">
                     <p>telefone</p>
                     <div class="telefone">
-                        <p class="pessoal">pessoal</p>
-                        <p class="residencial">residencial</p>
+                        <p>pessoal</p>
+                        <p>residencial</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    `;
-
-	container.innerHTML = template;
-
-    return container;
-}
+</body>
+</html>

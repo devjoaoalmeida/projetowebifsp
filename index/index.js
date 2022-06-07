@@ -20,6 +20,9 @@ const init = () => {
             case "#sobre":
                 main.appendChild(sobre());
                 break;
+            case "#perfil":
+                main.appendChild(perfil());
+                break;
             default:
                 main.appendChild(home());
         }

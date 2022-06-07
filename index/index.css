@@ -4,6 +4,7 @@
 @import url(/front/css/lista_style.css);
 @import url(/front/css/servicocadastrado_style.css);
 @import url(/front/css/sobre_style.css);
+@import url(/front/css/perfil_style.css);
 
 @import url(/slider/slider_style.css);
 
@@ -133,6 +134,14 @@ main{
 button, a{
 	margin: auto;
 	cursor: pointer;
+	width: auto;
+	height: auto;
+}
+
+p{
+    margin: auto;
+    width: auto;
+    height: auto;
 }
 
 /*RODAPE*/

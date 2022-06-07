@@ -1,0 +1,93 @@
+.meu_perfil{
+    display: flex;
+    width: 1300px;
+    height: 843px;;
+}
+
+.perfis{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0px 0px 10px;
+    align-items: center;
+    padding-top: 80px;
+    width: 250px;
+    background-color: white;
+}
+
+.user{
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border: thin;
+    border-style: solid;
+    border-color: #babaca;
+    width: 220px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.sair{
+    display: flex;
+    cursor: pointer;
+    margin-top: 450px;
+    justify-content: center;
+    text-align: center;
+}
+
+.conteudo_perfis{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 10px 10px 0px;
+    padding-top: 80px;
+    width: 1050px;
+    height: 843;
+}
+
+.usercomum_conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+.usercliente_conteudo{
+    display: none;
+    flex-direction: column;
+}
+
+.userempresa_conteudo{
+    display: none;
+    flex-direction: column;
+}
+
+.info_endereco{
+    display: flex;
+    flex-direction: column;
+}
+
+.endereco{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.telefones{
+    display: flex;
+    flex-direction: column;
+}
+
+.telefone{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+
+
+
+
+
+
+
