@@ -86,6 +86,8 @@ a.logo{
 	font-size: x-large;
 }
 
+/*MODAL LOGIN*/
+
 .login{
 	display: grid;
 	justify-content: center;
@@ -136,6 +138,17 @@ button, a{
 	cursor: pointer;
 	width: auto;
 	height: auto;
+}
+
+button{
+	border: none;
+	border-radius: 8px 3px 8px 3px;
+	padding: 10px;
+}
+
+button:hover{
+	opacity: 0.8;
+	text-shadow: 1px white;
 }
 
 p{

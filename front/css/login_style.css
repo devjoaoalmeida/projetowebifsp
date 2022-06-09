@@ -7,7 +7,7 @@
     padding-top: 30px;
 }
 
-input{
+input.emailsenha{
     width: 400px;
     height: 30px;
     border-radius: 10px;
@@ -28,13 +28,8 @@ input{
 
 .entrar{
     display: flex;
-}
-
-button.entrar{
     height: 40px;
     width: 410px;
-    border: none;
-    border-radius: 10px;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -42,9 +37,9 @@ button.entrar{
     color: white;
 }
 
-button.entrar:hover{
-    background-color: #babaca;
-    color: black;
+.entrar:hover{
+    opacity: 0.8;
+	text-shadow: 1px white;
 }
 
 .esqueceu_senha{
@@ -65,6 +60,7 @@ input.lembrarme{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80px;
     background-color: #babaca;
     border-radius: 0px 0px 10px 10px;
 }

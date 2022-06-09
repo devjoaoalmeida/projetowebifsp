@@ -38,25 +38,26 @@
 
 	<div id="login">
 		<div class="modal" id="modal_login">
-			<form class="conteudo_modal">
-				<p class="fechar" onclick="document.getElementById('modal_login').style.display='none'">Fechar</p>
-				<div class="quadro_login">
-					<b>E-mail</b>
-					<input type="text" placeholder="Insira o seu e-mail" required>
-					<b>Senha</b>
-					<input type="password" placeholder="Coloque sua senha" required>	
-					<div class="esqueceu_senha">
-						<p>Esqueceu a senha?</p>
+			<div class="conteudo_modal">
+				<form>
+					<p class="fechar" onclick="document.getElementById('modal_login').style.display='none'">Fechar</p>
+					<div class="quadro_login">
+						<b>E-mail</b>
+						<input class="emailsenha" type="text" placeholder="Insira o seu e-mail" required>
+						<b>Senha</b>
+						<input class="emailsenha" type="password" placeholder="Coloque sua senha" required>	
+						<div class="esqueceu_senha">
+							<p>Esqueceu a senha?</p>
+						</div>
+						<div>
+							<button class="entrar" type="submit">Entrar</button>
+						</div>
 					</div>
-					<div>
-						<button class="entrar" type="submit">Entrar</button>
-					</div>
-				</div>
+				</form>
 				<div class="cadastrese">
-					<p id="cad_login">Cadastre-se </p>
-					<p >ou use uma de suas contas: </p>
+					<button id="cad_login">Cadastre-se</button>
 				</div>
-			</form>
+			</div>
 		</div>
 	</div>
 
