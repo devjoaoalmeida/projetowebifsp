@@ -40,14 +40,14 @@
 		<div class="modal" id="modal_login">
 			<div class="conteudo_modal">
 				<form>
-					<p class="fechar" onclick="document.getElementById('modal_login').style.display='none'">Fechar</p>
+					<p class="fechar" onclick="document.getElementById('modal_login').style.display='none'">x</p>
 					<div class="quadro_login">
 						<b>E-mail</b>
 						<input class="emailsenha" type="text" placeholder="Insira o seu e-mail" required>
 						<b>Senha</b>
 						<input class="emailsenha" type="password" placeholder="Coloque sua senha" required>	
 						<div class="esqueceu_senha">
-							<p>Esqueceu a senha?</p>
+							<button class="esqueceu_senha">Esqueceu a senha?</button>
 						</div>
 						<div>
 							<button class="entrar" type="submit">Entrar</button>
@@ -55,13 +55,33 @@
 					</div>
 				</form>
 				<div class="cadastrese">
-					<button id="cad_login">Cadastre-se</button>
+					<button onclick="document.getElementById('modal_cadlogin').style.display='flex'">Cadastre-se</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="cad_login"></div>
+	<div id="cadlogin">
+		<div class="modal_cadlogin" id="modal_cadlogin">
+			<div class="conteudo_modal">
+				<form>
+					<p class="fechar" onclick="document.getElementById('modal_cadlogin').style.display='none', document.getElementById('modal_login').style.display='none'">x</p>
+					<div class="quadro_cadlogin">
+						<b>Informe seu nome</b>
+						<input class="emailsenha" type="text" placeholder="Insira o seu nome" required>
+						<b>Informe seu e-mail</b>
+						<input class="emailsenha" type="text" placeholder="Insira o seu e-mail" required>
+						<b>Crie uma senha</b>
+						<input class="emailsenha" type="password" placeholder="Crie uma senha" required>
+						<input class="emailsenha" type="password" placeholder="Insira sua senha novamente" required>
+					</div>
+				</form>
+				<div class="criar_conta">
+					<button type="submit"><b>CRIAR CONTA</b></button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div id="senha"></div>
 	

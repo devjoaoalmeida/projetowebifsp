@@ -21,23 +21,27 @@ export default () => {
         </div>
 	</div>
     <div class="quadro_maispedidos">
-        <div class="maispedidos">
-            <img src="" alt="" width="150px" height="200px">
-            <div class="info_maispedidos">
-                <p>nome do serviço: </p>
-                <p>empresa: </p>
-                <p>descrição: </p>
-                <button class="botao_orcamento">fazer orçamento</button>
+        <div class="botao_orcamento">
+            <div class="maispedidos">
+                <img src="" alt="" width="150px" height="200px">
+                <div class="info_maispedidos">
+                    <p class="info_maispedidos">Manuntenção em micro-ondas</p>
+                    <p class="info_maispedidos">Oficina Consertatudo</p>
+                    <p class="info_maispedidos">Faça um orçamento para melhor saber sobre o problema</p>
+                </div>
             </div>
+            <button>fazer orçamento</button>
         </div>
-        <div class="maispedidos">
-            <img src="" alt="" width="150px" height="200px">
-            <div class="info_maispedidos">
-                <p>nome do serviço: </p>
-                <p>empresa: </p>
-                <p>descrição: </p>
-                <button class="botao_orcamento">fazer orçamento</button>
+        <div class="botao_orcamento">
+            <div class="maispedidos">
+                <img src="" alt="" width="150px" height="200px">
+                <div class="info_maispedidos">
+                    <p class="info_maispedidos">Manuntenção em micro-ondas</p>
+                    <p class="info_maispedidos">Oficina Consertatudo</p>
+                    <p class="info_maispedidos">Faça um orçamento para melhor saber sobre o problema</p>
+                </div>
             </div>
+            <button>fazer orçamento</button>
         </div>
     </div>
     `;

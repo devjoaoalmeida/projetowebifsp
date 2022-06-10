@@ -9,7 +9,6 @@
 .img_slider{
 	display: flex;
 	justify-content: center;
-	margin: auto;
 	position: absolute;
 }
 
@@ -29,12 +28,12 @@
 }
 
 .anterior, .proximo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: absolute;
 	width: 50px;
-	height: 30px;
 	margin-top: 150px;
-	color: black;
-	font-weight: bold;
 	border-radius: 10px;
 	border-style: none;
 	font-size: 25px;
@@ -47,34 +46,44 @@
 .anterior{
 	left: 0;
 }
-  
-.anterior:hover, .proximo:hover {
-	background-color: rgba(80,80,80,0.5);
-	color: white;
-}
 
 button.botao_slider{
 	height: 10px;
-	width: 50px;
+	width: 80px;
 	margin: 10px;
 	margin-top: 340px;
 	border: none;
 	border-radius: 10px;
-	background-color: #babaca;
 }
   
-button.botao_slider:hover {
-	background-color: #808080;
-}
-
 .quadro_maispedidos{
 	display: flex;
-	margin-top: 80px;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 .maispedidos{
 	display: flex;
-	margin: auto;
+	align-items: center;
+	width: 500px;
+}
+
+.info_maispedidos{
+	display: flex;
+	flex-direction: column;
 	align-content: space-between;
+}
+
+p.info_maispedidos{
+	display: flex;
+	flex-direction: column;
+	font-size:medium;
+	width: 300px;
+	height: 50px;
+	margin: 1px;
+}
+
+.botao_orcamento{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

@@ -1,0 +1,36 @@
+.quadro_cadlogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
+  padding-top: 30px;
+}
+
+input.emailsenha{
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border: thin;
+  border-style: solid;
+  text-align: center;
+}
+
+.fechar{
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  width: 480px;
+  font-size: xx-large;
+  cursor: pointer;
+  color: purple;
+}
+
+.criar_conta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: var(--header);
+  border-radius: 0px 0px 10px 10px;
+}

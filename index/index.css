@@ -6,16 +6,58 @@
 @import url(/front/css/sobre_style.css);
 @import url(/front/css/perfil_style.css);
 
-@import url(/slider/slider_style.css);
+@import url(/front/css/modal_geral.css);
 
 @import url(/front/css/login_style.css);
+@import url(/front/css/cadlogin_style.css);
+
+:root {
+	--header: #8a2be2;
+	--texto: #1e111d;
+	--topbot: #f5f5f5;
+	--fundo: #fffafa;
+	--main_cor: white;
+	--lados: #6f1abd;
+	--button: #f0ddee;
+}
 
 body{
-	background-color: #f5f5f5;
-    margin: auto;
+	background-color: var(--fundo);
+	color: var(--texto);
+    margin: 0;
 	font-size: large;
 	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
+
+p, button, a, input{
+    margin: 0;
+	padding: 0;
+}
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--texto);
+}
+
+button{
+	cursor: pointer;
+	border: thin;
+	border-style: solid;
+	border-radius: 8px 3px 8px 3px;
+	padding: 5px;
+	background-color: var(--button);
+}
+
+button:hover{
+	opacity: 0.7;
+}
+
+a:hover{
+	opacity: 0.6;
+}
+
+/*HEADER*/
 
 header{
 	display: grid;
@@ -29,20 +71,10 @@ header{
 	grid-column-start: 1;
 	grid-column-end: 4;
 	padding-right: 20px;
-	background-color: #fff0f5;
+	background-color: var(--topbot);
 	align-items: center;
 	justify-content: flex-end;
 	color: #1e111d;
-}
-
-a{	
-	text-decoration: none;
-	color: #1e111d;
-}
-
-a:hover{
-	opacity: 0.8;
-	text-shadow: 1px white;
 }
 
 /*BARRA DE PESQUISA*/
@@ -58,7 +90,7 @@ a:hover{
 .pesquisa{
 	display: flex;
 	width: 1300px;
-	background-color: #8a2be2;
+	background-color: var(--header);
 	justify-content: space-evenly;
 	align-items: center;
 }
@@ -74,49 +106,16 @@ input.pesquisa{
 	border-radius: 10px;
 }
 
-.logo{
+.logo, .login{
 	display: grid;
 	justify-content: center;
 	align-content: center;
-	background-color:#5c2391;
+	background-color: var(--lados);
 }
 
 a.logo{
 	color: white;
 	font-size: x-large;
-}
-
-/*MODAL LOGIN*/
-
-.login{
-	display: grid;
-	justify-content: center;
-	align-content: center;
-	background-color: #5c2391;
-}
-
-.modal{
-	display: none;
-	position: fixed;
-	top: 0;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.2);
-}
-
-.conteudo_modal{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 500px;
-	height: 450px;
-    background-color: #fffafa;
-	color: #1e111d;
-	margin: auto;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px black;
 }
 
 /*CONTEUDO PRINCIPAL*/
@@ -129,39 +128,14 @@ main{
 	width: 1300px;
 	height: 843px;
 	position: static;
-	background-color: #fffafa;
-	color: #1e111d;
-}
-
-button, a{
-	margin: auto;
-	cursor: pointer;
-	width: auto;
-	height: auto;
-}
-
-button{
-	border: none;
-	border-radius: 8px 3px 8px 3px;
-	padding: 10px;
-}
-
-button:hover{
-	opacity: 0.8;
-	text-shadow: 1px white;
-}
-
-p{
-    margin: auto;
-    width: auto;
-    height: auto;
+	background-color: var(--main_cor);
 }
 
 /*RODAPE*/
 
 footer{
 	display: flex;
-	background-color: #babaca;
+	background-color: var(--topbot);
 	height: 35px;
 	justify-content: center;
 	width: auto;
@@ -174,13 +148,10 @@ footer{
 .rodape{
 	display: flex;
 	align-content: center;
-}
-
-p.rodape{
-	display: flex;
-	margin: auto;
+	align-items: center;
 	width: auto;
 }
+
 
 
 
