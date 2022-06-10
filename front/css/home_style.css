@@ -70,7 +70,7 @@ button.botao_slider{
 .info_maispedidos{
 	display: flex;
 	flex-direction: column;
-	align-content: space-between;
+	height: 200px;
 }
 
 p.info_maispedidos{
@@ -78,8 +78,8 @@ p.info_maispedidos{
 	flex-direction: column;
 	font-size:medium;
 	width: 300px;
-	height: 50px;
-	margin: 1px;
+	height: 66px;
+	text-align: justify;
 }
 
 .botao_orcamento{

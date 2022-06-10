@@ -17,6 +17,15 @@
 	height: 100%;
 }
 
+.modal_senha{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
 .conteudo_modal{
 	display: flex;
 	flex-direction: column;

@@ -11,6 +11,7 @@ input.emailsenha{
     width: 400px;
     height: 30px;
     border-radius: 10px;
+    margin:10px;
     border: thin;
     border-style: solid;
     text-align: center;
@@ -20,8 +21,17 @@ input.emailsenha{
     display: flex;
     position: absolute;
     justify-content: flex-end;
-    width: 480px;
     font-size: xx-large;
+    cursor: pointer;
+    color: purple;
+}
+
+.voltar{
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    font-size: larger;
+    margin: 10px;
     cursor: pointer;
     color: purple;
 }
@@ -40,6 +50,15 @@ input.emailsenha{
     width: 410px;
 }
 
+.enviar_email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: var(--header);
+    border-radius: 0px 0px 10px 10px;
+}
+
 button.esqueceu_senha{
     border: none;
     background-color: unset;
@@ -52,4 +71,13 @@ button.esqueceu_senha{
     height: 80px;
     background-color: var(--header);
     border-radius: 0px 0px 10px 10px;
+}
+
+.quadro_senha{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content:center;
+    align-items: center;
 }

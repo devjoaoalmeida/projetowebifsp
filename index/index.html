@@ -39,15 +39,15 @@
 	<div id="login">
 		<div class="modal" id="modal_login">
 			<div class="conteudo_modal">
+				<p class="fechar" onclick="document.getElementById('modal_login').style.display='none'">x</p>
 				<form>
-					<p class="fechar" onclick="document.getElementById('modal_login').style.display='none'">x</p>
 					<div class="quadro_login">
 						<b>E-mail</b>
 						<input class="emailsenha" type="text" placeholder="Insira o seu e-mail" required>
 						<b>Senha</b>
 						<input class="emailsenha" type="password" placeholder="Coloque sua senha" required>	
 						<div class="esqueceu_senha">
-							<button class="esqueceu_senha">Esqueceu a senha?</button>
+							<button class="esqueceu_senha" onclick="document.getElementById('modal_senha').style.display='flex'">Esqueceu a senha?</button>
 						</div>
 						<div>
 							<button class="entrar" type="submit">Entrar</button>
@@ -64,8 +64,9 @@
 	<div id="cadlogin">
 		<div class="modal_cadlogin" id="modal_cadlogin">
 			<div class="conteudo_modal">
+				<p class="fechar" onclick="document.getElementById('modal_cadlogin').style.display='none', document.getElementById('modal_login').style.display='none'">x</p>
+				<p class="voltar" onclick="document.getElementById('modal_cadlogin').style.display='none'">Voltar</p>
 				<form>
-					<p class="fechar" onclick="document.getElementById('modal_cadlogin').style.display='none', document.getElementById('modal_login').style.display='none'">x</p>
 					<div class="quadro_cadlogin">
 						<b>Informe seu nome</b>
 						<input class="emailsenha" type="text" placeholder="Insira o seu nome" required>
@@ -83,7 +84,24 @@
 		</div>
 	</div>
 
-	<div id="senha"></div>
+	<div id="senha">
+		<div class="modal_senha" id="modal_senha">
+			<div class="conteudo_modal">
+				<p class="fechar" onclick="document.getElementById('modal_senha').style.display='none', document.getElementById('modal_login').style.display='none'">x</p>
+				<p class="voltar" onclick="document.getElementById('modal_senha').style.display='none'">Voltar</p>
+				<form>
+					<div class="quadro_senha">
+						<b>Informe seu e-mail</b>
+						<input class="emailsenha" type="text" placeholder="Insira o seu e-mail" required>
+					</div>
+					<p>Ao clicar em "enviar e-mail", uma nova senha será enviada ao seu e-mail e ela será sua senha temporaria ate a sua redefinição.</p>
+				</form>
+				<div class="enviar_email">
+					<button type="submit">Enviar e-mail</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<div id="orcamento"></div>
 
