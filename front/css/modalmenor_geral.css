@@ -1,4 +1,4 @@
-.modal{
+.modalmenor_login{
 	display: none;
 	position: fixed;
 	top: 0;
@@ -8,7 +8,7 @@
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal_cadlogin{
+.modalmenor_cadlogin{
 	display: none;
 	position: fixed;
 	top: 0;
@@ -17,7 +17,7 @@
 	height: 100%;
 }
 
-.modal_senha{
+.modalmenor_senha{
 	display: none;
 	position: fixed;
 	top: 0;
@@ -26,7 +26,7 @@
 	height: 100%;
 }
 
-.conteudo_modal{
+.conteudo_modalmenor{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

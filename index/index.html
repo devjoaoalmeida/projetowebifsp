@@ -7,6 +7,7 @@
 	<script src="index.js" type="module"></script>
 	<script src="/front/js/slider.js"></script>
 	<script src="/front/js/perfil.js"></script>
+	<script src="/front/js/orcamento.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -31,15 +32,15 @@
 		</div>
 
 		<div class="login">
-			<button onclick="document.getElementById('modal_login').style.display='flex'">Login</button>
+			<button onclick="document.getElementById('modalmenor_login').style.display='flex'">Login</button>
 			<a href="#perfil">Meu Perfil</a>
 		</div>
 	</header>
 
 	<div id="login">
-		<div class="modal" id="modal_login">
-			<div class="conteudo_modal">
-				<p class="fechar" onclick="document.getElementById('modal_login').style.display='none'">x</p>
+		<div class="modalmenor_login" id="modalmenor_login">
+			<div class="conteudo_modalmenor">
+				<p class="fechar" onclick="document.getElementById('modalmenor_login').style.display='none'">x</p>
 				<form>
 					<div class="quadro_login">
 						<b>E-mail</b>
@@ -47,7 +48,7 @@
 						<b>Senha</b>
 						<input class="emailsenha" type="password" placeholder="Coloque sua senha" required>	
 						<div class="esqueceu_senha">
-							<button class="esqueceu_senha" onclick="document.getElementById('modal_senha').style.display='flex'">Esqueceu a senha?</button>
+							<button class="esqueceu_senha" onclick="document.getElementById('modalmenor_senha').style.display='flex'">Esqueceu a senha?</button>
 						</div>
 						<div>
 							<button class="entrar" type="submit">Entrar</button>
@@ -55,17 +56,17 @@
 					</div>
 				</form>
 				<div class="cadastrese">
-					<button onclick="document.getElementById('modal_cadlogin').style.display='flex'">Cadastre-se</button>
+					<button onclick="document.getElementById('modalmenor_cadlogin').style.display='flex'">Cadastre-se</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div id="cadlogin">
-		<div class="modal_cadlogin" id="modal_cadlogin">
-			<div class="conteudo_modal">
-				<p class="fechar" onclick="document.getElementById('modal_cadlogin').style.display='none', document.getElementById('modal_login').style.display='none'">x</p>
-				<p class="voltar" onclick="document.getElementById('modal_cadlogin').style.display='none'">Voltar</p>
+		<div class="modalmenor_cadlogin" id="modalmenor_cadlogin">
+			<div class="conteudo_modalmenor">
+				<p class="fechar" onclick="document.getElementById('modalmenor_cadlogin').style.display='none', document.getElementById('modalmenor_login').style.display='none'">x</p>
+				<p class="voltar" onclick="document.getElementById('modalmenor_cadlogin').style.display='none'">Voltar</p>
 				<form>
 					<div class="quadro_cadlogin">
 						<b>Informe seu nome</b>
@@ -78,23 +79,23 @@
 					</div>
 				</form>
 				<div class="criar_conta">
-					<button type="submit"><b>CRIAR CONTA</b></button>
+					<button type="submit">CRIAR CONTA</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div id="senha">
-		<div class="modal_senha" id="modal_senha">
-			<div class="conteudo_modal">
-				<p class="fechar" onclick="document.getElementById('modal_senha').style.display='none', document.getElementById('modal_login').style.display='none'">x</p>
-				<p class="voltar" onclick="document.getElementById('modal_senha').style.display='none'">Voltar</p>
+		<div class="modalmenor_senha" id="modalmenor_senha">
+			<div class="conteudo_modalmenor">
+				<p class="fechar" onclick="document.getElementById('modalmenor_senha').style.display='none', document.getElementById('modalmenor_login').style.display='none'">x</p>
+				<p class="voltar" onclick="document.getElementById('modalmenor_senha').style.display='none'">Voltar</p>
 				<form>
 					<div class="quadro_senha">
 						<b>Informe seu e-mail</b>
 						<input class="emailsenha" type="text" placeholder="Insira o seu e-mail" required>
 					</div>
-					<p>Ao clicar em "enviar e-mail", uma nova senha será enviada ao seu e-mail e ela será sua senha temporaria ate a sua redefinição.</p>
+					<p class="descricao_senha">Ao clicar em "enviar e-mail", uma nova senha será enviada ao seu e-mail e ela será sua senha temporaria ate a sua redefinição.</p>
 				</form>
 				<div class="enviar_email">
 					<button type="submit">Enviar e-mail</button>
@@ -103,11 +104,35 @@
 		</div>
 	</div>
 	
-	<div id="orcamento"></div>
+	<div id="orcamento">
+		<div class="modalmaior_orcamento" id="modalmaior_orcamento">
+			<div class="conteudo_modalmaior">
+				<form>
+					<div class="quadro_orcamento">
+						<p class="nomeservico_orcamento">Oficina Consertatudo: Conserto de Micro-ondas</p>	
+						<div class="info_orcamento">
+							<p>Categoria: Eletronica</p>
+							<p>Custo pré definido: R$100,00</p>
+							<p>Prazo: 5 dias</p>
+						</div>
+						<input type="text" class="mensagem" placeholder="Explique o que aconteceu com o micro-ondas" required>
+						<div class="botoes_orcamento">
+							<button type="submit" onclick="orcamento_feito()">fazer orçamento</button>
+							<button type="button" onclick="document.getElementById('modalmaior_orcamento').style.display='none'">Cancelar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
-	<div id="pagamento"></div>
+	<div id="pagamento">
 
-	<div id="cad_servico"></div>
+	</div>
+
+	<div id="cad_servico">
+
+	</div>
 
 	<main id="root"> <!-- ONDE TEM OS SERVIÇOS MAIS PROCURADOS DO SITE e as PROPAGANDAS--> 
 	</main>

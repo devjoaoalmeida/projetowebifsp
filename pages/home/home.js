@@ -30,7 +30,7 @@ export default () => {
                     <p class="info_maispedidos">Faça um orçamento para melhor saber sobre o problema</p>
                 </div>
             </div>
-            <button>fazer orçamento</button>
+            <button onclick="document.getElementById('modalmaior_orcamento').style.display='flex'">fazer orçamento</button>
         </div>
         <div class="botao_orcamento">
             <div class="maispedidos">
@@ -41,7 +41,7 @@ export default () => {
                     <p class="info_maispedidos">Faça um orçamento para melhor saber sobre o problema</p>
                 </div>
             </div>
-            <button>fazer orçamento</button>
+            <button onclick="document.getElementById('modalmaior_orcamento').style.display='flex'">fazer orçamento</button>
         </div>
     </div>
     `;

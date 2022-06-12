@@ -81,3 +81,7 @@ button.esqueceu_senha{
     justify-content:center;
     align-items: center;
 }
+
+p.descricao_senha{
+    text-align: justify;
+}

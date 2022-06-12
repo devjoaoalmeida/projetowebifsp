@@ -6,10 +6,12 @@
 @import url(/front/css/sobre_style.css);
 @import url(/front/css/perfil_style.css);
 
-@import url(/front/css/modal_geral.css);
+@import url(/front/css/modalmenor_geral.css);
+@import url(/front/css/modalmaior_geral.css);
 
 @import url(/front/css/login_style.css);
 @import url(/front/css/cadlogin_style.css);
+@import url(/front/css/orcamento_style.css);
 
 :root {
 	--header: #8a2be2;
@@ -25,7 +27,7 @@ body{
 	background-color: var(--fundo);
 	color: var(--texto);
     margin: 0;
-	font-size: large;
+	font-size: larger;
 	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
 
@@ -43,7 +45,7 @@ form{
 
 p{
 	width: 400px;
-	text-align: justify;
+	text-align: center;
 }
 
 a{
@@ -57,8 +59,10 @@ button{
 	border: thin;
 	border-style: solid;
 	border-radius: 8px 3px 8px 3px;
-	padding: 5px;
+	padding: 10px;
+	width: 200px;
 	background-color: var(--button);
+	font-size: large;
 }
 
 button:hover{
