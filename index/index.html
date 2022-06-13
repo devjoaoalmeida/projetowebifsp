@@ -72,7 +72,7 @@
 						<b>Informe seu nome</b>
 						<input class="emailsenha" type="text" placeholder="Insira o seu nome" required>
 						<b>Informe seu e-mail</b>
-						<input class="emailsenha" type="text" placeholder="Insira o seu e-mail" required>
+						<input class="emailsenha" type="email" placeholder="Insira o seu e-mail" required>
 						<b>Crie uma senha</b>
 						<input class="emailsenha" type="password" placeholder="Crie uma senha" required>
 						<input class="emailsenha" type="password" placeholder="Insira sua senha novamente" required>
@@ -107,18 +107,41 @@
 	<div id="orcamento">
 		<div class="modalmaior_orcamento" id="modalmaior_orcamento">
 			<div class="conteudo_modalmaior">
+				<div class="quadro_orcamento">
+					<p class="nomeservico_orcamento">Oficina Consertatudo: Conserto de Micro-ondas</p>	
+					<div class="info_orcamento">
+						<p>Categoria: Eletronica</p>
+						<p>Custo pré definido: R$100,00</p>
+						<p>Prazo: 5 dias</p>
+					</div>
+					<input type="text" class="mensagem" placeholder="Explique o que aconteceu com o micro-ondas" required>
+					<div class="botoes_orcamento">
+						<button type="submit" onclick="orcamento_feito()">confirmar</button>
+						<button type="button" onclick="document.getElementById('modalmaior_orcamento').style.display='none'">Cancelar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="cadservico">
+		<div class="modalmaior_cadservico" id="modalmaior_cadservico">
+			<div class="conteudo_modalmaior">
 				<form>
-					<div class="quadro_orcamento">
-						<p class="nomeservico_orcamento">Oficina Consertatudo: Conserto de Micro-ondas</p>	
-						<div class="info_orcamento">
-							<p>Categoria: Eletronica</p>
-							<p>Custo pré definido: R$100,00</p>
-							<p>Prazo: 5 dias</p>
-						</div>
+					<div class="quadro_cadservico">
+						<b>Informe o nome do serviço</b>
+						<input type="text">
+						<b>Informe a categoria do serviço</b>
+						<input type="text">
+						<b>Informe o custo minimo do serviço</b>
+						<input type="text">
+						<b>Informe o prazo minimo do serviço</b>
+						<input type="text">	
+						<b>Descrição do serviço</b>
 						<input type="text" class="mensagem" placeholder="Explique o que aconteceu com o micro-ondas" required>
 						<div class="botoes_orcamento">
-							<button type="submit" onclick="orcamento_feito()">fazer orçamento</button>
-							<button type="button" onclick="document.getElementById('modalmaior_orcamento').style.display='none'">Cancelar</button>
+							<button type="submit">cadastrar serviço</button>
+							<button type="button" onclick="document.getElementById('modalmaior_cadservico').style.display='none'">Cancelar</button>
 						</div>
 					</div>
 				</form>
@@ -127,13 +150,46 @@
 	</div>
 
 	<div id="pagamento">
+		<div class="modalmaior_pagamento" id="modalmaior_pagamento">
+			<div class="conteudo_modalmaior">
+				<form>
 
+					<div class="quadro_pagamento">
+			
+						<label for="nome_cartao"><b> Nome do portador (como gravado no cartão): </b></label>
+						<input type="text" name="nome_cartao" required>
+				
+						<label for="numero_cartao"><b> Número do cartão </b></label>
+						<input type="text" name="nome_cartao" required>
+				
+						<label for="validade"><b> Validade (MM/AAAA): </b></label>
+						<input type="text" name="validade" placeholder="MM / AAAA" required>
+				
+						<label for="cod_seguranca"><b> Codigo de segurança </b></label>
+						<input type="text" name="cod_seguranca" placeholder="CVV" required>
+				
+						<label for="parcelas"><b> Parcelas (valor minimo da parcela é R$80,00): </b></label>
+						<input type="text" name="valor" required>
+				
+						<label for="cpf"><b> CPF: </b></label>
+						<input type="text" name="cpf" required>
+				
+						<label for="nascimento"><b> Data de nascimento do portador: </b></label>
+						<input type="text" name="nascimento" placeholder="DD / MM / AAAA" required>
+				
+						<label for="telefone"><b> Telefone do portador </b></label>
+						<input type="text" name="telefone" placeholder="(XX) X XXXX-XXXX" required>
+				
+						<button type="submit">Pagar</button>
+				
+						<button type="button" onclick="document.getElementById('pagamento').style.display='none'" class="btn_cancelar">Cancelar</button>
+			
+					</div>
+	  
+		  		</form>
+			</div>
+		</div>
 	</div>
-
-	<div id="cad_servico">
-
-	</div>
-
 	<main id="root"> <!-- ONDE TEM OS SERVIÇOS MAIS PROCURADOS DO SITE e as PROPAGANDAS--> 
 	</main>
 

@@ -4,6 +4,10 @@ function user(){
         user.style.display="flex";
         document.getElementById('usercliente_conteudo').style.display='none';
         document.getElementById('userempresa_conteudo').style.display='none';
+
+        document.getElementById('useropcoes_comum').style.display='flex';
+        document.getElementById('useropcoes_cliente').style.display='none';
+        document.getElementById('useropcoes_empresa').style.display='none';
     } 
 }
 
@@ -13,6 +17,10 @@ function cliente(){
         cliente.style.display="flex";
         document.getElementById('usercomum_conteudo').style.display='none';
         document.getElementById('userempresa_conteudo').style.display='none';
+
+        document.getElementById('useropcoes_comum').style.display='none';
+        document.getElementById('useropcoes_cliente').style.display='flex';
+        document.getElementById('useropcoes_empresa').style.display='none';
     }
 }
 
@@ -22,5 +30,9 @@ function empresa(){
         empresa.style.display="flex";
         document.getElementById('usercomum_conteudo').style.display='none';
         document.getElementById('usercliente_conteudo').style.display='none';
+
+        document.getElementById('useropcoes_comum').style.display='none';
+        document.getElementById('useropcoes_cliente').style.display='none';
+        document.getElementById('useropcoes_empresa').style.display='flex';
     }
 }
