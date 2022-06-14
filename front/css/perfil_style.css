@@ -74,40 +74,120 @@ p.useropcoes{
 
 .conteudo_perfis{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 1000px;
     height: 843px;
     padding-top: 20px;
-}
-
-
-.usercomum_conteudo{
-    display: none;
-    flex-direction: column;
-    width: 980px;
 }
 
 .info_usercomum{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    width: 900px;
+    border: thin;
+    border-bottom-style: solid;
+    height: 50px;
+}
+
+/*conteudo do perfil comum*/
+
+.usercomum_conteudo{
+    display: none;
+    flex-direction: column;
+    align-items: center;
     width: 980px;
 }
 
 .trocar_senha{
     display: none;
     flex-direction: column;
-    text-align: center;
-    width: 500px;
-    margin: auto;
-    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    width: 900px;
+    height: 250px;
 }
 
+input{
+    display: flex;
+    border-radius: 10px;
+    height: 30px;
+    width: 350px;
+    font-size:medium;
+    text-align: center;
+}
+
+/*conteudo do perfil cliente*/
 
 .usercliente_conteudo{
     display: none;
     flex-direction: column;
-    width: 980px;
+    width: 900px;
 }
+
+.ordemservico{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: thin;
+    border-bottom-style: solid;
+}
+
+p.vermais{
+    cursor: pointer;
+    border: none;
+}
+
+.quadros{
+    width: 450px;
+}
+
+.quadros_ordemservico{
+    display: flex;
+    width: 900px;
+    margin-top: 20px;
+}
+
+.orcamentospendentes{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: thin;
+    border-bottom-style: solid;
+}
+
+.quadro_orcamentospendentes{
+    display: flex;
+    width: 900px;
+    margin-top: 20px;
+}
+
+.cpf{
+    width: 900px;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+    border: thin;
+    border-bottom-style: solid;
+}
+
+.info_pessoais{
+    display: none;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.endereco{
+    width: 700px;
+}
+
+.telefone{
+    width: 200px;
+}
+
+/*conteudo do perfil empresa*/
 
 .userempresa_cliente{
     display: none;

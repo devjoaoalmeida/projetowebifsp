@@ -34,12 +34,11 @@ export default () => {
         </div>
 
         <div class="conteudo_perfis">
-            
+            <div class="info_usercomum">
+                <p> Nome: João Pedro de Almeida </p>
+                <p> E-mail: almeiida.joao@gmail.com </p>
+            </div>
             <div id="usercomum_conteudo" class="usercomum_conteudo">
-                <div class="info_usercomum">
-                    <p> Nome: João Pedro de Almeida </p>
-                    <p> E-mail: almeiida.joao@gmail.com </p>
-                </div>
                 <div class="trocar_senha" id="trocar_senha">
                     <b>Crie uma nova senha</b>
 					<input type="password" placeholder="Crie nova uma senha" required>

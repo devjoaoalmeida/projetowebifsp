@@ -24,6 +24,33 @@ function cliente(){
     }
 }
 
+function os(){
+    let os = document.getElementById('ordemservico');
+    if(document.getElementById('ordemservico')){
+        os.style.display='flex';
+        document.getElementById('orcamentospendentes').style.display='none';
+        document.getElementById('info_pessoais').style.display='none';
+    }
+}
+
+function orcpen(){
+    let orcpen = document.getElementById('orcamentospendentes');
+    if(document.getElementById('orcamentospendentes')){
+        orcpen.style.display='flex';
+        document.getElementById('ordemservico').style.display='none';
+        document.getElementById('info_pessoais').style.display='none';
+    }
+}
+
+function info_pessoais(){
+    let info_pessoais = document.getElementById('info_pessoais');
+    if(document.getElementById('info_pessoais')){
+        info_pessoais.style.display='flex';
+        document.getElementById('orcamentospendentes').style.display='none';
+        document.getElementById('ordemservico').style.display='none';
+    }
+}
+
 function empresa(){
     let empresa = document.getElementById('userempresa_conteudo');
     if (empresa) {
