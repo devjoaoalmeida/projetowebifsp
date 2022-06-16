@@ -138,9 +138,14 @@ input{
 p.vermais{
     cursor: pointer;
     border: none;
+    margin-top: 20px;
+    width: 900px;
+    text-align: center;
 }
 
 .quadros{
+    display: flex;
+    flex-direction: column;
     width: 450px;
 }
 
@@ -166,33 +171,53 @@ p.vermais{
 
 .cpf{
     width: 900px;
-    height: 40px;
-    text-align: center;
-    font-size: large;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: thin;
     border-bottom-style: solid;
 }
 
-.info_pessoais{
+.contato_pessoal{
     display: none;
     justify-content: space-between;
     width: 900px;
 }
 
 .endereco{
-    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 600px;
+    height: 200px;
+    
 }
 
 .telefone{
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 200px;
 }
 
 /*conteudo do perfil empresa*/
 
-.userempresa_cliente{
+.userempresa_conteudo{
     display: none;
     flex-direction: column;
-    width: 980px;
+    width: 900px;
+}
+
+.info_empresa{
+    width: 900px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: thin;
+    border-bottom-style: solid;
 }
 
 

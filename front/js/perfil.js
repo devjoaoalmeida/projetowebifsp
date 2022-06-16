@@ -29,7 +29,7 @@ function os(){
     if(document.getElementById('ordemservico')){
         os.style.display='flex';
         document.getElementById('orcamentospendentes').style.display='none';
-        document.getElementById('info_pessoais').style.display='none';
+        document.getElementById('contato_pessoal').style.display='none';
     }
 }
 
@@ -38,13 +38,13 @@ function orcpen(){
     if(document.getElementById('orcamentospendentes')){
         orcpen.style.display='flex';
         document.getElementById('ordemservico').style.display='none';
-        document.getElementById('info_pessoais').style.display='none';
+        document.getElementById('contato_pessoal').style.display='none';
     }
 }
 
-function info_pessoais(){
-    let info_pessoais = document.getElementById('info_pessoais');
-    if(document.getElementById('info_pessoais')){
+function contato_pessoal(){
+    let info_pessoais = document.getElementById('contato_pessoal');
+    if(document.getElementById('contato_pessoal')){
         info_pessoais.style.display='flex';
         document.getElementById('orcamentospendentes').style.display='none';
         document.getElementById('ordemservico').style.display='none';
