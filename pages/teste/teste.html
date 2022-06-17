@@ -1,7 +1,14 @@
-export default () => {
-    const container = document.createElement('div');
-
-    const template = `
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/index/index.css'>
+    <script src="/front/js/perfil.js"></script>
+</head>
+<body>
     <div class="meu_perfil">
         <div class="perfis">
             <div onclick="user()" class="user">
@@ -273,10 +280,12 @@ export default () => {
 				<p class="fechar" onclick="document.getElementById('modalmenor_telefone').style.display='none'">x</p>
 				<form>
 					<div class="quadro_telefone">
-                        <b>Pessoas</b>
-					    <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
-                        <b>Residencial</b>
-					    <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
+						<div>
+                            <b>Pessoas</b>
+						    <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
+                            <b>Residencial</b>
+						    <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
+                        </div>
 					</div>
 				</form>
 				<div class="alterar">
@@ -285,9 +294,6 @@ export default () => {
 			</div>
 		</div>
     </div>
-    `;
 
-	container.innerHTML = template;
-
-    return container;
-}
+</body>
+</html>

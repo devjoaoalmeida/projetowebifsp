@@ -24,30 +24,30 @@ function cliente(){
     }
 }
 
-function os(){
-    let os = document.getElementById('ordemservico');
-    if(document.getElementById('ordemservico')){
-        os.style.display='flex';
-        document.getElementById('orcamentospendentes').style.display='none';
-        document.getElementById('contato_pessoal').style.display='none';
+function os_cliente(){
+    let os_cliente = document.getElementById('os_cliente');
+    if(document.getElementById('os_cliente')){
+        os_cliente.style.display='flex';
+        document.getElementById('orcamentos_cliente').style.display='none';
+        document.getElementById('contato_cliente').style.display='none';
     }
 }
 
-function orcpen(){
-    let orcpen = document.getElementById('orcamentospendentes');
-    if(document.getElementById('orcamentospendentes')){
-        orcpen.style.display='flex';
-        document.getElementById('ordemservico').style.display='none';
-        document.getElementById('contato_pessoal').style.display='none';
+function orc_cliente(){
+    let orc_cliente = document.getElementById('orcamentos_cliente');
+    if(document.getElementById('orcamentos_cliente')){
+        orc_cliente.style.display='flex';
+        document.getElementById('os_cliente').style.display='none';
+        document.getElementById('contato_cliente').style.display='none';
     }
 }
 
-function contato_pessoal(){
-    let info_pessoais = document.getElementById('contato_pessoal');
-    if(document.getElementById('contato_pessoal')){
-        info_pessoais.style.display='flex';
-        document.getElementById('orcamentospendentes').style.display='none';
-        document.getElementById('ordemservico').style.display='none';
+function contato_cliente(){
+    let contato_cliente = document.getElementById('contato_cliente');
+    if(document.getElementById('contato_cliente')){
+        contato_cliente.style.display='flex';
+        document.getElementById('orcamentos_cliente').style.display='none';
+        document.getElementById('os_cliente').style.display='none';
     }
 }
 
@@ -61,5 +61,77 @@ function empresa(){
         document.getElementById('useropcoes_comum').style.display='none';
         document.getElementById('useropcoes_cliente').style.display='none';
         document.getElementById('useropcoes_empresa').style.display='flex';
+    }
+}
+
+function cad_servico(){
+    let cad_servico = document.getElementById('cad_servico');
+    if(document.getElementById('cad_servico')){
+        cad_servico.style.display='flex';
+        document.getElementById('servicos_cads').style.display='none';
+        document.getElementById('orcamentos_empresa').style.display='none';
+        document.getElementById('os_empresa').style.display='none';
+        document.getElementById('historico_clientes').style.display='none';
+        document.getElementById('contato_empresa').style.display='none';
+    }
+}
+
+function servicos_cads(){
+    let servicos_cads = document.getElementById('servicos_cads');
+    if(document.getElementById('servicos_cads')){
+        servicos_cads.style.display='flex';
+        document.getElementById('cad_servico').style.display='none';
+        document.getElementById('orcamentos_empresa').style.display='none';
+        document.getElementById('os_empresa').style.display='none';
+        document.getElementById('historico_clientes').style.display='none';
+        document.getElementById('contato_empresa').style.display='none';
+    }
+}
+
+function orc_empresa(){
+    let orc_empresa = document.getElementById('orcamentos_empresa');
+    if(document.getElementById('orcamentos_empresa')){
+        orc_empresa.style.display='flex';
+        document.getElementById('servicos_cads').style.display='none';
+        document.getElementById('cad_servico').style.display='none';
+        document.getElementById('os_empresa').style.display='none';
+        document.getElementById('historico_clientes').style.display='none';
+        document.getElementById('contato_empresa').style.display='none';
+    }
+}
+
+function os_empresa(){
+    let os_empresa = document.getElementById('os_empresa');
+    if(document.getElementById('os_empresa')){
+        os_empresa.style.display='flex';
+        document.getElementById('servicos_cads').style.display='none';
+        document.getElementById('cad_servico').style.display='none';
+        document.getElementById('orcamentos_empresa').style.display='none';
+        document.getElementById('historico_clientes').style.display='none';
+        document.getElementById('contato_empresa').style.display='none';
+    }
+}
+
+function historico_clientes(){
+    let historico_clientes = document.getElementById('historico_clientes');
+    if(document.getElementById('historico_clientes')){
+        historico_clientes.style.display='flex';
+        document.getElementById('servicos_cads').style.display='none';
+        document.getElementById('cad_servico').style.display='none';
+        document.getElementById('orcamentos_empresa').style.display='none';
+        document.getElementById('os_empresa').style.display='none';
+        document.getElementById('contato_empresa').style.display='none';
+    }
+}
+
+function contato_empresa(){
+    let contato_empresa = document.getElementById('contato_empresa');
+    if(document.getElementById('contato_empresa')){
+        contato_empresa.style.display='flex';
+        document.getElementById('servicos_cads').style.display='none';
+        document.getElementById('cad_servico').style.display='none';
+        document.getElementById('orcamentos_empresa').style.display='none';
+        document.getElementById('os_empresa').style.display='none';
+        document.getElementById('historico_clientes').style.display='none';
     }
 }

@@ -65,12 +65,14 @@ button.botao_slider{
 	display: flex;
 	align-items: center;
 	width: 500px;
+	margin-bottom: 20px;
 }
 
 .info_maispedidos{
 	display: flex;
 	flex-direction: column;
-	height: 200px;
+	height: 180px;
+	margin-left: 10px;
 }
 
 p.info_maispedidos{

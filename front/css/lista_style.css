@@ -1,57 +1,98 @@
 .quadro_lista{
     display: flex;
     width: 1300px;
+    height: 843px;
 }
 
 .filtro{
     display: flex;
     flex-direction: column;
-    margin: auto;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 300px;
+}
+
+.tipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin: 10px;
 }
 
 .filtros{
+    width: 270px;
+}
+
+.custo{
     display: flex;
-    margin: auto;
-    width: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin: 10px;
 }
 
 .prazo{
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin: 10px;
+}
+
+.opcoes_prazo{
+    display: flex;
+    height: 100px;
     align-items: center;
+}
+
+.lista_servico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 843px;
+    padding-top: 20px;
+}
+
+.titulo_lista{
+    cursor: pointer;
+    border: none;
+    margin: 20px;
+    height: 40px;
+    width: 900px;
+    text-align: center;
+    border: thin;
+    border-bottom-style: solid;
 }
 
 .quadro_servicos{
     display: flex;
-    margin: auto;
+    flex-direction: column;
+    width: 900px;
 }
 
 .servicos{
     display: flex;
-    margin: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 900px;
+    height: 230px;
+    border: thin;
+    border-bottom-style: solid;
 }
 
 .servicos_info{
     display: flex;
-    flex-direction: column;
-}
-
-.info{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: auto;
-}
-
-.descricao_info{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    text-align: start;
+    width: 900px;
+    margin-top: 10px;
 }
 
 .descricao{
-    width: 400px;
-    height: 100px;
-    border: thin;
-    border-style: solid;
-    padding: 10px;
+    text-align: justify;
+    width: 450px;
+    height: 50px;
 }

@@ -105,6 +105,7 @@ p.useropcoes{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
     margin-top: 30px;
     width: 900px;
     height: 250px;
@@ -127,20 +128,21 @@ input{
     width: 900px;
 }
 
-.ordemservico{
+.os_cliente{
     display: none;
     flex-direction: column;
     align-items: center;
-    border: thin;
-    border-bottom-style: solid;
 }
 
 p.vermais{
     cursor: pointer;
     border: none;
-    margin-top: 20px;
+    margin: 20px;
+    height: 40px;
     width: 900px;
     text-align: center;
+    border: thin;
+    border-bottom-style: solid;
 }
 
 .quadros{
@@ -149,21 +151,19 @@ p.vermais{
     width: 450px;
 }
 
-.quadros_ordemservico{
+.quadros_oscliente{
     display: flex;
     width: 900px;
     margin-top: 20px;
 }
 
-.orcamentospendentes{
+.orcamentos_cliente{
     display: none;
     flex-direction: column;
     align-items: center;
-    border: thin;
-    border-bottom-style: solid;
 }
 
-.quadro_orcamentospendentes{
+.quadro_orcamentoscliente{
     display: flex;
     width: 900px;
     margin-top: 20px;
@@ -179,7 +179,7 @@ p.vermais{
     border-bottom-style: solid;
 }
 
-.contato_pessoal{
+.contato_cliente{
     display: none;
     justify-content: space-between;
     width: 900px;
@@ -190,7 +190,7 @@ p.vermais{
     flex-direction: column;
     justify-content: space-around;
     width: 600px;
-    height: 200px;
+    height: 250px;
     
 }
 
@@ -199,7 +199,7 @@ p.vermais{
     flex-direction: column;
     justify-content: space-around;
     width: 300px;
-    height: 200px;
+    height: 250px;
 }
 
 /*conteudo do perfil empresa*/
@@ -218,6 +218,185 @@ p.vermais{
     justify-content: center;
     border: thin;
     border-bottom-style: solid;
+}
+
+.cad_servico{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.quadro_cadservico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    height: 400px;
+    width: 900px;
+    margin-top: 20px;
+}
+
+.servicos_cads{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quadro_servicoscads{
+    display: flex;
+    width: 900px;
+    margin-top: 20px;
+}
+
+.titulo_os{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 900px;
+}
+
+.os_empresa{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quadros_osempresa{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin-top: 20px;
+}
+
+.orcamentos_empresa{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.os_aberto{
+    display: flex;
+    width: 900px;
+    height: 100px;
+}
+
+.os_fechado{
+    display: flex;
+    width: 900px;
+    height: 100px;
+}
+
+.quadro_orcamentosempresa{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin-top: 20px;
+}
+
+.orc_aberto{
+    display: flex;
+    width: 900px;
+    height: 100px;
+}
+
+.orc_fechado{
+    display: flex;
+    width: 900px;
+    height: 100px;
+}
+
+.titulo_orc{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 900px;
+}
+
+.historico_clientes{
+    display: none;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.historico_clientes{
+    display: flex;
+    width: 350px;
+}
+
+p.historico_clientes{
+    display: flex;
+    margin: 20px;
+    border: none;
+    width: 900px;
+}
+
+.contato_empresa{
+    display: none;
+    justify-content: space-between;
+    width: 900px;
+}
+
+/*modal alterar endereco e telefone*/
+
+.quadro_telefone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 250px;
+    margin-top: 50px;
+}
+
+.quadro_endereco{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1000px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.bairro{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin:10px;
+    border: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+.estado{
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    margin:10px;
+    border: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+.numero{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin:10px;
+    border: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+.alterar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: var(--header);
+    border-radius: 0px 0px 10px 10px;
 }
 
 
