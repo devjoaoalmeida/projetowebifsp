@@ -1,18 +1,12 @@
-@import url(/front/css/detalheservico_style.css);
-@import url(/front/css/cadastroservico_style.css);
-@import url(/front/css/home_style.css);
-@import url(/front/css/lista_style.css);
-@import url(/front/css/servicocadastrado_style.css);
-@import url(/front/css/sobre_style.css);
-@import url(/front/css/perfil_style.css);
+@import url(/front/pages/spa/home/home_style.css);
+@import url(/front/pages/spa/lista_servicos/lista_style.css);
+@import url(/front/pages/spa/perfil/perfil_style.css);
+@import url(/front/pages/spa/sobre/sobre_style.css);
 
-@import url(/front/css/modalmenor_geral.css);
-@import url(/front/css/modalmaior_geral.css);
-
-@import url(/front/css/login_style.css);
-@import url(/front/css/cadlogin_style.css);
-@import url(/front/css/orcamento_style.css);
-@import url(/front/css/pagamento_style.css);
+@import url(/front/modal/cadlogin_style.css);
+@import url(/front/modal/login_style.css);
+@import url(/front/modal/modal_style.css);
+@import url(/front/modal/orcamento_style.css);
 
 :root {
 	--header: #8a2be2;
