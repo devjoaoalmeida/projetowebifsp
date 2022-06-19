@@ -20,29 +20,9 @@ export default () => {
             <button class="botao_slider" onclick="slideAtual(2)"></button>
         </div>
 	</div>
-    <div class="quadro_maispedidos">
-        <div class="botao_orcamento">
-            <div class="maispedidos">
-                <img src="" alt="" width="150px" height="200px">
-                <div class="info_maispedidos">
-                    <p class="info_maispedidos">Manuntenção em micro-ondas</p>
-                    <p class="info_maispedidos">Oficina Consertatudo</p>
-                    <p class="info_maispedidos">Faça um orçamento para melhor saber sobre o problema</p>
-                </div>
-            </div>
-            <button onclick="document.getElementById('modalmaior_orcamento').style.display='flex'">fazer orçamento</button>
-        </div>
-        <div class="botao_orcamento">
-            <div class="maispedidos">
-                <img src="" alt="" width="150px" height="200px">
-                <div class="info_maispedidos">
-                    <p class="info_maispedidos">Manuntenção em micro-ondas</p>
-                    <p class="info_maispedidos">Oficina Consertatudo</p>
-                    <p class="info_maispedidos">Faça um orçamento para melhor saber sobre o problema</p>
-                </div>
-            </div>
-            <button onclick="document.getElementById('modalmaior_orcamento').style.display='flex'">fazer orçamento</button>
-        </div>
+
+    <div class="boas_vindas">
+        <p class="boas_vindas">Seja bem-vindo ao ServTech, aqui você poderá encontrar o solução certa para o seu problema esta aqui!</p>
     </div>
     `;
 

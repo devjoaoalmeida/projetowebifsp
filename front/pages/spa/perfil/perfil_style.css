@@ -26,6 +26,26 @@
     border-radius: 5px 5px 5px 5px;
 }
 
+.user_cliente{
+    display: none;
+    flex-direction : column;
+    align-items: center;
+    border: thin;
+    border-style: solid;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.user_empresa{
+    display: none;
+    flex-direction : column;
+    align-items: center;
+    border: thin;
+    border-style: solid;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
 p.user{
     cursor: pointer;
     border: none;
@@ -111,12 +131,18 @@ p.useropcoes{
     height: 250px;
 }
 
+.inserir_senha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 700px;    
+}
+
 input{
     display: flex;
     border-radius: 10px;
-    height: 30px;
-    width: 350px;
-    font-size:medium;
+    height: 25px;
+    width: 250px;
     text-align: center;
 }
 
@@ -397,6 +423,10 @@ p.historico_clientes{
     height: 100px;
     background-color: var(--header);
     border-radius: 0px 0px 10px 10px;
+}
+
+.criar_cliente{
+    display:none;
 }
 
 

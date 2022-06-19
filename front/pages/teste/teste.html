@@ -5,8 +5,10 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/index/index.css'>
-    <script src="/front/js/perfil.js"></script>
+    <link rel='stylesheet' href='/front/index/index.css'>
+    <script src="/front/index/index.js"></script>
+    <script src="/front/js/slider.js"></script>
+    <script src="/front/js/funcao_perfil.js"></script>
 </head>
 <body>
     <div class="meu_perfil">
@@ -17,7 +19,12 @@
                     <p class="useropcoes" onclick="document.getElementById('trocar_senha').style.display='flex'">Trocar senha</p>
                 </div>
             </div>
-            <div onclick="cliente()" class="user">
+
+            <div class="user">
+                <p class="user" onclick="criar_cliente()">Quero ser cliente</p>
+            </div>
+
+            <div id="user_cliente" onclick="cliente()" class="user_cliente">
                 <p class="user">Sou cliente</p>
                 <div class="useropcoes_cliente" id="useropcoes_cliente">
                     <p class="useropcoes" onclick="os_cliente()">Ordem de Serviço</p>
@@ -25,7 +32,12 @@
                     <p class="useropcoes" onclick="contato_cliente()">Informações Pessoais</p>
                 </div>
             </div>
-            <div onclick="empresa()" class="user">
+
+            <div class="user">
+                <p class="user" onclick="criar_empresa()">Quero ter a minha empresa</p>
+            </div>
+
+            <div id="user_empresa" onclick="empresa()" class="user_empresa">
                 <p class="user">Minha empresa</p>
                 <div class="useropcoes_empresa" id="useropcoes_empresa">
                     <p class="useropcoes" onclick="cad_servico()">Criar Serviço</p>
@@ -40,7 +52,6 @@
         </div>
 
         <div class="conteudo_perfis">
-
             <div class="info_usercomum">
                 <p> Nome: João Pedro de Almeida </p>
                 <p> E-mail: almeiida.joao@gmail.com </p>
@@ -49,11 +60,15 @@
             <div id="usercomum_conteudo" class="usercomum_conteudo">
                 <div class="trocar_senha" id="trocar_senha">
                     <p>Crie uma nova senha</p>
-					<input type="password" placeholder="Insira nova uma senha" required>
-					<input type="password" placeholder="Insira sua senha novamente" required>
+                    <div class="inserir_senha">
+                        <input type="password" placeholder="Insira nova uma senha" required>
+					    <input type="password" placeholder="Insira sua senha novamente" required>
+                    </div>
                     <button>Criar nova senha</button>
                 </div>
             </div>
+
+            
 
             <div id="usercliente_conteudo" class="usercliente_conteudo">
                 <p class="cpf">CPF: 123.456.789-00</p>
@@ -243,6 +258,64 @@
         </div>
     </div>
 
+    <div id="criar_cliente">
+        <form>
+            <b>CPF</b>
+            <input class="emailsenha" type="text" placeholder="Insira o seu cpf" required>
+            
+            <div id="alterar_endereco">
+                <b>Rua</b>
+                <input class="emailsenha" type="text" required>
+                <b>Número</b>
+                <input class="numero" type="text" required>
+                <b>Bairro</b>
+                <input class="bairro" type="text" required>
+                <b>Cidade</b>
+                <input class="emailsenha" type="text" required>
+                <b>Estado</b>
+                <input class="estado" type="text" required>
+            </div>
+        
+            <div id="alterar_telefone">
+                <b>Pessoas</b>
+                <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
+                <b>Residencial</b>
+                <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
+            </div>
+        </form>
+    </div>
+
+    <div id="criar_empresa">
+        <form>
+            <b>CNPJ</b>
+            <input class="emailsenha" type="text" placeholder="Insira o seu cpf" required>
+            <b>Razão Social</b>
+            <input class="emailsenha" type="text" placeholder="Insira o seu cpf" required>
+            <b>Nome Fantasia</b>
+            <input class="emailsenha" type="text" placeholder="Insira o seu cpf" required>
+            
+            <div id="alterar_endereco">
+                <b>Rua</b>
+                <input class="emailsenha" type="text" required>
+                <b>Número</b>
+                <input class="numero" type="text" required>
+                <b>Bairro</b>
+                <input class="bairro" type="text" required>
+                <b>Cidade</b>
+                <input class="emailsenha" type="text" required>
+                <b>Estado</b>
+                <input class="estado" type="text" required>
+            </div>
+        
+            <div id="alterar_telefone">
+                <b>Pessoas</b>
+                <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
+                <b>Residencial</b>
+                <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
+            </div>
+        </form>
+    </div>
+
     <div id="alterar_endereco">
 		<div class="modalmaior_endereco" id="modalmaior_endereco">
 			<div class="conteudo_modalmaior">
@@ -280,12 +353,10 @@
 				<p class="fechar" onclick="document.getElementById('modalmenor_telefone').style.display='none'">x</p>
 				<form>
 					<div class="quadro_telefone">
-						<div>
-                            <b>Pessoas</b>
-						    <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
-                            <b>Residencial</b>
-						    <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
-                        </div>
+                        <b>Pessoas</b>
+					    <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
+                        <b>Residencial</b>
+					    <input class="emailsenha" type="text" placeholder="Insira o seu novo telefone" required>
 					</div>
 				</form>
 				<div class="alterar">
@@ -294,6 +365,5 @@
 			</div>
 		</div>
     </div>
-
 </body>
 </html>

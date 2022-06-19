@@ -22,7 +22,7 @@ body{
 	background-color: var(--fundo);
 	color: var(--texto);
     margin: 0;
-	font-size: larger;
+	font-size: large;
 	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
 
@@ -52,11 +52,10 @@ button{
 	cursor: pointer;
 	border: thin;
 	border-style: solid;
-	border-radius: 8px 3px 8px 3px;
-	padding: 10px;
-	width: 200px;
+	border-radius: 10px 2px 10px 2px;
+	padding: 8px;
+	width: 130px;
 	background-color: var(--button);
-	font-size: large;
 }
 
 button:hover{
@@ -125,7 +124,7 @@ input.pesquisa{
 
 a.logo{
 	color: white;
-	font-size: x-large;
+	font-size: xx-large;
 }
 
 /*CONTEUDO PRINCIPAL*/

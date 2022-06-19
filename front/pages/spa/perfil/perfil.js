@@ -42,8 +42,10 @@ export default () => {
             <div id="usercomum_conteudo" class="usercomum_conteudo">
                 <div class="trocar_senha" id="trocar_senha">
                     <p>Crie uma nova senha</p>
-					<input type="password" placeholder="Insira nova uma senha" required>
-					<input type="password" placeholder="Insira sua senha novamente" required>
+                    <div class="inserir_senha">
+                        <input type="password" placeholder="Insira nova uma senha" required>
+					    <input type="password" placeholder="Insira sua senha novamente" required>
+                    </div>
                     <button>Criar nova senha</button>
                 </div>
             </div>

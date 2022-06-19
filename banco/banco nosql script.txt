@@ -24,8 +24,7 @@ db.servico.insert(
 	"orcamento": "",
 	"comentarios": {
 		"comentario": "",
-		"avaliacao": ""},
-	"foto_servico": ["","","",""]
+		"avaliacao": ""}
 	}
 )
 
@@ -42,7 +41,6 @@ db.createCollecion( "servico",
 		"comentarios": {
 			"comentario": <string>,
 			"avaliacao": <string>},
-		"foto_servico": [<array>]
 	}
 )
 

@@ -22,10 +22,10 @@ export default () => {
 			<p class="linguagens">Usando as linguagens para desenvolvimento web:</p>
 
 			<ul>
-				<li> FRONT: HTML, CSS, JavaScript e Vue,js</li>
+				<li> FRONT: HTML, CSS, JavaScript</li>
 				<li> BACK: Golang </li>
 				<li> BANCO: Relacional (MySQL) e Não-relacional (MongoDB) </li>
-				<li> INFRA: Servidor em DOCKER </li>
+				<li> INFRA: Servidor em LINUX</li>
 			</ul>
 		</div>
 	</div>

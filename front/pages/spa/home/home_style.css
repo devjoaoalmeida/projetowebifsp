@@ -1,8 +1,6 @@
 .slider {
 	position: relative;
 	display: flex;
-	width: 1000px;
-	height: 400px;
 	justify-content: center;
 }
 
@@ -41,10 +39,12 @@
   
 .proximo{
 	right: 0;
+	margin-right: 100px;
 }
   
 .anterior{
 	left: 0;
+	margin-left: 100px;
 }
 
 button.botao_slider{
@@ -55,37 +55,17 @@ button.botao_slider{
 	border: none;
 	border-radius: 10px;
 }
-  
-.quadro_maispedidos{
-	display: flex;
-	justify-content: space-between;
-}
 
-.maispedidos{
+.boas_vindas{
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	width: 500px;
-	margin-bottom: 20px;
+	width: 1300px;
+	height: 250px;
 }
 
-.info_maispedidos{
-	display: flex;
-	flex-direction: column;
-	height: 180px;
-	margin-left: 10px;
-}
-
-p.info_maispedidos{
-	display: flex;
-	flex-direction: column;
-	font-size:medium;
-	width: 300px;
-	height: 66px;
-	text-align: justify;
-}
-
-.botao_orcamento{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+p.boas_vindas{
+	text-align: center;
+	width: 800px;
+	font-size: x-large;
 }
