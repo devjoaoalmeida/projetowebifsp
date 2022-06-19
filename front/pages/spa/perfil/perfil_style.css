@@ -26,8 +26,14 @@
     border-radius: 5px 5px 5px 5px;
 }
 
+p.user{
+    cursor: pointer;
+    border: none;
+    margin: 10px;
+}
+
 .user_cliente{
-    display: none;
+    display: flex;
     flex-direction : column;
     align-items: center;
     border: thin;
@@ -46,22 +52,15 @@
     border-radius: 5px 5px 5px 5px;
 }
 
-p.user{
+p.useropcoes{
     cursor: pointer;
     border: none;
+    text-align: start;
     margin: 10px;
 }
 
-.useropcoes_comum{
-    display: none;
-    flex-direction: column;
-    border: thin;
-    border-top-style: solid;
-    width: 290px;
-}
-
 .useropcoes_cliente{
-    display: none;
+    display: flex;
     flex-direction: column;
     border: thin;
     border-top-style: solid;
@@ -74,13 +73,6 @@ p.user{
     border: thin;
     border-top-style: solid;
     width: 290px;
-}
-
-p.useropcoes{
-    cursor: pointer;
-    border: none;
-    text-align: start;
-    margin: 10px;
 }
 
 .sair{
@@ -103,7 +95,7 @@ p.useropcoes{
 
 .info_usercomum{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
     width: 900px;
     border: thin;
@@ -111,14 +103,7 @@ p.useropcoes{
     height: 50px;
 }
 
-/*conteudo do perfil comum*/
-
-.usercomum_conteudo{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 980px;
-}
+/*trocar senha*/
 
 .trocar_senha{
     display: none;
@@ -195,16 +180,6 @@ p.vermais{
     margin-top: 20px;
 }
 
-.cpf{
-    width: 900px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: thin;
-    border-bottom-style: solid;
-}
-
 .contato_cliente{
     display: none;
     justify-content: space-between;
@@ -231,6 +206,12 @@ p.vermais{
 /*conteudo do perfil empresa*/
 
 .userempresa_conteudo{
+    display: none;
+    flex-direction: column;
+    width: 900px;
+}
+
+.criar_empresa{
     display: none;
     flex-direction: column;
     width: 900px;
@@ -386,36 +367,6 @@ p.historico_clientes{
     margin-top: 50px;
 }
 
-.bairro{
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-    margin:10px;
-    border: thin;
-    border-style: solid;
-    text-align: center;
-}
-
-.estado{
-    width: 50px;
-    height: 30px;
-    border-radius: 10px;
-    margin:10px;
-    border: thin;
-    border-style: solid;
-    text-align: center;
-}
-
-.numero{
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    margin:10px;
-    border: thin;
-    border-style: solid;
-    text-align: center;
-}
-
 .alterar{
     display: flex;
     justify-content: center;
@@ -424,11 +375,6 @@ p.historico_clientes{
     background-color: var(--header);
     border-radius: 0px 0px 10px 10px;
 }
-
-.criar_cliente{
-    display:none;
-}
-
 
 
 

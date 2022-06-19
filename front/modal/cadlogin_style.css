@@ -1,19 +1,119 @@
-.quadro_cadlogin{
+.quadro_cadlogincliente{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 300px;
-  padding-top: 30px;
+  justify-content: space-evenly;
+  width: 1000px;
+  height: 400px;
+  margin-top: 50px;
 }
 
-input.emailsenha{
+.quadro_cadloginempresa{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1000px;
+  height: 400px;
+}
+
+.info_usuario{
+  display: flex;
+}
+
+/*.info_usuario{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 400px;
+  height: 265px;
+}*/
+
+.criar_usuario{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 265px;
+}
+
+.criar_endereço{
+  display: flex;
+  width: 400px;
+}
+
+.ruanumero{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 100px;
+}
+
+.bairrocidadeestado{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 100px;
+}
+
+.rua{
+  width: 350px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 30px;
+  border: thin;
+  border-style: solid; 
+}
+
+.num{
+  width: 100px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 30px;
+  border: thin;
+  border-style: solid; 
+}
+
+.bairro{
+  width: 150px;
   height: 30px;
   border-radius: 10px;
+  margin-top: 10px;
+  height: 30px;
   border: thin;
-  border-style: solid;
-  text-align: center;
+  border-style: solid; 
+}
+
+.cidade{
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 30px;
+  border: thin;
+  border-style: solid; 
+}
+
+.estado{
+  width: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 30px;
+  border: thin;
+  border-style: solid; 
+}
+
+.criar_telefone{
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.input_telefone{
+  width: 150px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 30px;
+  border: thin;
+  border-style: solid; 
 }
 
 .fechar{

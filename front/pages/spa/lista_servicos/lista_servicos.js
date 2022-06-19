@@ -40,7 +40,7 @@ export default () => {
                         <div>
                             <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam accusantium debitis a quos temporibus ut pariatur quas eos cumque est harum</p>
                         </div>  
-                        <button onclick="document.getElementById('modalmaior_orcamento').style.display='flex'"> pedir orçamento </button>
+                        <button onclick="document.getElementById('modalmenor_orcamento').style.display='flex'"> pedir orçamento </button>
                     </div>
                 </div>
                 <div class="servicos">
@@ -54,7 +54,7 @@ export default () => {
                         <div>
                             <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam accusantium debitis a quos temporibus ut pariatur quas eos cumque est harum</p>
                         </div>  
-                        <button onclick="document.getElementById('modalmaior_orcamento').style.display='flex'"> pedir orçamento </button>
+                        <button onclick="document.getElementById('modalmenor_orcamento').style.display='flex'"> pedir orçamento </button>
                     </div>
                 </div>
                 <div class="servicos">
@@ -68,7 +68,7 @@ export default () => {
                         <div>
                             <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam accusantium debitis a quos temporibus ut pariatur quas eos cumque est harum</p>
                         </div>  
-                        <button onclick="document.getElementById('modalmaior_orcamento').style.display='flex'"> pedir orçamento </button>
+                        <button onclick="document.getElementById('modalmenor_orcamento').style.display='flex'"> pedir orçamento </button>
                     </div>
                 </div>
                 <div class="servicos">
@@ -82,7 +82,7 @@ export default () => {
                         <div>
                             <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam accusantium debitis a quos temporibus ut pariatur quas eos cumque est harum</p>
                         </div>  
-                        <button onclick="document.getElementById('modalmaior_orcamento').style.display='flex'"> pedir orçamento </button>
+                        <button onclick="document.getElementById('modalmenor_orcamento').style.display='flex'"> pedir orçamento </button>
                     </div>
                 </div>
             </div>

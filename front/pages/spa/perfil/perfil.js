@@ -4,21 +4,21 @@ export default () => {
     const template = `
     <div class="meu_perfil">
         <div class="perfis">
-            <div onclick="user()" class="user">
+            <div id="user_cliente" onclick="cliente()" class="user_cliente">
                 <p class="user">Meu perfil</p>
-                <div class="useropcoes_comum" id="useropcoes_comum">
-                    <p class="useropcoes" onclick="document.getElementById('trocar_senha').style.display='flex'">Trocar senha</p>
-                </div>
-            </div>
-            <div onclick="cliente()" class="user">
-                <p class="user">Sou cliente</p>
                 <div class="useropcoes_cliente" id="useropcoes_cliente">
                     <p class="useropcoes" onclick="os_cliente()">Ordem de Serviço</p>
                     <p class="useropcoes" onclick="orc_cliente()">Orçamentos</p>
                     <p class="useropcoes" onclick="contato_cliente()">Informações Pessoais</p>
+                    <p class="useropcoes" onclick="trocar_senha()">Trocar senha</p>
                 </div>
             </div>
-            <div onclick="empresa()" class="user">
+
+            <div class="user">
+                <p class="user" onclick="criar_empresa()">Quero ter a minha empresa</p>
+            </div>
+
+            <div id="user_empresa" onclick="empresa()" class="user_empresa">
                 <p class="user">Minha empresa</p>
                 <div class="useropcoes_empresa" id="useropcoes_empresa">
                     <p class="useropcoes" onclick="cad_servico()">Criar Serviço</p>
@@ -33,25 +33,12 @@ export default () => {
         </div>
 
         <div class="conteudo_perfis">
-
             <div class="info_usercomum">
                 <p> Nome: João Pedro de Almeida </p>
                 <p> E-mail: almeiida.joao@gmail.com </p>
+                <p> CPF: 123.456.789-00 </p>
             </div>
-
-            <div id="usercomum_conteudo" class="usercomum_conteudo">
-                <div class="trocar_senha" id="trocar_senha">
-                    <p>Crie uma nova senha</p>
-                    <div class="inserir_senha">
-                        <input type="password" placeholder="Insira nova uma senha" required>
-					    <input type="password" placeholder="Insira sua senha novamente" required>
-                    </div>
-                    <button>Criar nova senha</button>
-                </div>
-            </div>
-
             <div id="usercliente_conteudo" class="usercliente_conteudo">
-                <p class="cpf">CPF: 123.456.789-00</p>
                 <div id="os_cliente" class="os_cliente">
                     <div class="quadros_oscliente">
                         <div class="quadros">
@@ -103,6 +90,68 @@ export default () => {
                         <button onclick="document.getElementById('modalmenor_telefone').style.display='flex'">alterar dados</button>
                     </div>
                 </div>
+                <div class="trocar_senha" id="trocar_senha">
+                    <p>Crie uma nova senha</p>
+                    <div class="inserir_senha">
+                        <input type="password" placeholder="Insira nova uma senha" required>
+					    <input type="password" placeholder="Insira sua senha novamente" required>
+                    </div>
+                    <button>Criar nova senha</button>
+                </div>
+            </div>
+
+            <div id="criar_empresa" class="criar_empresa">
+                <form>
+					<div class="quadro_cadloginempresa">
+						<div class="criar_infoempresa">
+							<b>Informe seu CNPJ</b>
+							<input class="emailsenha" type="text" placeholder="Insira o seu cnpj" required>
+							<b>Informe a Razão Social da empresa</b>
+							<input class="emailsenha" type="text" placeholder="Insira o seu razão social" required>
+							<b>Informe o Nome Fantasia da empresa</b>
+							<input class="emailsenha" type="text" placeholder="Insira o seu nome fantasia" required>
+						</div>
+						<div class="criar_endereco">
+							<div class="ruanumero">
+								<div>
+									<b>Rua</b>
+									<input class="rua" type="text" placeholder="Insira sua rua" required>		
+								</div>
+								<div>
+									<b>Número</b>
+									<input class="num" type="text" required>
+								</div>
+							</div>
+							<div class="bairrocidadeestado">
+								<div>
+									<b>Bairro</b>
+									<input class="bairro" type="text" placeholder="Insira seu bairro" required>
+								</div>
+								<div>
+									<b>Cidade</b>
+									<input class="cidade" type="text" placeholder="Insira sua cidade" required>
+								</div>
+								<div>
+									<b>Estado</b>
+									<input class="estado" type="text" required>
+								</div>
+							</div>
+							<div class="criar_telefone">
+								<div>
+									<b>Tel. Pessoal</b>
+									<input class="input_telefone" type="text" required>
+								</div>
+								<div>
+									<b>Tel. Residencial</b>
+									<input class="input_telefone" type="text" required>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div>
+					    <button type="submit">CRIAR CONTA</button>
+				    </div>
+				</form>
             </div>
 
             <div id="userempresa_conteudo" class="userempresa_conteudo">                

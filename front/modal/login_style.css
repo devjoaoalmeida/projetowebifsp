@@ -8,10 +8,10 @@
 }
 
 input.emailsenha{
-    width: 400px;
+    width: 350px;
     height: 30px;
     border-radius: 10px;
-    margin:10px;
+    margin-top: 10px;
     border: thin;
     border-style: solid;
     text-align: center;
@@ -20,6 +20,16 @@ input.emailsenha{
 .fechar{
     display: flex;
     position: absolute;
+    justify-content: flex-end;
+    font-size: xx-large;
+    cursor: pointer;
+    color: purple;
+}
+
+.fechar_maior{
+    display: flex;
+    position: absolute;
+    width: 980px;
     justify-content: flex-end;
     font-size: xx-large;
     cursor: pointer;
@@ -54,6 +64,8 @@ input.emailsenha{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 500px;
+    margin-top: 86px;
     height: 80px;
     background-color: var(--header);
     border-radius: 0px 0px 10px 10px;
@@ -84,4 +96,9 @@ button.esqueceu_senha{
 
 p.descricao_senha{
     text-align: justify;
+}
+
+.criar_conta{
+    margin-top: 20px;
+    width: 1000px;
 }
