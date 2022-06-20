@@ -2,9 +2,9 @@ export default () => {
     const container = document.createElement('div');
 
     const template = `
-    <div class="quadro_lista">
+    <!--<div class="quadro_lista">-->
         
-        <div class="filtro">
+        <!--<div class="filtro">
             <div class="tipo">
                 <p> Categorias </p>
                 <input class="filtros" list="lista_servicos">
@@ -25,10 +25,11 @@ export default () => {
                     <input type="checkbox" name="longo" id="longo"><p>Longo</p>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <div class="lista_servico">
             <div class="quadro_servicos">
+            <p class="titulo_listaservico">Lista de Serviços</p>
                 <div class="servicos">
                     <p class="nome_servico">Nome do serviço</p>
                     <div class="info_servicos">
@@ -87,7 +88,7 @@ export default () => {
                 </div>
             </div>
         </div>
-    </div>
+    <!--</div>-->
     `;
 
 	container.innerHTML = template;
