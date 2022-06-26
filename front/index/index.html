@@ -6,6 +6,7 @@
 	<script src="index.js" type="module"></script>
 	<script src="/front/js/funcao_perfil.js"></script>
 	<script src="/front/js/slider.js"></script>
+	<script src="../api/post.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,58 +67,58 @@
 			<div class="conteudo_modalmaior">
 				<p class="fechar_maior" onclick="document.getElementById('modalmaior_cadlogin').style.display='none', document.getElementById('modalmenor_login').style.display='none'">x</p>
 				<p class="voltar" onclick="document.getElementById('modalmaior_cadlogin').style.display='none'">Voltar</p>
-				<form>
+				<form onsubmit="cadastraCliente()">
 					<div class="quadro_cadlogincliente">
 						<div class="info_usuario">
 							<div class="criar_usuario">
 								<b>Informe seu nome</b>
-								<input class="emailsenha" type="text" placeholder="Insira o seu nome" required>
+								<input class="emailsenha" id="nome" name="nome" type="text" placeholder="Insira o seu nome" required>
 								<b>Informe seu e-mail</b>
-								<input class="emailsenha" type="email" placeholder="Insira o seu e-mail" required>
+								<input class="emailsenha" id="email" name="email" type="email" placeholder="Insira o seu e-mail" required>
 								<b>Crie uma senha</b>
 								<input class="emailsenha" type="password" placeholder="Crie uma senha" required>
-								<input class="emailsenha" type="password" placeholder="Insira sua senha novamente" required>
+								<input class="emailsenha" id="senha" name="senha" type="password" placeholder="Insira sua senha novamente" required>
 							</div>
 							<div class="criar_endereco">
 								<div class="ruanumero">
 									<div>
 										<b>Rua</b>
-										<input class="rua" type="text" placeholder="Insira sua rua" required>		
+										<input class="rua" id="rua" name="rua" type="text" placeholder="Insira sua rua" required>		
 									</div>
 									<div>
 										<b>Número</b>
-										<input class="num" type="text" required>
+										<input class="num" id="numero" name="numero" type="text" required>
 									</div>
 								</div>
 								<div class="bairrocidadeestado">
 									<div>
 										<b>Bairro</b>
-										<input class="bairro" type="text" placeholder="Insira seu bairro" required>
+										<input class="bairro" id="bairro" name="bairro" type="text" placeholder="Insira seu bairro" required>
 									</div>
 									<div>
 										<b>Cidade</b>
-										<input class="cidade" type="text" placeholder="Insira sua cidade" required>
+										<input class="cidade" id="cidade" name="cidade" type="text" placeholder="Insira sua cidade" required>
 									</div>
 									<div>
 										<b>Estado</b>
-										<input class="estado" type="text" required>
+										<input class="estado" id="estado" name="estado" type="text" required>
 									</div>
 								</div>
 								<div class="criar_telefone">
 									<div>
-										<b>Tel. Pessoal</b>
-										<input class="input_telefone" type="text" required>
+										<b>Tel. Principal</b>
+										<input class="input_telefone" id="telefone1" name="telefone1" type="text" required>
 									</div>
 									<div>
-										<b>Tel. Residencial</b>
-										<input class="input_telefone" type="text" required>
+										<b>Tel. Secundario</b>
+										<input class="input_telefone" id="telefone2" name="telefone2" type="text">
 									</div>
 								</div>
 							</div>
 						</div>
 						<div>
 							<b>Informe o seu cpf</b>
-							<input class="emailsenha" type="text" placeholder="Insira o seu CPF" required>
+							<input class="emailsenha" id="cpf" name="cpf" type="text" placeholder="Insira o seu CPF" required>
 						</div>
 					</div>
 					<div class="criar_conta">

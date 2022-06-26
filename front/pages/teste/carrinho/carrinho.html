@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho_style.css">
+    <script src="carrinho_script.js"></script>
+	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+	<h1 class="titulo">Meu Carrinho</h1>
+
+	<div class="divisao">
+		<div class="lista_carrinho">
+			<div class="quadro_carrinho">
+				<img src="fff.png" class="img" alt="imagem do produto">
+				<div class="quadro_produto">
+					<div class="info_produto">
+						<h1 class="nome">Produto</h1>
+						<h4 class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sapiente laborum autem accusantium. Illo, consectetur mollitia. Enim qui, at, voluptas aliquam excepturi neque obcaecati repellendus quia molestias ducimus porro! Accusantium!</h4>	
+					</div>			
+					<div class="quantidade">
+						<div class="disponiveis">
+							<div x-data="{count: 0}">
+								<button x-text="count" @click="count++"></button>
+							</div>
+							<p>5 disponiveis</p>
+						</div>
+						<h2> 2.100,00 </h2>
+					</div>
+				</div>
+			</div>
+			<div class="quadro_carrinho">
+				<img src="fff.png" class="img" alt="imagem do produto">
+				<div class="quadro_produto">
+					<div class="info_produto">
+						<h1 class="nome">Produto</h1>
+						<h4 class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sapiente laborum autem accusantium. Illo, consectetur mollitia. Enim qui, at, voluptas aliquam excepturi neque obcaecati repellendus quia molestias ducimus porro! Accusantium!</h4>	
+					</div>			
+					<div class="quantidade">
+						<div class="disponiveis">
+							<div x-data="{count: 0}">
+								<button x-text="count" @click="count++"></button>
+							</div>
+							<p>5 disponiveis</p>
+						</div>
+						<h2> 2.100,00 </h2>
+					</div>
+				</div>
+			</div>
+			<div class="quadro_carrinho">
+				<img src="fff.png" class="img" alt="imagem do produto">
+				<div class="quadro_produto">
+					<div class="info_produto">
+						<h1 class="nome">Produto</h1>
+						<h4 class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sapiente laborum autem accusantium. Illo, consectetur mollitia. Enim qui, at, voluptas aliquam excepturi neque obcaecati repellendus quia molestias ducimus porro! Accusantium!</h4>	
+					</div>			
+					<div class="quantidade">
+						<div class="disponiveis">
+							<div x-data="{count: 0}">
+								<button x-text="count" @click="count++"></button>
+							</div>
+							<p>5 disponiveis</p>
+						</div>
+						<h2> 2.100,00 </h2>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<div class="resumo_pedido">
+			<h1 class="titulo_resumo">Resumo do pedido</h1>
+			<div class=subtotal>
+				<h3>Subtotal (3 produtos)</h3>
+				<h3>R$ 2.100,00 </h3>			
+			</div>
+			<div class="frete">
+				<h3>frete</h3>
+				<h3>R$ 100,00 </h3>	
+			</div>
+			<div class="total">
+				<h3><strong>total (3 produtos)</strong></h3>
+				<h3>R$ 2.100,00 </h3>
+			</div>
+			<button class="continuar">Continuar</button>
+			<p class="cupom">Possui cupom ou vale? Você poderá usá-los na etapa de pagamento.</p>
+		</div>
+	</div>
+</body>
+</html>
