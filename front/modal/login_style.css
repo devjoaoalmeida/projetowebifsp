@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-around;
     height: 300px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 input.emailsenha{
@@ -88,8 +88,8 @@ button.esqueceu_senha{
 .quadro_senha{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    height: 200px;
+    margin-top: 70px;
     justify-content:center;
     align-items: center;
 }
@@ -100,5 +100,5 @@ p.descricao_senha{
 
 .criar_conta{
     margin-top: 20px;
-    width: 1000px;
+    width: 500px;
 }

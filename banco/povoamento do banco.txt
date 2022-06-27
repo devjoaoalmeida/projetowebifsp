@@ -10,20 +10,15 @@ INSERT INTO empresa	(cnpj, razao_social, nome_fantasia)	VALUES	(70248953000105,"
 
 select * from empresa;
 
-INSERT INTO endereco (rua,numero,cidade,bairro,estado,idusuario)	VALUES	("Dr. Rua Estrada","678","Centro","São Miguel Arcanjo","SP",1);		
-INSERT INTO endereco (rua,numero,cidade,bairro,estado,idusuario)	VALUES	("Avenida Asfaltada","154A","Longe Bairro","Itapetininga","SP",2);			
-INSERT INTO endereco (rua,numero,cidade,bairro,estado,idusuario,idempresa)	VALUES	("Estrada de terra","4568","Vila Legal","Ilha do Medo","PR",3,3);			
-INSERT INTO endereco (rua,numero,cidade,bairro,estado,idempresa)	VALUES	("Avenida Asfaltada","154A","Longe Bairro","Itapetininga","SP",1);				
-INSERT INTO endereco (rua,numero,cidade,bairro,estado,idempresa)	VALUES	("Dr. Rua Estrada","678","Centro","São Miguel Arcanjo","SP",2);				
+INSERT INTO endereco (rua,numero,cidade,bairro,estado,idempresa)	VALUES	("Dr. Rua Estrada","678","Centro","São Miguel Arcanjo","SP",1);		
+INSERT INTO endereco (rua,numero,cidade,bairro,estado,idempresa)	VALUES	("Avenida Asfaltada","154A","Longe Bairro","Itapetininga","SP",2);			
+INSERT INTO endereco (rua,numero,cidade,bairro,estado,idempresa)	VALUES	("Estrada de terra","4568","Vila Legal","Ilha do Medo","PR",3);			
 
 select * from endereco;	
 
-INSERT INTO telefone	(telefone1,telefone2,idusuario)	VALUES	(15996325814,1532795486,1);				
-INSERT INTO telefone	(telefone1,telefone2,idusuario)	VALUES	(15997486523,1534285964,2);			
-INSERT INTO telefone	(telefone1,idusuario)	VALUES	(15996543556,3);
-INSERT INTO telefone	(telefone1,idempresa)	VALUES	(1532795365,1);				
-INSERT INTO telefone	(telefone1,telefone2,idempresa)	VALUES	(15996654236,1534896789,2);				
-INSERT INTO telefone	(telefone1,idempresa)	VALUES	(1532468967,3);	
+INSERT INTO telefone	(telefone1,telefone2,idempresa)	VALUES	(15996325814,1532795486,1);				
+INSERT INTO telefone	(telefone1,idempresa)	VALUES	(15997486523,2);					
+INSERT INTO telefone	(telefone1,telefone2,idempresa)	VALUES	(15996654236,1534896789,2);		
 
 select * from telefone;		
 

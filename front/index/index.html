@@ -6,14 +6,13 @@
 	<script src="index.js" type="module"></script>
 	<script src="/front/js/funcao_perfil.js"></script>
 	<script src="/front/js/slider.js"></script>
-	<script src="../api/post.js"></script>
+	<script src="/front/api/post.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<title>index</title>
 </head>
-
 <body>
 	<header> <!-- BARRA DE PESQUISA E BOTOES DA CONTA E PEDIDOS-->	
 		<div class="quadro_topheader"> <!-- BARRA DE ATALHOS --> 
@@ -56,17 +55,17 @@
 					</div>
 				</form>
 				<div class="cadastrese">
-					<button onclick="document.getElementById('modalmaior_cadlogin').style.display='flex'">Cadastre-se</button>
+					<button onclick="document.getElementById('modalmenor_cadlogin').style.display='flex'">Cadastre-se</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div id="cadlogin">
-		<div class="modalmaior_cadlogin" id="modalmaior_cadlogin">
-			<div class="conteudo_modalmaior">
-				<p class="fechar_maior" onclick="document.getElementById('modalmaior_cadlogin').style.display='none', document.getElementById('modalmenor_login').style.display='none'">x</p>
-				<p class="voltar" onclick="document.getElementById('modalmaior_cadlogin').style.display='none'">Voltar</p>
+		<div class="modalmenor_cadlogin" id="modalmenor_cadlogin">
+			<div class="conteudo_modalmenor">
+				<p class="fechar" onclick="document.getElementById('modalmenor_cadlogin').style.display='none', document.getElementById('modalmenor_login').style.display='none'">x</p>
+				<p class="voltar" onclick="document.getElementById('modalmenor_cadlogin').style.display='none'">Voltar</p>
 				<form onsubmit="cadastraCliente()">
 					<div class="quadro_cadlogincliente">
 						<div class="info_usuario">
@@ -78,51 +77,13 @@
 								<b>Crie uma senha</b>
 								<input class="emailsenha" type="password" placeholder="Crie uma senha" required>
 								<input class="emailsenha" id="senha" name="senha" type="password" placeholder="Insira sua senha novamente" required>
+								<b>Informe o seu cpf</b>
+								<input class="emailsenha" id="cpf" name="cpf" type="text" placeholder="Insira o seu CPF" required>
 							</div>
-							<div class="criar_endereco">
-								<div class="ruanumero">
-									<div>
-										<b>Rua</b>
-										<input class="rua" id="rua" name="rua" type="text" placeholder="Insira sua rua" required>		
-									</div>
-									<div>
-										<b>Número</b>
-										<input class="num" id="numero" name="numero" type="text" required>
-									</div>
-								</div>
-								<div class="bairrocidadeestado">
-									<div>
-										<b>Bairro</b>
-										<input class="bairro" id="bairro" name="bairro" type="text" placeholder="Insira seu bairro" required>
-									</div>
-									<div>
-										<b>Cidade</b>
-										<input class="cidade" id="cidade" name="cidade" type="text" placeholder="Insira sua cidade" required>
-									</div>
-									<div>
-										<b>Estado</b>
-										<input class="estado" id="estado" name="estado" type="text" required>
-									</div>
-								</div>
-								<div class="criar_telefone">
-									<div>
-										<b>Tel. Principal</b>
-										<input class="input_telefone" id="telefone1" name="telefone1" type="text" required>
-									</div>
-									<div>
-										<b>Tel. Secundario</b>
-										<input class="input_telefone" id="telefone2" name="telefone2" type="text">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div>
-							<b>Informe o seu cpf</b>
-							<input class="emailsenha" id="cpf" name="cpf" type="text" placeholder="Insira o seu CPF" required>
 						</div>
 					</div>
 					<div class="criar_conta">
-						<button type="submit">CRIAR CONTA</button>
+						<button type="submit" >CRIAR CONTA</button>
 					</div>
 				</form>
 			</div>

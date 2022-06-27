@@ -44,15 +44,15 @@ export default () => {
                         <button onclick="document.getElementById('modalmenor_orcamento').style.display='flex'"> pedir orçamento </button>
                     </div>
                 </div>
-                <div class="servicos">
+                <div class="servicos" id="servicos">
                     <p class="nome_servico">Nome do serviço</p>
-                    <div class="info_servicos">
-                        <div class="opcoes_servicos">
+                    <div class="info_servicos" id="info_servicos">
+                        <div class="opcoes_servicos" id="opcoes_servicos">
                             <p>Tipo: Mecanica</p>
                             <p>Custo Minimo: R$ 100,00</p>
                             <p>Prazo Minimo: 2 dias</p>
                         </div> 
-                        <div>
+                        <div id="descricao">
                             <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam accusantium debitis a quos temporibus ut pariatur quas eos cumque est harum</p>
                         </div>  
                         <button onclick="document.getElementById('modalmenor_orcamento').style.display='flex'"> pedir orçamento </button>

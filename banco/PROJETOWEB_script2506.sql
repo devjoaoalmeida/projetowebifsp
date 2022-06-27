@@ -30,12 +30,8 @@ CREATE TABLE endereco (
   cidade VARCHAR(200) NOT NULL,
   bairro VARCHAR(100) NOT NULL,
   estado VARCHAR(2) NOT NULL,
-  idusuario INT NULL,
-  idempresa INT NULL,
+  idempresa INT NOT NULL,
   PRIMARY KEY (idendereco),
-  CONSTRAINT fk_endereco_usuario FOREIGN KEY (idusuario) REFERENCES usuario (idusuario)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
   CONSTRAINT fk_endereco_empresa FOREIGN KEY (idempresa) REFERENCES empresa (idempresa)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -49,12 +45,8 @@ CREATE TABLE telefone (
   idtelefone INT NOT NULL AUTO_INCREMENT,
   telefone1 BIGINT NOT NULL,
   telefone2 BIGINT NULL,
-  idusuario INT NULL,
-  idempresa INT NULL,
+  idempresa INT NOT NULL,
   PRIMARY KEY (idtelefone),
-  CONSTRAINT fk_telefone_usuario FOREIGN KEY (idusuario) REFERENCES usuario (idusuario)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
   CONSTRAINT fk_telefone_empresa FOREIGN KEY (idempresa) REFERENCES empresa (idempresa)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
