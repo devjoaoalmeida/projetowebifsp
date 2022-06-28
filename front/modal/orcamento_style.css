@@ -1,0 +1,43 @@
+.quadro_orcamento{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 500px;
+	height: 250px;
+}
+
+.nomeservico_orcamento{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: x-large;
+}
+
+.info_orcamento{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 400px;
+}
+
+.mensagem{
+	display: flex;
+	flex-direction: column;
+	display: flex;
+	text-align: center;
+	width: 400px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.botoes_orcamento{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	justify-content: space-around;
+	width: 500px;
+	height: 80px;
+    background-color: var(--header);
+    border-radius: 0px 0px 10px 10px;
+}

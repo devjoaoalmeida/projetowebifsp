@@ -1,0 +1,39 @@
+.quadro_sobre{
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    margin: auto;
+}
+
+h4.desenvolvedores{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.desenvolvedores{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: auto;
+}
+
+p.joao, p.walace{
+    display: flex;
+    margin: 5px;
+    width: auto;
+}
+
+.linguagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: auto;
+}
+
+p.linguagens{
+    display: flex;
+    width: auto;
+    font-size: x-large;
+}

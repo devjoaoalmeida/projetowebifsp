@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="index.js" type="module"></script>
+	<script src="/front/js/funcao_perfil.js"></script>
+	<script src="/front/js/slider.js"></script>
+	<script src="/front/api/post.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<title>index</title>
+</head>
+<body>
+	<header> <!-- BARRA DE PESQUISA E BOTOES DA CONTA E PEDIDOS-->	
+		<div class="quadro_topheader"> <!-- BARRA DE ATALHOS --> 
+			<a href="#sobre" class="quadro_topheader"> Sobre </a>
+		</div>
+
+		<div class="quadro_pesquisa">
+			<div class="pesquisa">
+				<a href="#lista_servico">Serviços</a>
+				<input type="search" placeholder="Qual serviço você procura?" class="pesquisa">
+			</div>
+		</div>	
+
+		<div class="logo">
+			<a class="logo" href="#home">ServTech</a>
+		</div>
+
+		<div class="login">
+			<button onclick="document.getElementById('modalmenor_login').style.display='flex'">Login</button>
+			<a href="#perfil">Meu Perfil</a>
+		</div>
+	</header>
+
+	<div id="login">
+		<div class="modalmenor_login" id="modalmenor_login">
+			<div class="conteudo_modalmenor">
+				<p class="fechar" onclick="document.getElementById('modalmenor_login').style.display='none'">x</p>
+				<form>
+					<div class="quadro_login">
+						<b>E-mail</b>
+						<input class="emailsenha" type="text" placeholder="Insira o seu e-mail" required>
+						<b>Senha</b>
+						<input class="emailsenha" type="password" placeholder="Coloque sua senha" required>	
+						<div class="esqueceu_senha">
+							<button class="esqueceu_senha" onclick="document.getElementById('modalmenor_senha').style.display='flex'">Esqueceu a senha?</button>
+						</div>
+						<div>
+							<button class="entrar" type="submit">Entrar</button>
+						</div>
+					</div>
+				</form>
+				<div class="cadastrese">
+					<button onclick="document.getElementById('modalmenor_cadlogin').style.display='flex'">Cadastre-se</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="cadlogin">
+		<div class="modalmenor_cadlogin" id="modalmenor_cadlogin">
+			<div class="conteudo_modalmenor">
+				<p class="fechar" onclick="document.getElementById('modalmenor_cadlogin').style.display='none', document.getElementById('modalmenor_login').style.display='none'">x</p>
+				<p class="voltar" onclick="document.getElementById('modalmenor_cadlogin').style.display='none'">Voltar</p>
+				<form onsubmit="cadastraCliente()">
+					<div class="quadro_cadlogincliente">
+						<div class="info_usuario">
+							<div class="criar_usuario">
+								<b>Informe seu nome</b>
+								<input class="emailsenha" id="nome" name="nome" type="text" placeholder="Insira o seu nome" required>
+								<b>Informe seu e-mail</b>
+								<input class="emailsenha" id="email" name="email" type="email" placeholder="Insira o seu e-mail" required>
+								<b>Crie uma senha</b>
+								<input class="emailsenha" type="password" placeholder="Crie uma senha" required>
+								<input class="emailsenha" id="senha" name="senha" type="password" placeholder="Insira sua senha novamente" required>
+								<b>Informe o seu cpf</b>
+								<input class="emailsenha" id="cpf" name="cpf" type="text" placeholder="Insira o seu CPF" required>
+							</div>
+						</div>
+					</div>
+					<div class="criar_conta">
+						<button type="submit" >CRIAR CONTA</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="senha">
+		<div class="modalmenor_senha" id="modalmenor_senha">
+			<div class="conteudo_modalmenor">
+				<p class="fechar" onclick="document.getElementById('modalmenor_senha').style.display='none', document.getElementById('modalmenor_login').style.display='none'">x</p>
+				<p class="voltar" onclick="document.getElementById('modalmenor_senha').style.display='none'">Voltar</p>
+				<form>
+					<div class="quadro_senha">
+						<b>Informe seu e-mail</b>
+						<input class="emailsenha" type="text" placeholder="Insira o seu e-mail" required>
+					</div>
+					<p class="descricao_senha">Ao clicar em "enviar e-mail", uma nova senha será enviada ao seu e-mail e ela será sua senha temporaria ate a sua redefinição.</p>
+					<div class="enviar_email">
+						<button type="submit">Enviar e-mail</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div id="orcamento">
+		<div class="modalmenor_orcamento" id="modalmenor_orcamento">
+			<div class="conteudo_modalmenor">
+				<div class="quadro_orcamento">
+					<p class="nomeservico_orcamento">Oficina Consertatudo: </p>	
+					<p class="nomeservico_orcamento">Conserto de Micro-ondas</p>
+					<div class="info_orcamento">
+						<p>Categoria: Eletronica</p>
+						<p>Custo pré definido: R$100,00</p>
+						<p>Prazo: 5 dias</p>
+					</div>
+				</div>
+				<form>
+					<input type="text" class="mensagem" placeholder="Explique o que aconteceu com o micro-ondas" required>
+					<div class="botoes_orcamento">
+						<button type="submit" onclick="orcamento_feito()">confirmar</button>
+						<button type="button" onclick="document.getElementById('modalmenor_orcamento').style.display='none'">Cancelar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<main id="root"> <!-- ONDE TEM OS SERVIÇOS MAIS PROCURADOS DO SITE e as PROPAGANDAS--> 
+	</main>
+
+	<footer> <!-- RODAPE AI EIM -->
+		<div class="rodape">
+			<p class="rodape">DESENVOLVIDO POR WALACE E JOAO PARA O PROJETO DO PRIMEIRO SEMESTRE DO CURSO DE ESPECIALIZAÇÃO EM DESENVOLVIMENTO WEB NO INSTITUTO FEDERAL DE SÃO PAULO EM ITAPETININGA.</p>
+		</div>
+	</footer>
+</body>
+</html>

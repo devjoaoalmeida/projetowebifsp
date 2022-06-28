@@ -1,0 +1,95 @@
+/*modal maior*/
+
+.modalmenor_orcamento{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modalmaior_endereco{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modalmenor_cadlogin{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.conteudo_modalmaior{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 1000px;
+	height: 600px;
+    background-color: var(--fundo);
+    margin-top: 210px;
+	margin: auto;
+    border-radius: 10px;
+}
+
+/*modal menor*/
+
+.modalmenor_login{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modalmenor_senha{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.modalmenor_telefone{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modalmenor_cadlogin{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.conteudo_modalmenor{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 500px;
+	height: 500px;
+    background-color: var(--fundo);
+	margin: auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,116 @@
+/*.quadro_lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1300px;
+    height: 843px;
+}
+
+.filtro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 300px;
+    border: groove;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.tipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin: 10px;
+}
+
+.filtros{
+    width: 270px;
+}
+
+.custo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin: 10px;
+}
+
+.prazo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin: 10px;
+}
+
+.opcoes_prazo{
+    display: flex;
+    height: 100px;
+    align-items: center;
+}*/
+
+.lista_servico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1300px;
+    height: 843px;
+}
+
+p.titulo_listaservico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    height: 50px;
+}
+
+.quadro_servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1300px;
+    height: 800px;
+}
+
+.servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 120px;
+    margin: 10px;
+    padding: 20px;
+    border: groove;
+    border-radius: 25px;
+}
+
+p.nome_servico{
+    border: thin;
+    border-bottom-style: solid;
+    width: 1000px;
+    padding-bottom: 10px;
+}
+
+.opcoes_servicos{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.info_servicos{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.descricao{
+    text-align: justify;
+    width: 450px;
+}

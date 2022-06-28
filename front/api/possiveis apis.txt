@@ -1,0 +1,55 @@
+entrar no perfil - verificar no banco (select)
+
+cadastrar usuário cliente - insert
+
+esqueceu a senha - select (pra enviar uma senha no e-mail)
+
+
+
+buscar servicos (listar de serviço) - select (pelo mongo)
+
+pedir orçamento - insert (somente de descrição)
+
+
+
+buscar ordem de servicos do cliente - select
+
+orçamento do cliente - select
+
+informações pessoais - select
+
+alterar endereço e telefone - update
+
+trocar senha - update
+
+
+
+criar empresa - insert 
+
+cadastrar servico - insert
+
+servicos cadastrados - select
+
+buscar ordem de servicos do empresa - select
+
+orçamento do cliente - empresa
+
+informações pessoais - select
+
+alterar endereço e telefone - update
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

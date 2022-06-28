@@ -1,0 +1,29 @@
+INSERT INTO usuario	(nome, email, senha, cpf) VALUES ("João Pedro de Almeida","teste@teste.com","Senh4123",42684691500);				
+INSERT INTO usuario	(nome, email, senha, cpf)	VALUES	("Walace Victor Galdino de Oliveira Soares","teste2@teste.com","S3nha123",89687452310);
+INSERT INTO usuario	(nome, email, senha, cpf)	VALUES	("Fulano da Silva","teste3@teste.com","senhA456",64964785211);		
+
+select * from usuario;	
+
+INSERT INTO empresa	(cnpj, razao_social, nome_fantasia)	VALUES	(50269849000156,"Cozinhas LTDA","Conserto para cozinha");			
+INSERT INTO empresa	(cnpj, razao_social, nome_fantasia)	VALUES	(60589548000160,"Eletrodomesticos LTDA","Conserto de eletrodomestico");			
+INSERT INTO empresa	(cnpj, razao_social, nome_fantasia)	VALUES	(70248953000105,"Moveis LTDA","Conserto de moveis");
+
+select * from empresa;
+
+INSERT INTO endereco (rua,numero,cidade,bairro,estado,idempresa)	VALUES	("Dr. Rua Estrada","678","Centro","São Miguel Arcanjo","SP",1);		
+INSERT INTO endereco (rua,numero,cidade,bairro,estado,idempresa)	VALUES	("Avenida Asfaltada","154A","Longe Bairro","Itapetininga","SP",2);			
+INSERT INTO endereco (rua,numero,cidade,bairro,estado,idempresa)	VALUES	("Estrada de terra","4568","Vila Legal","Ilha do Medo","PR",3);			
+
+select * from endereco;	
+
+INSERT INTO telefone	(telefone1,telefone2,idempresa)	VALUES	(15996325814,1532795486,1);				
+INSERT INTO telefone	(telefone1,idempresa)	VALUES	(15997486523,2);					
+INSERT INTO telefone	(telefone1,telefone2,idempresa)	VALUES	(15996654236,1534896789,2);		
+
+select * from telefone;		
+
+INSERT INTO ordemservico	(nome,tipo,custo,prazo,descricao,idusuario,idempresa)	VALUES	("Conserto de fogão","conserto","10050","8 dias","O acendimento automativo não esta funcionando",1,1);				
+INSERT INTO ordemservico	(nome,tipo,custo,prazo,descricao,idusuario,idempresa)	VALUES	("Conserto de fogão","conserto","10050","5 dias","O forno não ta pegando direito",3,1);				
+INSERT INTO ordemservico	(nome,tipo,custo,prazo,descricao,idusuario,idempresa)	VALUES	("Conserto de mvoeis","reparo","5080","2 dias","A porta do guarda-roupa não ta fechando direito",2,3);		
+							
+select * from ordemservico;
