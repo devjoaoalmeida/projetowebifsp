@@ -71,7 +71,7 @@ input.emailsenha{
     border-radius: 0px 0px 10px 10px;
 }
 
-button.esqueceu_senha{
+a.esqueceu_senha{
     border: none;
     background-color: unset;
 }

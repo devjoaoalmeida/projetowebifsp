@@ -1,7 +1,8 @@
-import home from "../pages/spa/home/home.js";
-import lista_servicos from "../pages/spa/lista_servicos/lista_servicos.js";
-import perfil from "../pages/spa/perfil/perfil.js";
-import sobre from "../pages/spa/sobre/sobre.js";
+import home from "./pages/home.js";
+import lista_servicos from "./pages/lista_servicos.js";
+import perfil_cliente from "./pages/perfil_cliente.js";
+import perfil_empresa from "./pages/perfil_empresa.js";
+import sobre from "./pages/sobre.js";
 
 const main = document.querySelector("#root");
 
@@ -18,8 +19,11 @@ const init = () => {
             case "#sobre":
                 main.appendChild(sobre());
                 break;
-            case "#perfil":
-                main.appendChild(perfil());
+            case "#perfil_cliente":
+                main.appendChild(perfil_cliente());
+                break;
+            case "#perfil_empresa":
+                main.appendChild(perfil_empresa());
                 break;
             default:
                 main.appendChild(home());

@@ -1,12 +1,12 @@
-@import url(/front/pages/spa/home/home_style.css);
-@import url(/front/pages/spa/lista_servicos/lista_style.css);
-@import url(/front/pages/spa/perfil/perfil_style.css);
-@import url(/front/pages/spa/sobre/sobre_style.css);
+@import url(/front/css/pages/home_style.css);
+@import url(/front/css/pages/lista_style.css);
+@import url(/front/css/pages/perfil_style.css);
+@import url(/front/css/pages/sobre_style.css);
 
-@import url(/front/modal/cadlogin_style.css);
-@import url(/front/modal/login_style.css);
-@import url(/front/modal/modal_style.css);
-@import url(/front/modal/orcamento_style.css);
+@import url(/front/css/modal/cadlogin_style.css);
+@import url(/front/css/modal/login_style.css);
+@import url(/front/css/modal/modal_style.css);
+@import url(/front/css/modal/orcamento_style.css);
 
 :root {
 	--header: #8a2be2;

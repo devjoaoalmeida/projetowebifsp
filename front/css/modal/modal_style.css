@@ -4,6 +4,7 @@
 	display: none;
 	position: fixed;
 	top: 0;
+	left: 0;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
@@ -22,12 +23,13 @@
 }
 
 .modalmenor_cadlogin{
-	display: none;
+	display: flex;
 	position: fixed;
 	top: 0;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .conteudo_modalmaior{
@@ -45,7 +47,7 @@
 /*modal menor*/
 
 .modalmenor_login{
-	display: none;
+	display: flex;
 	position: fixed;
 	top: 0;
 	z-index: 1;
@@ -55,12 +57,13 @@
 }
 
 .modalmenor_senha{
-	display: none;
+	display: flex;
 	position: fixed;
 	top: 0;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .modalmenor_telefone{
@@ -75,12 +78,13 @@
 }
 
 .modalmenor_cadlogin{
-	display: none;
+	display: flex;
 	position: fixed;
 	top: 0;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .conteudo_modalmenor{

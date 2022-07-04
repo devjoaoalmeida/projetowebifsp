@@ -2,7 +2,7 @@ export default () => {
     const container = document.createElement('div');
 
     const template = `
-	<div class="quadro_sobre">	
+	<div class="quadro_sobre">
 		<h4 class="desenvolvedores">Este projeto foi feito para o primeiro semestre da especialização em desenvolvimento web no Instituto Federal de Itapetininga, sendo desenvolvido por: </h4>	
 		<div class="desenvolvedores">			
 			<div class="joao">

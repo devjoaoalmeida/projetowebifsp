@@ -114,3 +114,13 @@ p.nome_servico{
     text-align: justify;
     width: 450px;
 }
+
+a.pedir_orcamento{
+	cursor: pointer;
+	border: thin;
+	border-style: solid;
+	border-radius: 10px 2px 10px 2px;
+	padding: 8px;
+	width: 130px;
+	background-color: var(--button);
+}

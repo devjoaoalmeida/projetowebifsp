@@ -134,7 +134,7 @@ input{
 /*conteudo do perfil cliente*/
 
 .usercliente_conteudo{
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 900px;
 }
