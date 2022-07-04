@@ -9,39 +9,6 @@ function cliente(){
     }
 }
 
-function os_cliente(){
-    let os_cliente = document.getElementById('os_cliente');
-    if(document.getElementById('os_cliente')){
-        os_cliente.style.display='flex';
-        document.getElementById('orcamentos_cliente').style.display='none';
-        document.getElementById('contato_cliente').style.display='none';
-        document.getElementById('trocar_senha').style.display='none';
-        document.getElementById('criar_empresa').style.display='none';
-    }
-}
-
-function orc_cliente(){
-    let orc_cliente = document.getElementById('orcamentos_cliente');
-    if(document.getElementById('orcamentos_cliente')){
-        orc_cliente.style.display='flex';
-        document.getElementById('os_cliente').style.display='none';
-        document.getElementById('contato_cliente').style.display='none';
-        document.getElementById('trocar_senha').style.display='none';
-        document.getElementById('criar_empresa').style.display='none';
-    }
-}
-
-function contato_cliente(){
-    let contato_cliente = document.getElementById('contato_cliente');
-    if(document.getElementById('contato_cliente')){
-        contato_cliente.style.display='flex';
-        document.getElementById('orcamentos_cliente').style.display='none';
-        document.getElementById('os_cliente').style.display='none';
-        document.getElementById('trocar_senha').style.display='none';
-        document.getElementById('criar_empresa').style.display='none';
-    }
-}
-
 function trocar_senha(){
     let trocar_senha = document.getElementById('trocar_senha');
     if(document.getElementById('trocar_senha')){

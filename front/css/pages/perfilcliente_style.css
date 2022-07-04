@@ -42,16 +42,6 @@ p.user{
     border-radius: 5px 5px 5px 5px;
 }
 
-.user_empresa{
-    display: none;
-    flex-direction : column;
-    align-items: center;
-    border: thin;
-    border-style: solid;
-    margin: 5px;
-    border-radius: 5px 5px 5px 5px;
-}
-
 p.useropcoes{
     cursor: pointer;
     border: none;
@@ -61,14 +51,6 @@ p.useropcoes{
 
 .useropcoes_cliente{
     display: flex;
-    flex-direction: column;
-    border: thin;
-    border-top-style: solid;
-    width: 290px;
-}
-
-.useropcoes_empresa{
-    display: none;
     flex-direction: column;
     border: thin;
     border-top-style: solid;
@@ -201,150 +183,6 @@ p.vermais{
     justify-content: space-around;
     width: 300px;
     height: 250px;
-}
-
-/*conteudo do perfil empresa*/
-
-.userempresa_conteudo{
-    display: none;
-    flex-direction: column;
-    width: 900px;
-}
-
-.criar_empresa{
-    display: none;
-    flex-direction: column;
-    width: 900px;
-}
-
-.info_empresa{
-    width: 900px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: thin;
-    border-bottom-style: solid;
-}
-
-.cad_servico{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
-.quadro_cadservico{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-    height: 400px;
-    width: 900px;
-    margin-top: 20px;
-}
-
-.servicos_cads{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-.quadro_servicoscads{
-    display: flex;
-    width: 900px;
-    margin-top: 20px;
-}
-
-.titulo_os{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    width: 900px;
-}
-
-.os_empresa{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-.quadros_osempresa{
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-    margin-top: 20px;
-}
-
-.orcamentos_empresa{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-.os_aberto{
-    display: flex;
-    width: 900px;
-    height: 100px;
-}
-
-.os_fechado{
-    display: flex;
-    width: 900px;
-    height: 100px;
-}
-
-.quadro_orcamentosempresa{
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-    margin-top: 20px;
-}
-
-.orc_aberto{
-    display: flex;
-    width: 900px;
-    height: 100px;
-}
-
-.orc_fechado{
-    display: flex;
-    width: 900px;
-    height: 100px;
-}
-
-.titulo_orc{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    width: 900px;
-}
-
-.historico_clientes{
-    display: none;
-    margin: 20px;
-    flex-direction: column;
-    align-items: center;
-}
-
-button.historico_clientes{
-    display: flex;
-    width: 350px;
-}
-
-p.historico_clientes{
-    display: flex;
-    margin: 20px;
-    border: none;
-    width: 900px;
-}
-
-.contato_empresa{
-    display: none;
-    justify-content: space-between;
-    width: 900px;
 }
 
 /*modal alterar endereco e telefone*/

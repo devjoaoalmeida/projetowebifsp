@@ -1,6 +1,7 @@
 @import url(/front/css/pages/home_style.css);
 @import url(/front/css/pages/lista_style.css);
-@import url(/front/css/pages/perfil_style.css);
+@import url(/front/css/pages/perfilcliente_style.css);
+@import url(/front/css/pages/perfilempresa_style.css);
 @import url(/front/css/pages/sobre_style.css);
 
 @import url(/front/css/modal/cadlogin_style.css);

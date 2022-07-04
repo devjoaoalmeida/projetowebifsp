@@ -7,9 +7,9 @@ export default () => {
             <div id="user_cliente" onclick="cliente()" class="user_cliente">
                 <p class="user">Meu perfil</p>
                 <div class="useropcoes_cliente" id="useropcoes_cliente">
-                    <p class="useropcoes" onclick="os_cliente();osCliente()">Ordem de Serviço</p>
-                    <p class="useropcoes" onclick="orc_cliente();orcamentoCliente()">Orçamentos</p>
-                    <p class="useropcoes" onclick="contato_cliente()" onclick="infoPessoal()">Informações Pessoais</p>
+                    <p class="useropcoes" onclick="osCliente()">Ordem de Serviço</p>
+                    <p class="useropcoes" onclick="orcamentoCliente()">Orçamentos</p>
+                    <p class="useropcoes" onclick="infoPessoais()">Informações Pessoais</p>
                     <p class="useropcoes" onclick="trocar_senha()">Trocar senha</p>
                 </div>
             </div>
@@ -42,25 +42,25 @@ export default () => {
                     <div class="quadros_oscliente">
                         <div class="quadros">
                             <p id="num_os"></p>
-                            <p id="data_orc"></p>
+                            <p id="data_os"></p>
                         </div>
                         <div class="quadros">
                             <p id="num_os"></p>
-                            <p id="data_orc"></p>
+                            <p id="data_os"></p>
                         </div>
                     </div>
                 </div>
                 <div id="orcamentos_cliente" class="orcamentos_cliente">
                     <div class="quadro_orcamentoscliente">
                         <div class="quadros">
-                            <p>Consertatudo: Conserto de Micro-ondas</p>
-                            <p>Orçamento feito: 07/06/2022</p>
-                            <p>Pendente</p>
+                            <p id="nome_servico"></p>
+                            <p id="data_orc"></p>
+                            <p id="status_orc"></p>
                         </div>
                         <div class="quadros">
-                            <p>Consertatudo: Conserto de Micro-ondas</p>
-                            <p>Orçamento feito: 07/06/2022</p>
-                            <p>Respondido</p>
+                            <p id="nome_servico"></p>
+                            <p id="data_orc"></p>
+                            <p id="status_orc"></p>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ export default () => {
                     <div class="endereco">
                         <p>ENDEREÇO</p>
                         <div class="info_endereco">
-                            <p>Rua das Laranjeiras, nº 564 Centro, Sorocaba - SP</p>
+                            <p id="rua"></p>
                         </div>
                         <button onclick="document.getElementById('modalmaior_endereco').style.display='flex'">alterar dados</button>
                     </div>
@@ -76,8 +76,8 @@ export default () => {
                         <p>TELEFONE</p>
                         <div class="telefones">
                             <div class="info_telefone">
-                                <p>(15) 99632-8945 </p>
-                                <p>(15) 3279-1245 </p>
+                                <p id="telefone1"></p>
+                                <p id="telefone2"></p>
                             </div>
                         </div>
                         <button onclick="document.getElementById('modalmenor_telefone').style.display='flex'">alterar dados</button>
@@ -91,12 +91,62 @@ export default () => {
                     </div>
                     <button>Criar nova senha</button>
                 </div>
-                <criar-empresa></criar-empresa>
+            </div>
+            <div id="criar_empresa" class="criar_empresa">
+                <form>
+                    <div class="quadro_cadloginempresa">
+                        <div class="criar_infoempresa">
+                            <b>Informe seu CNPJ</b>
+                            <input class="emailsenha" type="text" placeholder="Insira o seu cnpj" required>
+                            <b>Informe a Razão Social da empresa</b>
+                            <input class="emailsenha" type="text" placeholder="Insira o seu razão social" required>
+                            <b>Informe o Nome Fantasia da empresa</b>
+                            <input class="emailsenha" type="text" placeholder="Insira o seu nome fantasia" required>
+                        </div>
+                        <div class="criar_endereco">
+                            <div class="ruanumero">
+                                <div>
+                                    <b>Rua</b>
+                                    <input class="rua" type="text" placeholder="Insira sua rua" required>		
+                                </div>
+                                <div>
+                                    <b>Número</b>
+                                    <input class="num" type="text" required>
+                                </div>
+                            </div>
+                            <div class="bairrocidadeestado">
+                                <div>
+                                    <b>Bairro</b>
+                                    <input class="bairro" type="text" placeholder="Insira seu bairro" required>
+                                </div>
+                                <div>
+                                    <b>Cidade</b>
+                                    <input class="cidade" type="text" placeholder="Insira sua cidade" required>
+                                </div>
+                                <div>
+                                    <b>Estado</b>
+                                    <input class="estado" type="text" required>
+                                </div>
+                            </div>
+                            <div class="criar_telefone">
+                                <div>
+                                    <b>Tel. Pessoal</b>
+                                    <input class="input_telefone" type="text" required>
+                                </div>
+                                <div>
+                                    <b>Tel. Residencial</b>
+                                    <input class="input_telefone" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit">CRIAR CONTA</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <alterar-endereco></alterar-endereco>
-    <alterar-telefone></alterar-telefone>
 
     <div id="alterar_endereco">
 		<div class="modalmaior_endereco" id="modalmaior_endereco">
