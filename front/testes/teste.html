@@ -4,11 +4,25 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
+    <script defer src="../js/api/post.js"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='/front/css/main.css'>
 </head>
 <body>
-    <login></login>
-    <script src="/front/js/teste_webcomponent.js"></script>
+    
+    <div id="login">
+        <div class="modalmenor_login" id="modalmenor_login">
+            <div class="conteudo_modalmenor">
+                <p class="fechar" onclick="document.getElementById('modalmenor_login').style.display='none'">x</p>
+                <form class="quadro_login">
+                    <input type="email" class="emailsenha" placeholder="Insira o seu e-mail">
+                    <input type="password" class="emailsenha" placeholder="Coloque sua senha">	
+                    <button class="entrar_login" id="entrar_login">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>

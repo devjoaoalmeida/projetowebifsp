@@ -37,3 +37,64 @@ p.linguagens{
     width: auto;
     font-size: x-large;
 }
+
+@media (max-width: 1300px) {
+	.quadro_sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desenvolvedores{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        width: 1000px;
+    }
+
+    h4.desenvolvedores{
+        display: flex;
+        justify-content: center;
+        width: 800px;
+    }
+    
+    p.joao, p.walace{
+        display: flex;
+        margin: 5px;
+        width: 350px;
+    }  
+}
+
+@media (max-width: 1100px) {
+    .quadro_sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+    }
+    .desenvolvedores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+
+    h4.desenvolvedores{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        text-align: center;
+    }
+
+    .joao,.walace{
+        margin: 10px;
+    }
+
+    .linguagens{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+}

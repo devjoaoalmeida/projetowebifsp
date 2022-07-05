@@ -9,14 +9,14 @@ export default () => {
                     <form>
                         <div class="quadro_login">
                             <b>E-mail</b>
-                            <input class="emailsenha" type="text" placeholder="Insira o seu e-mail" required>
+                            <input class="emailsenha" id="email" type="email" placeholder="Insira o seu e-mail" required>
                             <b>Senha</b>
-                            <input class="emailsenha" type="password" placeholder="Coloque sua senha" required>	
+                            <input class="emailsenha" id="senha" type="password" placeholder="Coloque sua senha" required>	
                             <div class="esqueceu_senha">
                                 <a class="esqueceu_senha" href="#senha">Esqueceu a senha?</a>
                             </div>
                             <div>
-                                <button class="entrar" type="submit">Entrar</button>
+                                <button class="entrar" id="entrar_login">Entrar</button>
                             </div>
                         </div>
                     </form>

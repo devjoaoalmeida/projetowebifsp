@@ -66,6 +66,7 @@ p.titulo_listaservico{
     align-items: center;
     width: 1300px;
     height: 50px;
+    margin-top: 20px;
 }
 
 .quadro_servicos{
@@ -81,7 +82,7 @@ p.titulo_listaservico{
     flex-direction: column;
     align-items: center;
     width: 1000px;
-    height: 120px;
+    height: 170px;
     margin: 10px;
     padding: 20px;
     border: groove;
@@ -124,3 +125,204 @@ a.pedir_orcamento{
 	width: 130px;
 	background-color: var(--button);
 }
+
+@media (max-width: 1200px) {
+	.lista_servico{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1000px;
+        height: 843px;
+    }
+    
+    p.titulo_listaservico{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        margin-top: 30px;
+    }
+    
+    .quadro_servicos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1000px;
+        height: 800px;
+    }
+    
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 800px;
+        height: 170px;
+        margin: 10px;
+        padding: 20px;
+        border: groove;
+        border-radius: 25px;
+    }
+    
+    p.nome_servico{
+        border: thin;
+        border-bottom-style: solid;
+        width: 800px;
+        padding-bottom: 10px;
+    }
+    
+    .opcoes_servicos{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    
+    .info_servicos{
+        display: flex;
+        text-align: start;
+        justify-content: space-between;
+        width: 800px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .descricao{
+        text-align: justify;
+        width: 400px;
+    }
+    
+    a.pedir_orcamento{
+        cursor: pointer;
+        border: thin;
+        border-style: solid;
+        border-radius: 10px 2px 10px 2px;
+        padding: 8px;
+        width: 130px;
+        background-color: var(--button);
+    }
+}
+
+@media (max-width: 900px) {
+	.lista_servico{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+        height: 843px;
+    }
+    
+    p.titulo_listaservico{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        margin-top: 30px;
+    }
+    
+    .quadro_servicos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+        height: 800px;
+    }
+    
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+        height: 170px;
+        margin: 10px;
+        padding: 20px;
+        border: groove;
+        border-radius: 25px;
+    }
+    
+    p.nome_servico{
+        border: thin;
+        border-bottom-style: solid;
+        width: 600px;
+        padding-bottom: 10px;
+    }
+    
+    .opcoes_servicos{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    
+    .info_servicos{
+        display: flex;
+        text-align: start;
+        justify-content: space-between;
+        width: 600px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+	.lista_servico{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+        height: 843px;
+    }
+    
+    p.titulo_listaservico{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        margin-top: 30px;
+    }
+    
+    .quadro_servicos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+        height: 800px;
+    }
+    
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+        height: 170px;
+        margin: 10px;
+        padding: 20px;
+        border: groove;
+        border-radius: 25px;
+    }
+    
+    p.nome_servico{
+        border: thin;
+        border-bottom-style: solid;
+        width: 450px;
+        padding-bottom: 10px;
+    }
+    
+    .opcoes_servicos{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    
+    .info_servicos{
+        display: flex;
+        text-align: start;
+        justify-content: space-between;
+        width: 450px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+

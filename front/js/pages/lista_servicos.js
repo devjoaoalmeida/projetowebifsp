@@ -38,8 +38,8 @@ export default () => {
                         <div>
                             <p class="descricao" id="descricao"></p>
                         </div>  
-                        <button onclick="document.getElementById('modalmenor_orcamento').style.display='flex'"> pedir orçamento </button>
                     </div>
+                    <button onclick="document.getElementById('modalmenor_orcamento').style.display='flex'"> pedir orçamento </button>
                 </div>
             </div>
         </div>
