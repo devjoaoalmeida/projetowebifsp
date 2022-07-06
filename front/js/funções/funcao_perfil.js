@@ -3,7 +3,6 @@ function cliente(){
     if (cliente) {
         cliente.style.display="flex";
         document.getElementById('userempresa_conteudo').style.display='none';
-
         document.getElementById('useropcoes_cliente').style.display='flex';
         document.getElementById('useropcoes_empresa').style.display='none';
     }
@@ -31,13 +30,11 @@ function criar_empresa(){
     }
 }
 
-
 function empresa(){
     let empresa = document.getElementById('userempresa_conteudo');
     if (empresa) {
         empresa.style.display="flex";
         document.getElementById('usercliente_conteudo').style.display='none';
-
         document.getElementById('useropcoes_cliente').style.display='none';
         document.getElementById('useropcoes_empresa').style.display='flex';
     }
@@ -55,42 +52,6 @@ function cad_servico(){
     }
 }
 
-function servicos_cads(){
-    let servicos_cads = document.getElementById('servicos_cads');
-    if(document.getElementById('servicos_cads')){
-        servicos_cads.style.display='flex';
-        document.getElementById('cad_servico').style.display='none';
-        document.getElementById('orcamentos_empresa').style.display='none';
-        document.getElementById('os_empresa').style.display='none';
-        document.getElementById('historico_clientes').style.display='none';
-        document.getElementById('contato_empresa').style.display='none';
-    }
-}
-
-function orc_empresa(){
-    let orc_empresa = document.getElementById('orcamentos_empresa');
-    if(document.getElementById('orcamentos_empresa')){
-        orc_empresa.style.display='flex';
-        document.getElementById('servicos_cads').style.display='none';
-        document.getElementById('cad_servico').style.display='none';
-        document.getElementById('os_empresa').style.display='none';
-        document.getElementById('historico_clientes').style.display='none';
-        document.getElementById('contato_empresa').style.display='none';
-    }
-}
-
-function os_empresa(){
-    let os_empresa = document.getElementById('os_empresa');
-    if(document.getElementById('os_empresa')){
-        os_empresa.style.display='flex';
-        document.getElementById('servicos_cads').style.display='none';
-        document.getElementById('cad_servico').style.display='none';
-        document.getElementById('orcamentos_empresa').style.display='none';
-        document.getElementById('historico_clientes').style.display='none';
-        document.getElementById('contato_empresa').style.display='none';
-    }
-}
-
 function historico_clientes(){
     let historico_clientes = document.getElementById('historico_clientes');
     if(document.getElementById('historico_clientes')){
@@ -100,17 +61,5 @@ function historico_clientes(){
         document.getElementById('orcamentos_empresa').style.display='none';
         document.getElementById('os_empresa').style.display='none';
         document.getElementById('contato_empresa').style.display='none';
-    }
-}
-
-function contato_empresa(){
-    let contato_empresa = document.getElementById('contato_empresa');
-    if(document.getElementById('contato_empresa')){
-        contato_empresa.style.display='flex';
-        document.getElementById('servicos_cads').style.display='none';
-        document.getElementById('cad_servico').style.display='none';
-        document.getElementById('orcamentos_empresa').style.display='none';
-        document.getElementById('os_empresa').style.display='none';
-        document.getElementById('historico_clientes').style.display='none';
     }
 }

@@ -50,7 +50,7 @@ async function perfilCliente() {
 	const episode = await result.json();
 	console.log(episode.name);
 
-    const nome = `<p> Nome: ${episode.name} </p>`;
+    const nome = `<p > Nome: ${episode.name} </p>`;
     const email = `<p> E-mail: ${episode.name} </p`;
     const cpf = `<p> CPF: ${episode.name} </p>`;
 
@@ -110,7 +110,7 @@ async function orcamentoCliente() {
         }
         return new Promise(promisseCallback);
     }
-    doGet('hhttps://rickandmortyapi.com/api/episode/5').then(console.log).catch(console.error);
+    doGet('https://rickandmortyapi.com/api/episode/5').then(console.log).catch(console.error);
 
     const result = await fetch (`https://rickandmortyapi.com/api/episode/5`);
 	const episode = await result.json();
@@ -178,11 +178,7 @@ async function infoPessoais(){
 }
 
 
-
-
-
-
-function perfilEmpresa() {
+async function perfilEmpresa() {
     const doGet = (url) => {
         const promisseCallback = (resolve, reject) => {
             fetch(url)
@@ -195,42 +191,39 @@ function perfilEmpresa() {
         }
         return new Promise(promisseCallback);
     }
-    doGet('http://localhost:5000/empresa').then(console.log).catch(console.error);
+    doGet(`https://rickandmortyapi.com/api/episode/7`).then(console.log).catch(console.error);
 
-    const cnpj = `<p> CNPJ: ${empresa.cnpj} </p>`;
-    const razao_social = `<p> Razão Social: ${empresa.razao_social} </p`;
-    const nome_fantasia = `<p> Nome Fantasia: ${empresa.nome_fantasoa} </p>`;
+	const result = await fetch (`https://rickandmortyapi.com/api/episode/7`);
+	const episode = await result.json();
+	console.log(episode.name);
 
-    document.getElementById("info_empresa").insertAdjacentHTML('afterbegin',cnpj);
-    document.getElementById("info_empresa").insertAdjacentHTML('afterbegin',razao_social);
-    document.getElementById("info_empresa").insertAdjacentHTML('afterbegin',nome_fantasia);
+    const cnpj = `<p > CNPJ: ${episode.name} </p>`;
+    const razao_social= `<p> Razão Social: ${episode.name} </p`;
+    const nome_fantasia = `<p> Nome fantasia: ${episode.name} </p>`;
+
+    document.getElementById('info_empresacnpj').insertAdjacentHTML('afterbegin',cnpj);
+    document.getElementById('info_empresarazao').insertAdjacentHTML('afterbegin',razao_social);
+    document.getElementById('info_empresafantasia').insertAdjacentHTML('afterbegin',nome_fantasia);
+
 }
 
-function osEmpresa() {
-    const doGet = (url) => {
-        const promisseCallback = (resolve, reject) => {
-            fetch(url)
-            .then((response) => {
-                if (!response.ok) throw new Error('Erro ao executar requisição, status ' + response.status);
-                return response.json();
-            })
-            .then(resolve)
-            .catch(reject);
+async function servCadastrados(){
+
+    function servicos_cads(){
+        let servicos_cads = document.getElementById('servicos_cads');
+        if(document.getElementById('servicos_cads')){
+            servicos_cads.style.display='flex';
+            document.getElementById('cad_servico').style.display='none';
+            document.getElementById('orcamentos_empresa').style.display='none';
+            document.getElementById('os_empresa').style.display='none';
+            document.getElementById('historico_clientes').style.display='none';
+            document.getElementById('contato_empresa').style.display='none';
         }
-        return new Promise(promisseCallback);
     }
-    doGet('http://localhost:5000/empresa').then(console.log).catch(console.error);
-
-    const cnpj = `<p> CNPJ: ${empresa.cnpj} </p>`;
-    const razao_social = `<p> Razão Social: ${empresa.razao_social} </p`;
-    const nome_fantasia = `<p> Nome Fantasia: ${empresa.nome_fantasoa} </p>`;
-
-    document.getElementById("info_empresa").insertAdjacentHTML('afterbegin',cnpj);
-    document.getElementById("info_empresa").insertAdjacentHTML('afterbegin',razao_social);
-    document.getElementById("info_empresa").insertAdjacentHTML('afterbegin',nome_fantasia);
+    servicos_cads();
 }
 
-function orcamentoEmpresa() {
+async function osEmpresa() {
     const doGet = (url) => {
         const promisseCallback = (resolve, reject) => {
             fetch(url)
@@ -243,14 +236,112 @@ function orcamentoEmpresa() {
         }
         return new Promise(promisseCallback);
     }
-    doGet('http://localhost:5000/empresa').then(console.log).catch(console.error);
+    doGet(`https://rickandmortyapi.com/api/episode/5`).then(console.log).catch(console.error);
 
-    const cnpj = `<p> CNPJ: ${empresa.cnpj} </p>`;
-    const razao_social = `<p> Razão Social: ${empresa.razao_social} </p`;
-    const nome_fantasia = `<p> Nome Fantasia: ${empresa.nome_fantasoa} </p>`;
+    const result = await fetch (`https://rickandmortyapi.com/api/episode/5`);
+	const episode = await result.json();
+	console.log(episode.name);
 
-    document.getElementById("info_empresa").insertAdjacentHTML('afterbegin',cnpj);
-    document.getElementById("info_empresa").insertAdjacentHTML('afterbegin',razao_social);
-    document.getElementById("info_empresa").insertAdjacentHTML('afterbegin',nome_fantasia);
+    const num_os = `<p> Número da OS: ${episode.name}</p>`
+    const data_os = `<p> Data ordem serviço: ${episode.name}</p`;
+
+    document.getElementById('num_os').insertAdjacentHTML('afterbegin',num_os);
+    document.getElementById('data_os').insertAdjacentHTML('afterbegin',data_os);
+
+    function os_empresa(){
+        let os_empresa = document.getElementById('os_empresa');
+        if(document.getElementById('os_empresa')){
+            os_empresa.style.display='flex';
+            document.getElementById('servicos_cads').style.display='none';
+            document.getElementById('cad_servico').style.display='none';
+            document.getElementById('orcamentos_empresa').style.display='none';
+            document.getElementById('historico_clientes').style.display='none';
+            document.getElementById('contato_empresa').style.display='none';
+        }
+    }
+    os_empresa();
+}
+
+async function orcamentoEmpresa() {
+    const doGet = (url) => {
+        const promisseCallback = (resolve, reject) => {
+            fetch(url)
+            .then((response) => {
+                if (!response.ok) throw new Error('Erro ao executar requisição, status ' + response.status);
+                return response.json();
+            })
+            .then(resolve)
+            .catch(reject);
+        }
+        return new Promise(promisseCallback);
+    }
+    doGet('https://rickandmortyapi.com/api/episode/5').then(console.log).catch(console.error);
+
+    const result = await fetch (`https://rickandmortyapi.com/api/episode/5`);
+	const episode = await result.json();
+	console.log(episode.name);
+
+    const nome_servico = `<p> Nome Servico: ${episode.name} </p>`;
+    const data_orc = `<p> Orçamento feito: ${episode.name} </p`;
+    const status_orc = `<p> Status: ${episode.name} </p>`;
+
+    document.getElementById('nome_servico').insertAdjacentHTML('afterbegin',nome_servico);
+    document.getElementById('data_orc').insertAdjacentHTML('afterbegin',data_orc);
+    document.getElementById('status_orc').insertAdjacentHTML('afterbegin',status_orc);
+
+    function orc_empresa(){
+        let orc_empresa = document.getElementById('orcamentos_empresa');
+        if(document.getElementById('orcamentos_empresa')){
+            orc_empresa.style.display='flex';
+            document.getElementById('servicos_cads').style.display='none';
+            document.getElementById('cad_servico').style.display='none';
+            document.getElementById('os_empresa').style.display='none';
+            document.getElementById('historico_clientes').style.display='none';
+            document.getElementById('contato_empresa').style.display='none';
+        }
+    }
+    orc_empresa();
+}
+
+async function infoEmpresa(){
+    const doGet = (url) => {
+        const promisseCallback = (resolve, reject) => {
+            fetch(url)
+            .then((response) => {
+                if (!response.ok) throw new Error('Erro ao executar requisição, status ' + response.status);
+                return response.json();
+            })
+            .then(resolve)
+            .catch(reject);
+        }
+        return new Promise(promisseCallback);
+    }
+    doGet(`https://rickandmortyapi.com/api/episode/4`).then(console.log).catch(console.error);
+
+    const result = await fetch (`https://rickandmortyapi.com/api/episode/4`);
+	const episode = await result.json();
+	console.log(episode.name);
+
+    const rua = `<p> Rua:${episode.name}, nº ${episode.name}, bairro ${episode.name}, cidade ${episode.name}, estado ${episode.name}</p>`;
+    const telefone1 = `<p> Telefone 1: ${episode.name}`;
+    const telefone2 = `<p> Telefone 2: ${episode.name}`;
+
+    document.getElementById('rua').insertAdjacentHTML('afterbegin',rua);
+    document.getElementById('telefone1').insertAdjacentHTML('afterbegin',telefone1);
+    document.getElementById('telefone2').insertAdjacentHTML('afterbegin',telefone2);
+
+    
+function contato_empresa(){
+    let contato_empresa = document.getElementById('contato_empresa');
+    if(document.getElementById('contato_empresa')){
+        contato_empresa.style.display='flex';
+        document.getElementById('servicos_cads').style.display='none';
+        document.getElementById('cad_servico').style.display='none';
+        document.getElementById('orcamentos_empresa').style.display='none';
+        document.getElementById('os_empresa').style.display='none';
+        document.getElementById('historico_clientes').style.display='none';
+    }
+}
+    contato_empresa();
 }
 

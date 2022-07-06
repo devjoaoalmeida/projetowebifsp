@@ -14,6 +14,66 @@ db.createCollection( "servicos",
 	}	
 );
 
+db.servicos.insertMany(
+	{
+	nome: "conserto de pia",
+	tipo: "conserto",
+	custo: "R$ 100,00",
+	prazo: "1 dias",
+	descricao: "Pia entupida, instalação de sifão, instalação da pia",
+	orcamento: "false",
+	data: new Date("2022-04-22")
+	},
+	{
+	nome: "Limpeza da casa - completa (uso agua sanitaria)",
+	tipo: "limpeza",
+	custo: "R$ 270,00",
+	prazo: "2 dias a 3 dias",
+	descricao: "Da pra comer no chão de tão limpa",
+	orcamento: "false",
+	data: new Date("2022-04-22")
+	},
+	{
+	nome: "Remendo de Pneu",
+	tipo: "mecanica",
+	custo: "R$ 50,00",
+	prazo: "1 dia",
+	descricao: "Remendo de Pneu",
+	orcamento: "false",
+	data: ("2022-04-22")
+	}
+)
+
+db.servicos.insertMany(
+	{
+	nome: "conserto de pia",
+	tipo: "conserto",
+	custo: "R$ 100,00",
+	prazo: "1 dias",
+	descricao: "Pia entupida, instalação de sifão, instalação da pia",
+	orcamento: "false",
+	data: new Date($currentData)
+	},
+	{
+	nome: "Limpeza da casa - completa (uso agua sanitaria)",
+	tipo: "limpeza",
+	custo: "R$ 270,00",
+	prazo: "2 dias a 3 dias",
+	descricao: "Da pra comer no chão de tão limpa",
+	orcamento: "false",
+	data: new Date($currentData)
+	},
+	{
+	nome: "Remendo de Pneu",
+	tipo: "mecanica",
+	custo: "R$ 50,00",
+	prazo: "1 dia",
+	descricao: "Remendo de Pneu",
+	orcamento: "false",
+	data: new Date($currentData)
+	}
+)
+
 obs: para atualizar um servico, colocar currentData()
 
 db.servicos.agregate([

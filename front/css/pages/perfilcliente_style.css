@@ -1,19 +1,40 @@
+/*quadro perfil inteiro*/
+
+.info_usercomum{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 1300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
 .meu_perfil{
     display: flex;
     width: 1300px;
     height: 843px;
 }
 
+/*quadro opções perfis*/
+
 .perfis{
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 810px;
-    padding-top: 20px;
+    height: 770px;
+}
+
+/*opções cliente*/
+
+.user_cliente{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
     border: thin;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-right-style: solid;
+    border-style: solid;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .user{
@@ -32,14 +53,12 @@ p.user{
     margin: 10px;
 }
 
-.user_cliente{
+.useropcoes_cliente{
     display: flex;
-    flex-direction : column;
-    align-items: center;
+    flex-direction: column;
     border: thin;
-    border-style: solid;
-    margin: 5px;
-    border-radius: 5px 5px 5px 5px;
+    border-top-style: solid;
+    width: 290px;
 }
 
 p.useropcoes{
@@ -47,14 +66,6 @@ p.useropcoes{
     border: none;
     text-align: start;
     margin: 10px;
-}
-
-.useropcoes_cliente{
-    display: flex;
-    flex-direction: column;
-    border: thin;
-    border-top-style: solid;
-    width: 290px;
 }
 
 .sair{
@@ -66,15 +77,16 @@ p.useropcoes{
     cursor: pointer;
 }
 
+/*aparecer o conteudo do perfil*/
+
 .conteudo_perfis{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1000px;
-    height: 843px;
-    padding-top: 20px;
+    height: 810px;
+    padding-top: 10px;
 }
-
 
 /*trocar senha*/
 
@@ -84,7 +96,6 @@ p.useropcoes{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    margin-top: 30px;
     width: 900px;
     height: 250px;
 }
@@ -138,7 +149,6 @@ p.vermais{
 .quadros_oscliente{
     display: flex;
     width: 900px;
-    margin-top: 20px;
 }
 
 .orcamentos_cliente{
@@ -150,13 +160,13 @@ p.vermais{
 .quadro_orcamentoscliente{
     display: flex;
     width: 900px;
-    margin-top: 20px;
 }
 
 .contato_cliente{
     display: none;
     justify-content: space-between;
-    width: 900px;
+    align-items: center;
+    width: 800px;
 }
 
 .endereco{
@@ -164,8 +174,7 @@ p.vermais{
     flex-direction: column;
     justify-content: space-around;
     width: 600px;
-    height: 250px;
-    
+    height: 350px;
 }
 
 .telefone{
@@ -173,7 +182,7 @@ p.vermais{
     flex-direction: column;
     justify-content: space-around;
     width: 300px;
-    height: 250px;
+    height: 350px;
 }
 
 /*modal alterar endereco e telefone*/
@@ -206,40 +215,30 @@ p.vermais{
 }
 
 @media (max-width: 1300px) {
+    /*quadro perfil inteiro*/
     .meu_perfil{
-        display: flex;
         width: 1100px;
         height: 810px;
     }
-    
+
+    .info_usercomum{
+        display: flex;
+        justify-content: center;
+        width: 1000px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    /*quadro opções perfis*/
     .perfis{
         display: flex;
         flex-direction: column;
         width: 250px;
         height: 810px;
-        padding-top: 20px;
-        border: thin;
-        border-bottom-style: solid;
-        border-left-style: solid;
-        border-right-style: solid;
     }
-    
-    .user{
-        display: flex;
-        flex-direction : column;
-        align-items: center;
-        border: thin;
-        border-style: solid;
-        margin: 5px;
-        border-radius: 5px 5px 5px 5px;
-    }
-    
-    p.user{
-        cursor: pointer;
-        border: none;
-        margin: 10px;
-    }
-    
+
+    /*opções cliente*/
+
     .user_cliente{
         display: flex;
         flex-direction : column;
@@ -249,14 +248,23 @@ p.vermais{
         margin: 5px;
         border-radius: 5px 5px 5px 5px;
     }
-    
-    p.useropcoes{
+
+    .user{
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+        border: thin;
+        border-style: solid;
+        margin: 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    p.user{
         cursor: pointer;
         border: none;
-        text-align: start;
         margin: 10px;
     }
-    
+
     .useropcoes_cliente{
         display: flex;
         flex-direction: column;
@@ -264,7 +272,14 @@ p.vermais{
         border-top-style: solid;
         width: 240px;
     }
-    
+
+    p.useropcoes{
+        cursor: pointer;
+        border: none;
+        text-align: start;
+        margin: 10px;
+    }
+
     .sair{
         display: flex;
         position: fixed;
@@ -273,27 +288,628 @@ p.vermais{
         justify-content: center;
         cursor: pointer;
     }
-    
+
+    /*aparecer o conteudo do perfil*/
+
     .conteudo_perfis{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 900px;
+        width: 800px;
         height: 843px;
         padding-top: 20px;
     }
-    
-    .info_usercomum{
+
+    .usercliente_conteudo{
         display: flex;
-        justify-content: space-between;
-        text-align: center;
+        flex-direction: column;
         width: 700px;
+    }
+
+    .os_cliente{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    p.vermais{
+        cursor: pointer;
+        border: none;
+        margin: 20px;
+        height: 40px;
+        width: 900px;
+        text-align: center;
         border: thin;
         border-bottom-style: solid;
-        height: 50px;
+    }
+    
+    .quadros{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+    
+    .quadros_oscliente{
+        display: flex;
+        width: 750px;
+    }
+    
+    .orcamentos_cliente{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quadro_orcamentoscliente{
+        display: flex;
+        width: 750px;
+    }
+    
+    .contato_cliente{
+        display: none;
+        justify-content: space-between;
+        width: 750px;
+    }
+    
+    .endereco{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 500px;
+        height: 250px;
+    }
+    
+    .telefone{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 250px;
+        height: 250px;
     }
 }
 
+@media (max-width: 1100px) {
+    /*quadro perfil inteiro*/
+    .meu_perfil{
+        width: 900px;
+        height: 810px;
+    }
 
+    .info_usercomum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 900px;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    /*quadro opções perfis*/
+    .perfis{
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+        height: 810px;
+    }
+
+    /*opções cliente*/
+
+    .user_cliente{
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+        border: thin;
+        border-style: solid;
+        margin: 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    .user{
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+        border: thin;
+        border-style: solid;
+        margin: 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    p.user{
+        cursor: pointer;
+        border: none;
+        margin: 10px;
+    }
+
+    .useropcoes_cliente{
+        display: flex;
+        flex-direction: column;
+        border: thin;
+        border-top-style: solid;
+        width: 210px;
+    }
+
+    p.useropcoes{
+        cursor: pointer;
+        border: none;
+        text-align: start;
+        margin: 10px;
+    }
+
+    .sair{
+        display: flex;
+        position: fixed;
+        bottom: 150px;
+        width: 210px;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /*aparecer o conteudo do perfil*/
+
+    .conteudo_perfis{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+        height: 843px;
+        padding-top: 20px;
+    }
+
+    .usercliente_conteudo{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+    }
+
+    .os_cliente{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    p.vermais{
+        cursor: pointer;
+        border: none;
+        margin: 20px;
+        height: 40px;
+        width: 900px;
+        text-align: center;
+        border: thin;
+        border-bottom-style: solid;
+    }
+    
+    .quadros{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    
+    .quadros_oscliente{
+        display: flex;
+        width: 700px;
+    }
+    
+    .orcamentos_cliente{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quadro_orcamentoscliente{
+        display: flex;
+        width: 700px;
+    }
+    
+    .contato_cliente{
+        display: none;
+        justify-content: space-between;
+        width: 700px;
+    }
+    
+    .endereco{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 400px;
+        height: 250px;
+    }
+    
+    .telefone{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 200px;
+        height: 250px;
+    }
+
+    .trocar_senha{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 700px;
+        height: 250px;
+    }
+    
+    .inserir_senha{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 500px;    
+    }
+    
+    input{
+        display: flex;
+        border-radius: 10px;
+        height: 25px;
+        width: 200px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    /*quadro perfil inteiro*/
+    .meu_perfil{
+        width: 700px;
+        height: 810px;
+    }
+
+    .info_usercomum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    /*quadro opções perfis*/
+    .perfis{
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+        height: 810px;
+    }
+
+    /*opções cliente*/
+
+    .user_cliente{
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+        border: thin;
+        border-style: solid;
+        margin: 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    .user{
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+        border: thin;
+        border-style: solid;
+        margin: 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    p.user{
+        cursor: pointer;
+        border: none;
+        margin: 10px;
+    }
+
+    .useropcoes_cliente{
+        display: flex;
+        flex-direction: column;
+        border: thin;
+        border-top-style: solid;
+        width: 210px;
+    }
+
+    p.useropcoes{
+        cursor: pointer;
+        border: none;
+        text-align: start;
+        margin: 10px;
+    }
+
+    .sair{
+        display: flex;
+        position: fixed;
+        bottom: 150px;
+        width: 210px;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /*aparecer o conteudo do perfil*/
+
+    .conteudo_perfis{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        height: 843px;
+        padding-top: 20px;
+    }
+
+    .usercliente_conteudo{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .os_cliente{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    p.vermais{
+        cursor: pointer;
+        border: none;
+        margin: 20px;
+        height: 40px;
+        width: 900px;
+        text-align: center;
+        border: thin;
+        border-bottom-style: solid;
+    }
+    
+    .quadros{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    
+    .quadros_oscliente{
+        display: flex;
+        width: 500px;
+    }
+    
+    .orcamentos_cliente{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quadro_orcamentoscliente{
+        display: flex;
+        width: 500px;
+    }
+    
+    .contato_cliente{
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 500px;
+    }
+    
+    .endereco{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 400px;
+        height: 250px;
+    }
+    
+    .telefone{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 400px;
+        height: 250px;
+    }
+
+    .trocar_senha{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 500px;
+        height: 250px;
+    }
+    
+    .inserir_senha{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 400px;    
+    }
+    
+    input{
+        display: flex;
+        border-radius: 10px;
+        height: 25px;
+        width: 180px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    /*quadro perfil inteiro*/
+    .meu_perfil{
+        width: 650px;
+        height: 810px;
+    }
+
+    .info_usercomum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    /*quadro opções perfis*/
+    .perfis{
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+        height: 810px;
+    }
+
+    /*opções cliente*/
+
+    .user_cliente{
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+        border: thin;
+        border-style: solid;
+        margin: 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    .user{
+        display: flex;
+        flex-direction : column;
+        align-items: center;
+        border: thin;
+        border-style: solid;
+        margin: 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    p.user{
+        cursor: pointer;
+        border: none;
+        margin: 10px;
+    }
+
+    .useropcoes_cliente{
+        display: flex;
+        flex-direction: column;
+        border: thin;
+        border-top-style: solid;
+        width: 210px;
+    }
+
+    p.useropcoes{
+        cursor: pointer;
+        border: none;
+        text-align: start;
+        margin: 10px;
+    }
+
+    .sair{
+        display: flex;
+        position: fixed;
+        bottom: 150px;
+        width: 210px;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /*aparecer o conteudo do perfil*/
+
+    .conteudo_perfis{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: 843px;
+        padding-top: 20px;
+    }
+
+    .usercliente_conteudo{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .os_cliente{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quadros{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    
+    .quadros_oscliente{
+        display: flex;
+        width: 400px;
+    }
+    
+    .orcamentos_cliente{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quadro_orcamentoscliente{
+        display: flex;
+        width: 400px;
+    }
+    
+    .contato_cliente{
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 400px;
+    }
+    
+    .endereco{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 400px;
+        height: 250px;
+    }
+    
+    .telefone{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 400px;
+        height: 250px;
+    }
+
+    .trocar_senha{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 400px;
+        height: 250px;
+    }
+    
+    .inserir_senha{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 400px;    
+    }
+    
+    input{
+        display: flex;
+        border-radius: 10px;
+        height: 25px;
+        width: 180px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    /*quadro perfil inteiro*/
+
+    .info_usercomum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        margin-top: 200px;
+        margin-bottom: 10px;
+    }
+}
 
 
