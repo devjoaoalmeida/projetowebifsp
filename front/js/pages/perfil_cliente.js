@@ -60,7 +60,7 @@ export default () => {
                             <div class="info_endereco">
                                 <p id="rua"></p>
                             </div>
-                            <button onclick="document.getElementById('modalmaior_endereco').style.display='flex'">alterar dados</button>
+                            <button onclick="document.getElementById('modalmenor_endereco').style.display='flex'">alterar dados</button>
                         </div>
                         <div class="telefone">
                             <p>TELEFONE</p>
@@ -130,8 +130,8 @@ export default () => {
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <a href="#perfil_empresa">CRIAR CONTA</a>
+                        <div class="criar_perfilempresa">
+                            <a href="#perfil_empresa" onclick="perfilEmpresa()" >CRIAR CONTA</a>
                         </div>
                     </form>
                 </div>
@@ -140,9 +140,9 @@ export default () => {
 
 
     <div id="alterar_endereco">
-		<div class="modalmaior_endereco" id="modalmaior_endereco">
-			<div class="conteudo_modalmaior">
-				<p class="fechar" onclick="document.getElementById('modalmaior_endereco').style.display='none'">x</p>
+		<div class="modalmenor_endereco" id="modalmenor_endereco">
+			<div class="conteudo_modalmenor">
+				<p class="fechar" onclick="document.getElementById('modalmenor_endereco').style.display='none'">x</p>
 				<form>
 					<div class="quadro_endereco">
 						<div>

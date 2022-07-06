@@ -9,7 +9,7 @@ export default () => {
     </div>
         <div class="meu_perfil">
             <div class="perfis">
-                <div id="user_empresa" onclick="perfilEmpresa()" class="user_empresa">
+                <div id="user_empresa" class="user_empresa">
                     <p class="user">Minha empresa</p>
                     <div class="useropcoes_empresa" id="useropcoes_empresa">
                         <p class="useropcoes" onclick="cad_servico()">Criar Serviço</p>
@@ -59,7 +59,6 @@ export default () => {
                                 <p>Descrição</p>
                             </div>
                         </div>
-                        <p class="vermais">Ver mais...</p>
                     </div>
 
                     <div id="orcamentos_empresa" class="orcamentos_empresa">
@@ -77,7 +76,6 @@ export default () => {
                                     <p>Respondido</p>
                                 </div>
                             </div>
-                            <p class="vermais">Ver mais...</p>
                             <p class="titulo_orc"> Orçamentos fechados </p>
                             <div class="orc_fechado">
                                 <div class="quadros">
@@ -91,7 +89,6 @@ export default () => {
                                     <p>Respondido</p>
                                 </div>
                             </div>
-                            <p class="vermais">Ver mais...</p>                        
                         </div>
                     </div>
 
@@ -110,7 +107,6 @@ export default () => {
                                     <p>Consertatudo: Conserto de Micro-ondas</p>
                                 </div>
                             </div>
-                            <p class="vermais">Ver mais...</p>
                             <p class="titulo_os"> Ordem de serviço fechadas </p>
                             <div class="os_fechado">
                                 <div class="quadros">
@@ -124,7 +120,6 @@ export default () => {
                                     <p>Consertatudo: Conserto de Micro-ondas</p>
                                 </div>
                             </div>
-                            <p class="vermais">Ver mais...</p>
                         </div>
                     </div>
 
