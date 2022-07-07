@@ -9,7 +9,8 @@ async function perfilCliente() {
                 headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json; charset=UTF-8',
-                    'Access-Control-Allow-Origin':'*'
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Credentials': 'true'
                   }
             })
             .then((response) => {
@@ -21,14 +22,14 @@ async function perfilCliente() {
         }
         return new Promise(promisseCallback);
     }
-    doGet('http://localhost:5000/buscarusuario/3').then(console.log).catch(console.error);
+    doGet('http://localhost:5000/buscarusuario').then(console.log).catch(console.error);
 
-	const result = await fetch ('http://localhost:5000/buscarusuario/3');
+	const result = await fetch ('http://localhost:5000/buscarusuario');
 	const buscarusuario = await result.json();
 
-    const nome = `<p > Nome: ${buscarusuario.name} </p>`;
-    const email = `<p> E-mail: ${buscarusuario.year} </p`;
-    const cpf = `<p> CPF: ${buscarusuario.color} </p>`;
+    const nome = `<p > Nome: ${buscarusuario.nome} </p>`;
+    const email = `<p> E-mail: ${buscarusuario.email} </p`;
+    const cpf = `<p> CPF: ${buscarusuario.cpf} </p>`;
 
     document.getElementById('info_usernome').insertAdjacentHTML('afterbegin',nome);
     document.getElementById('info_useremail').insertAdjacentHTML('afterbegin',email);

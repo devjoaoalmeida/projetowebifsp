@@ -2,9 +2,11 @@ async function listaServico() {
     const doGet = (url) => {
         const promisseCallback = (resolve, reject) => {
             fetch(url, {
-                mode:"no-cors",
+                method: 'GET',
+                mode:"cors",
                 headers: {
-                'Access-Control-Allow-Origin':'*'}
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Credentials': 'true'}
             })
             .then((response) => {
                 if (!response.ok) throw new Error('Erro ao executar requisição, status ' + response.status);
@@ -16,12 +18,12 @@ async function listaServico() {
         return new Promise(promisseCallback);
     }
     
-    doGet('http://localhost:5000/buscarservico').then(console.log).catch(console.error);
+    doGet('http://localhost:5000/buscarservicos').then(console.log).catch(console.error);
 
-    const result = await fetch ('http://localhost:5000/buscarservico');
+    const result = await fetch ('http://localhost:5000/buscarservicos');
 	const buscarservico = await result.json();
 
-    const nome_servico = `<p > Nome do serviço: ${buscarservico.name} </p>`;
+    const nome_servico = `<p > Nome do serviço: ${buscarservico.nome} </p>`;
     const tipo = `<p> Categoria: ${buscarservico.tipo} </p`;
     const custo= `<p> ${buscarservico.custo} </p>`;
     const prazo = `<p> Prazo: ${buscarservico.prazo} </p>`;

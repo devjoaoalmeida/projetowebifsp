@@ -2,7 +2,7 @@ async function fazPost(url, body, token)  {
     console.log("Body=", body)
     let request = new XMLHttpRequest()
     request.open("POST", url, true)
-    request.setRequestHeader("Content-type", "application/json")
+    request.setRequestHeader("Content-type", "application/json",)
     if(token){
         request.setRequestHeader("Authorization", "Bearer  " + token);
     }
@@ -21,7 +21,7 @@ async function fazPost(url, body, token)  {
 
 async function efetuarLogin() {
     event.preventDefault()
-    let url = 'http://localhost:5000/buscarusuario'
+    let url = 'http://localhost:5000/login'
     let email = document.getElementById("email").value
     let senha = document.getElementById("senha").value
     console.log(email)
@@ -29,7 +29,7 @@ async function efetuarLogin() {
 
     user = {
         "email": email,
-        "password": senha
+        "senha": senha
     }
 
     await fazPost(url, user);
