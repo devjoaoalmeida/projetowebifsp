@@ -1,53 +1,99 @@
 use projetoweb
 
-
-
 db (pra ver se é o banco certo)
 
-
-
-db.createCollecion("usuario")
-
-db.createCollecion("servico")
-
-
-
-db.usuario.insert({nome: "",email: "", senha: "")}
-
-db.servico.insert(
+db.createCollection( "servicos",
 	{
-	"nome": "",
-	"categoria": "",
-	"custo": "",
-	"prazo": "",
-	"descricao": "",
-	"orcamento": "",
-	"comentarios": {
-		"comentario": "",
-		"avaliacao": ""}
+	nome: "<string>",
+	tipo: "<string>",
+	custo: "<string>",
+	prazo: "<string>",
+	descricao: "<string>",
+	orcamento: "<boolean>",
+	data: new Date("<YYYY-mm-dd>")
+	}	
+);
+
+db.servicos.insertMany(
+	{
+	nome: "conserto de pia",
+	tipo: "conserto",
+	custo: "R$ 100,00",
+	prazo: "1 dias",
+	descricao: "Pia entupida, instalação de sifão, instalação da pia",
+	orcamento: "false",
+	data: new Date("2022-04-22")
+	},
+	{
+	nome: "Limpeza da casa - completa (uso agua sanitaria)",
+	tipo: "limpeza",
+	custo: "R$ 270,00",
+	prazo: "2 dias a 3 dias",
+	descricao: "Da pra comer no chão de tão limpa",
+	orcamento: "false",
+	data: new Date("2022-04-22")
+	},
+	{
+	nome: "Remendo de Pneu",
+	tipo: "mecanica",
+	custo: "R$ 50,00",
+	prazo: "1 dia",
+	descricao: "Remendo de Pneu",
+	orcamento: "false",
+	data: ("2022-04-22")
 	}
 )
 
-
-
-db.createCollecion( "servico",
+db.servicos.insertMany(
 	{
-		"nome": <string>,
-		"categoria": <string>,
-		"custo": <string>,
-		"prazo": <string>,
-		"descricao": <string>,
-		"orcamento": <string>,
-		"comentarios": {
-			"comentario": <string>,
-			"avaliacao": <string>},
+	nome: "conserto de pia",
+	tipo: "conserto",
+	custo: "R$ 100,00",
+	prazo: "1 dias",
+	descricao: "Pia entupida, instalação de sifão, instalação da pia",
+	orcamento: "false",
+	data: new Date($currentData)
+	},
+	{
+	nome: "Limpeza da casa - completa (uso agua sanitaria)",
+	tipo: "limpeza",
+	custo: "R$ 270,00",
+	prazo: "2 dias a 3 dias",
+	descricao: "Da pra comer no chão de tão limpa",
+	orcamento: "false",
+	data: new Date($currentData)
+	},
+	{
+	nome: "Remendo de Pneu",
+	tipo: "mecanica",
+	custo: "R$ 50,00",
+	prazo: "1 dia",
+	descricao: "Remendo de Pneu",
+	orcamento: "false",
+	data: new Date($currentData)
 	}
 )
 
-db.createCollecion( "usuario",
+obs: para atualizar um servico, colocar currentData()
+
+db.servicos.agregate([
 	{
-		"nome": <string>,
-		"email": <string>,
-		"senha": <string>
+		$match: { data:"(2022-05-01)", orcamento: "false" }
+	},
+	
+	{
+		$group: { nome: "$nome", tipo: "$tipo", custo:"$custo", prazo:"$prazo", data:"$data"}
 	}
-)
+] )
+
+obs: puxa somente orçamento a ser feito e não em ordem de serviço
+
+db.servicos.agregate([
+	{
+		$match: { data:"(2022-05-01)", orcamento: "true" }
+	},
+	
+	{
+		$group: { nome: "$nome", tipo: "$tipo", custo:"$custo", prazo:"$prazo", data:"$data"}
+	}
+] )

@@ -1,0 +1,16 @@
+{
+    "short_name": "ServTech",
+    "name": "Loja Online de Serviços",
+    "icons": [
+      {
+        "src": "logo.png",
+        "sizes": "250x250",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#8a2be2",
+    "background_color": "#fffafa"
+  }

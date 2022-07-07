@@ -3,7 +3,7 @@ CREATE TABLE usuario (
   nome VARCHAR(100) NOT NULL,
   email VARCHAR(80) NOT NULL,
   senha VARCHAR(20) NOT NULL,
-  cpf BIGINT NOT NULL,
+  cpf VARCHAR(14) NOT NULL,
   PRIMARY KEY (idusuario))
 ENGINE = InnoDB;
 
@@ -13,7 +13,7 @@ select * from usuario;
 
 CREATE TABLE empresa (
   idempresa INT NOT NULL AUTO_INCREMENT,
-  cnpj BIGINT NOT NULL,
+  cnpj VARCHAR(18) NOT NULL, 
   razao_social VARCHAR(200) NOT NULL,
   nome_fantasia VARCHAR(200) NOT NULL,
   PRIMARY KEY (idempresa))
@@ -43,8 +43,8 @@ select * from endereco;
 
 CREATE TABLE telefone (
   idtelefone INT NOT NULL AUTO_INCREMENT,
-  telefone1 BIGINT NOT NULL,
-  telefone2 BIGINT NULL,
+  telefone1 VARCHAR(12) NOT NULL,
+  telefone2 VARCHAR(12) NULL,
   idempresa INT NOT NULL,
   PRIMARY KEY (idtelefone),
   CONSTRAINT fk_telefone_empresa FOREIGN KEY (idempresa) REFERENCES empresa (idempresa)
@@ -60,7 +60,7 @@ CREATE TABLE ordemservico (
   idordemservico INT NOT NULL AUTO_INCREMENT,
   nome VARCHAR(100) NOT NULL,
   tipo VARCHAR(45) NOT NULL,
-  custo INT NOT NULL,
+  custo VARCHAR(15) NOT NULL,
   prazo VARCHAR(50) NOT NULL,
   descricao VARCHAR(140) NOT NULL,
   idusuario INT NOT NULL,

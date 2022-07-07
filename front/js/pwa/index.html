@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/front/css/main.css">
+	<script src="../main.js" type="module"></script>
+	<script src="../modal/modal_login.js" type="module"></script>
+	<link rel="manifest" href="/front/js/pwa/manifest.json">
+	<link rel="shortcut icon" href="/front/js/pwa/logo.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<title>ServTech</title>
+</head>
+<body>
+	<header> 
+		<div class="quadro_topheader"> <!-- BARRA DE ATALHOS --> 
+			<a href="#sobre" class="quadro_topheader"> Sobre </a>
+		</div>
+		
+		<div class="quadro_pesquisa">
+			<div class="pesquisa">
+				<a href="#lista_servico" onclick="listaServico()">Serviços</a>
+				<input type="search" placeholder="Qual serviço você procura?" class="pesquisa">
+			</div>
+		</div>	
+
+		<div class="logo">
+			<a class="logo" href="#home">ServTech</a>
+		</div>
+
+		<div class="login">
+			<a href="#login">Login</a>
+			<a href="#perfil_cliente" onclick="perfilCliente()">Meu Perfil</a>
+		</div>
+	</header>
+
+	<div id="modal"></div>
+	<main id="root"></main>
+
+	<footer> 
+		<div class="rodape">
+			<p class="rodape">DESENVOLVIDO POR WALACE E JOAO PARA O PROJETO DO PRIMEIRO SEMESTRE DO CURSO DE ESPECIALIZAÇÃO EM DESENVOLVIMENTO WEB NO INSTITUTO FEDERAL DE SÃO PAULO EM ITAPETININGA.</p>
+		</div>
+	</footer>
+	
+	<script src="js/funções/funcao_perfil.js"></script>
+	<script src="js/funções/slider.js"></script>
+	<script src="js/api/get.js"></script>
+	<script src="js/api/post.js"></script>
+
+	<script src="./js/pwa/instalar.js"></script>
+</body>
+</html>
