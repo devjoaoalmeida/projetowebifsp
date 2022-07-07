@@ -44,15 +44,15 @@ async function perfilCliente() {
         }
         return new Promise(promisseCallback);
     }
-    doGet(`https://rickandmortyapi.com/api/episode/7`).then(console.log).catch(console.error);
+    doGet(tokenBuscar).then(console.log).catch(console.error);
 
-	const result = await fetch (`https://rickandmortyapi.com/api/episode/7`);
-	const episode = await result.json();
-	console.log(episode.name);
+	const result = await fetch (tokenBuscar);
+	const buscarusuario = await result.json();
+	console.log(buscarusuario.name);
 
-    const nome = `<p > Nome: ${episode.name} </p>`;
-    const email = `<p> E-mail: ${episode.name} </p`;
-    const cpf = `<p> CPF: ${episode.name} </p>`;
+    const nome = `<p > Nome: ${buscarusuario.nome} </p>`;
+    const email = `<p> E-mail: ${buscarusuario.email} </p`;
+    const cpf = `<p> CPF: ${buscarusuario.cpf} </p>`;
 
     document.getElementById('info_usernome').insertAdjacentHTML('afterbegin',nome);
     document.getElementById('info_useremail').insertAdjacentHTML('afterbegin',email);

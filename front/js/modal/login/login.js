@@ -16,7 +16,7 @@ export default () => {
                                 <a class="esqueceu_senha" href="#senha">Esqueceu a senha?</a>
                             </div>
                             <div>
-                                <button class="entrar" id="entrar_login">Entrar</button>
+                                <button class="entrar" id="entrar_login" onclick="efetuarLogin()">Entrar</button>
                             </div>
                         </div>
                     </form>
