@@ -18,9 +18,9 @@ async function listaServico() {
         return new Promise(promisseCallback);
     }
     
-    doGet('http://localhost:5000/buscarservicos').then(console.log).catch(console.error);
+    doGet('http://127.0.0.1:5000/buscarservicos').then(console.log).catch(console.error);
 
-    const result = await fetch ('http://localhost:5000/buscarservicos');
+    const result = await fetch ('http://127.0.0.1:5000/buscarservicos');
 	const buscarservico = await result.json();
 
     const nome_servico = `<p > Nome do serviço: ${buscarservico.nome} </p>`;
