@@ -1,4 +1,4 @@
-async function fazPost(url, body, token){
+async function fazPost(url, body, token)  {
     console.log("Body=", body)
     let request = new XMLHttpRequest()
     request.open("POST", url, true)
@@ -11,7 +11,9 @@ async function fazPost(url, body, token){
 
     request.onload = function() {
         console.log(this.responseText)
-        localStorage.setItem(tokenBuscar, JSON.stringify(this.responseText));
+        const token = this.responseText;
+        localStorage.setItem('token', token);
+        console.log(token);
     }
 
     return request.responseText
@@ -19,7 +21,7 @@ async function fazPost(url, body, token){
 
 async function efetuarLogin() {
     event.preventDefault()
-    let url = "localhost:5000/buscarusuario/1"
+    let url = 'http://localhost:5000/buscarusuario'
     let email = document.getElementById("email").value
     let senha = document.getElementById("senha").value
     console.log(email)
@@ -27,7 +29,7 @@ async function efetuarLogin() {
 
     user = {
         "email": email,
-        "password": senha,
+        "password": senha
     }
 
     await fazPost(url, user);
